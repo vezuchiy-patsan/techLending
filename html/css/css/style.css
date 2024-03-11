@@ -1,4 +1,10 @@
-* {
-  margin: 0;
-  padding: 1;
+:root {
+  --bs-primary: $primary;
+  --bs-primary-rgb: $primary-rgb;
+}
+
+body {
+  width: 1116px;
+  margin: 0 auto;
+  padding: 0;
 }/*# sourceMappingURL=style.css.map */
