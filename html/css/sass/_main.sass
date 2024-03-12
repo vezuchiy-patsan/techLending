@@ -17,7 +17,7 @@ section
         height: auto
         border-end-start-radius: 30px
         border-end-end-radius: 30px
-        padding: 18px 0 30px 0
+        padding: 18px 0 12px 0
         .section__head_logo
             width: 32%
     .section__head_h
@@ -57,3 +57,37 @@ section
                         line-height: 14.4px
                         &.active
                             color: var(--bs-primary)
+    
+    &.stat__section
+        padding: 50px 0
+        .stat__section_block
+            &::before
+                content: ""
+                display: block
+                width: calc(25% - 10px)
+                height: 2px
+                background: rgba(7, 29, 67, 1)
+                position: absolute
+                left: -31px
+                top: 57px  
+                transform: rotate(90deg)
+            &:last-child
+                &::after
+                    content: ""
+                    display: block
+                    width: calc(25% - 10px)
+                    height: 2px
+                    background: rgba(7, 29, 67, 1)
+                    position: absolute
+                    right: -21px
+                    top: 57px  
+                    transform: rotate(90deg)
+            p
+                margin-bottom: 8px
+        .number
+            p
+                font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                font-weight: 600
+                font-size: 3.625rem
+                line-height: 70px
+        
