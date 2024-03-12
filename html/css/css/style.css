@@ -165,9 +165,56 @@ section.stat__section .stat__section_block:last-child::after {
 section.stat__section .stat__section_block p {
   margin-bottom: 8px;
 }
+section.stat__section .stat__section_block > p {
+  margin-bottom: 0;
+  line-height: 19.2px;
+}
 section.stat__section .number p {
   font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 3.625rem;
   line-height: 70px;
+}
+section.services__section {
+  padding-top: 54px;
+}
+section.services__section h2 {
+  font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #A2A8AF;
+  margin-bottom: 16px;
+}
+section.services__section #pills-tab li:not(:last-child) {
+  margin-right: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+section.services__section #pills-tab button {
+  padding: 14.5px 16px;
+  border-radius: 35px;
+  border: 1px solid #E0E0E0;
+  background-color: rgba(255, 255, 255, 0);
+  color: #071D43;
+  font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+section.services__section #pills-tab button.active {
+  color: var(--bs-primary);
+  border-color: var(--bs-primary);
+}
+section.services__section .services__section_block_img img {
+  margin-top: -125px;
+}
+section.services__section .services__section_block h3 {
+  font-family: "Raleway Bold", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+section.services__section .services__section_block img {
+  margin-top: 35px;
+}
+section.services__section .services__section_block p {
+  font-size: 0.875rem;
 }/*# sourceMappingURL=style.css.map */
