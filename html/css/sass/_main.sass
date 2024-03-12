@@ -79,7 +79,7 @@ section
                     height: 2px
                     background: rgba(7, 29, 67, 1)
                     position: absolute
-                    right: -21px
+                    right: -31px
                     top: 57px  
                     transform: rotate(90deg)
             p
@@ -134,3 +134,77 @@ section
                 margin-top: 35px
             p
                 font-size: 0.875rem
+    &.industry__services
+        padding: 50px 0
+        h2
+            font: 
+                family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                weight: 600
+                size: 3rem
+            margin-bottom: 2.6875rem
+        .row
+            a
+                text-decoration-line: none
+                & > img
+                    max-width: 261px
+                    max-height: 305px
+                    border-radius: 30px
+                    object-fit: cover
+
+            > div
+                max-width: 261px
+                &:nth-child(even)
+                    .industry__services_cards_text
+                        border-bottom: 2px solid #A2A8AF
+                &:nth-child(odd)
+                    border-bottom: 2px solid #A2A8AF
+                    a
+                        > img
+                            height: 305px
+                &:first-child
+                    a > img
+                        object-position: left
+            .industry__services_cards_text
+                margin-top: 25px
+                img
+                    width: 25px
+                    position: relative
+                    left: 30px
+                    top: 15px
+                p
+                    padding: 0
+    &.partners__section
+        padding: 50px 0
+        position: relative
+        z-index: 10
+        h2
+            margin-bottom: 30px
+            font: 
+                family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                weight: 600
+    &.geograph__section
+        background: url('../../images/geograph_section.png')
+        background-size: 100% 100%
+        padding: 100px 0
+        position: relative
+        z-index: 1
+        top: -50px
+    &.form__section
+        background: url('../../images/form.png') center center
+        background-repeat: no-repeat
+        background-size: 100% 100%
+        border-top-left-radius: 30px
+        border-top-right-radius: 30px
+        padding: 100px 0 150px 0
+        position: relative
+        top: -100px
+        z-index: 10    
+        .input-group
+            width: 25%
+            input
+                border-radius: 35px
+                padding: 16px 20px
+        button
+            padding: 16px 20px
+            width: 20%
+            border-radius: 35px

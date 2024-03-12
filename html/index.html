@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-secondary">
@@ -217,22 +218,353 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="container"></div>
+    <section class="industry__services">
+        <div class="container">
+            <p class="h-mini">С кем работаем</p>
+            <h2 class="col-7">Внедряем наши решения
+                в следующих отраслях:</h2>
+            <div class="row gx-3 justify-content-between mx-0">
+                <div class="col-auto px-0">
+                    <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#farmerModal">
+                        <img src="./images/farmer-industry.webp" class="img-fluid" alt="Трактор в поле">
+                        <div class="industry__services_cards_text row justify-content-between mx-0">
+                            <p class="col-5 card-text-p-24">Сельское хозяйство</p>
+                            <div class="col-3 px-0">
+                                <img src="./images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="farmerModal" tabindex="-1" aria-labelledby="farmerModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div>
+                                        <p class="modal-mini-title">С кем работаем</p>
+                                        <h3 class="modal-title col-3" id="farmerModalLabel">Сельское хозяйство</h3>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Закрыть"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="divider"></div>
+                                    <p>
+                                        Сервисы обеспечивают точное отслеживание местоположения и маршрутов
+                                        сельхозтехники, повышая эффективность её использования и упрощая планирование
+                                        работ. Они также помогают эффективно управлять расходом топлива, выявляя утечки,
+                                        предотвращая несанкционированное использование и оптимизируя затраты.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto px-0">
+                    <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#oilModal">
+                        <img src="./images/oil-industry.webp" class="img-fluid" alt="Бензовоз">
+                        <div class="industry__services_cards_text row justify-content-between mx-0">
+                            <p class="col-5 card-text-p-24">Топливная
+                                промышленность</p>
+                            <div class="col-3 px-0">
+                                <img src="./images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="oilModal" tabindex="-1" aria-labelledby="oilModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div>
+                                        <p class="modal-mini-title">С кем работаем</p>
+                                        <h3 class="modal-title col-3" id="farmerModalLabel">Сельское хозяйство</h3>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Закрыть"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="divider"></div>
+                                    <p>
+                                        Сервисы обеспечивают точное отслеживание местоположения и маршрутов
+                                        сельхозтехники, повышая эффективность её использования и упрощая планирование
+                                        работ. Они также помогают эффективно управлять расходом топлива, выявляя утечки,
+                                        предотвращая несанкционированное использование и оптимизируя затраты.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto px-0">
+                    <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#transportModal">
+                        <img src="./images/transport-industry.webp" class="img-fluid" alt="Камаз">
+                        <div class="industry__services_cards_text row justify-content-between mx-0">
+                            <p class="col-5 card-text-p-24">Транспортная
+                                отрасль</p>
+                            <div class="col-3 px-0">
+                                <img src="./images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="transportModal" tabindex="-1" aria-labelledby="transportModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div>
+                                        <p class="modal-mini-title">С кем работаем</p>
+                                        <h3 class="modal-title col-3" id="farmerModalLabel">Сельское хозяйство</h3>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Закрыть"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="divider"></div>
+                                    <p>
+                                        Сервисы обеспечивают точное отслеживание местоположения и маршрутов
+                                        сельхозтехники, повышая эффективность её использования и упрощая планирование
+                                        работ. Они также помогают эффективно управлять расходом топлива, выявляя утечки,
+                                        предотвращая несанкционированное использование и оптимизируя затраты.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto px-0">
+                    <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#roadModal">
+                        <img src="./images/road-industry.webp" class="img-fluid" alt="Дорожная техника">
+                        <div class="industry__services_cards_text row justify-content-between mx-0">
+                            <p class="col-5 card-text-p-24">Дорожное
+                                строительство</p>
+                            <div class="col-3 px-0">
+                                <img src="./images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
+                            </div>
+                        </div>
+                    </a>
+                    <!-- Модальное окно -->
+                    <div class="modal fade" id="roadModal" tabindex="-1" aria-labelledby="roadModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div>
+                                        <p class="modal-mini-title">С кем работаем</p>
+                                        <h3 class="modal-title col-3" id="farmerModalLabel">Сельское хозяйство</h3>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Закрыть"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="divider"></div>
+                                    <p>
+                                        Сервисы обеспечивают точное отслеживание местоположения и маршрутов
+                                        сельхозтехники, повышая эффективность её использования и упрощая планирование
+                                        работ. Они также помогают эффективно управлять расходом топлива, выявляя утечки,
+                                        предотвращая несанкционированное использование и оптимизируя затраты.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </section>
-    <section>
-        <div class="container"></div>
+    <section class="partners__section bg-white rounded-5">
+        <div class="container">
+            <p class="h-mini">Клиенты</p>
+            <h2 class="col-4">НАШИ ПАРТНЁРЫ</h2>
+            <div class="swiper partners__section_gallery">
+                <div class="swiper-wrapper align-items-center">
+                    <div class="swiper-slide"><img src="./images/partners/logo_tpp_1.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="./images/partners/logoabz.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/partners/logoagro.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/partners/logoakron.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/partners/logobelgoroddorstroy.png" class="img-fluid"
+                            alt=""></div>
+                    <div class="swiper-slide"><img src="./images/partners/logogasprom-nn.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/partners/logoigs.png" class="img-fluid" alt=""></div>
+                    <div class="swiper-slide"><img src="./images/partners/technonikol.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="./images/partners/logorosneft.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <div class="container"></div>
+    <section class="geograph__section">
+        <div class="container">
+            <h2>ГЕОГРАФИЯ СЕРВИСОВ</h2>
+            <ul class="nav nav-pills mb-4 col-6" id="geographic-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-azs-tab" data-bs-toggle="pill" data-bs-target="#pills-azs"
+                        type="button" role="tab" aria-controls="pills-azs" aria-selected="true">АЗС-Онлайн</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-mon-tab" data-bs-toggle="pill" data-bs-target="#pills-mon"
+                        type="button" role="tab" aria-controls="pills-mon" aria-selected="false">Мониторинг
+                        транспорта</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-warehouse-tab" data-bs-toggle="pill"
+                        data-bs-target="#pills-warehouse" type="button" role="tab" aria-controls="pills-warehouse"
+                        aria-selected="false">Склад</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-calc-tab" data-bs-toggle="pill" data-bs-target="#pills-calc"
+                        type="button" role="tab" aria-controls="pills-calc" aria-selected="false">Сквозной учет
+                        топлива</button>
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-azs" role="tabpanel" aria-labelledby="pills-azs-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="services__section_block col-5">
+                            <h3>АЗС-Онлайн</h3>
+                            <div class="services__section_text col-10">
+                                <p>Сервис «АЗС-Онлайн» обеспечивает контроль и учет топлива на предприятии. Наше решение
+                                    базируется на фиксации данных с оборудования, их последующей выгрузке, создании
+                                    отчетов и удаленном управлении системой выдачи топлива. Это обнаруживает
+                                    несанкционированные сливы топлива, делая движение топлива на предприятии
+                                    централизованным и прозрачным. Внедрение сервиса «АЗС-Онлайн» приводит к сокращению
+                                    затрат предприятия на ГСМ до 30%.
+                                </p>
+                            </div>
+                            <img src="./images/arrows/arrow_right_up.png" alt="стрелка">
+                        </div>
+                        <div class="services__section_block_img col-6"><img src="./images/azs_mac.png"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                    </div>
+
+                </div>
+                <div class="tab-pane fade" id="pills-mon" role="tabpanel" aria-labelledby="pills-mon-tab" tabindex="0">
+                    <div class="row">
+                        <div class="services__section_block col-5">
+                            <h3>Мониторинг транспорта</h3>
+                            <div class="services__section_text col-10">
+                                <p>Внедрение системы мониторинга транспорта – современный способ повысить эффективность
+                                    работы автопарка. Нерациональное использование ТС, хищение топлива и
+                                    недобросовестное выполнение трудовых обязанностей сотрудниками – проблемы, с
+                                    которыми сталкиваются руководители компаний без использования мониторинга.
+                                </p>
+                                <p> Следите за маршрутами, изучайте историю перемещений, контролируйте расход топлива,
+                                    обороты двигателя, моточасы, скорость и многие другие параметры.
+                                    Решения компании «Гарвекс» обеспечивают полный контроль за работой автопарка,
+                                    оптимизируют ваши расходы и повышают дисциплину водителей.</p>
+                            </div>
+                            <img src="./images/arrows/arrow_right_up.png" alt="стрелка">
+                        </div>
+                        <div class="services__section_block_img col-6"><img src="./images/azs_mac.png"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-warehouse" role="tabpanel" aria-labelledby="pills-warehouse-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="services__section_block col-5">
+                            <h3>Склад</h3>
+                            <div class="services__section_text col-10">
+                                <p>«Склад» является сервисом хранения и обработки данных по товарам, сырью, финансовым
+                                    ресурсам. Здесь фиксируются все операции, связанные с хранением и движением товаров,
+                                    благодаря чему возможно оперативно уточнить местоположение товара, его количество и
+                                    общую стоимость. Система содействует упорядочиванию и сокращению времени составления
+                                    документов за счет внедрения электронного документооборота, а также упрощает процесс
+                                    приемки, перемещения и выбытия товаров со склада.
+                                </p>
+                            </div>
+                            <img src="./images/arrows/arrow_right_up.png" alt="стрелка">
+                        </div>
+                        <div class="services__section_block_img col-6"><img src="./images/azs_mac.png"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-calc" role="tabpanel" aria-labelledby="pills-calc-tab"
+                    tabindex="0">
+                    <div class="row">
+                        <div class="services__section_block col-5">
+                            <h3>Сквозной учет топлива</h3>
+                            <div class="services__section_text col-10">
+                                <p>Управление транспортным предприятием (УТП)
+                                    Система управления транспортной компании объединила все сервисы для автоматизации и
+                                    цифровизации основных бизнес-процессов. Это позволяет руководителю удаленно
+                                    контролировать компанию, оптимизировать планирование, повышать эффективность работы
+                                    автопарка, сократить штат сотрудников и издержки предприятия, а также
+                                    автоматизировать все бизнес-процессы от заказа до доставки товара клиенту.
+                                </p>
+                            </div>
+                            <img src="./images/arrows/arrow_right_up.png" alt="стрелка">
+                        </div>
+                        <div class="services__section_block_img col-6"><img src="./images/azs_mac.png"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section>
-        <div class="container"></div>
+    <section class="form__section">
+        <div class="container">
+            <h2 class="text-white text-center">Оставьте свой телефон
+                и получите консультацию</h2>
+            <form action="">
+                <div class="form__section_inputs row gx-3 justify-content-center">
+                    <div class="input-group ">
+                        <input type="text" class="form-control" placeholder="Введите имя" name="name" id="name"
+                            required="required" aria-required="true" aria-label="Введите имя">
+                    </div>
+                    <div class="input-group">
+                        <input type="tel" placeholder="+7 999 999 99 99" class="form-control" name="tel" maxlength="12"
+                            id="tel" required="required" aria-required="true">
+                    </div>
+                    <button type="submit" class="btn btn-dark" name="submit" id="submit">Отправить</button>
+                </div>
+            </form>
+            <div class="form__section_agreement">
+
+            </div>
+        </div>
     </section>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            loop: true,
+            pauseOnMouseEnter: true,
+            autoplay: {
+                delay: 3000,
+            },
+            slidesPerView: 5,
+            spaceBetween: 10,
+            // Responsive breakpoints
+            breakpoints: {
+                // when window width is >= 320px
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                // when window width is >= 480px
+                480: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // when window width is >= 640px
+                640: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
