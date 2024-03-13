@@ -41,11 +41,48 @@ section
                 padding-left: 29px
                 line-height: 28.8px
         > *
-            color: white  
-    nav   
+            color: white
+    nav
+        &:not(.scroll)
+            transition: all 0.1s ease-in-out
+        &.scroll
+            position: fixed
+            z-index: 100
+            top: 0
+            left: 0
+            width: 100%
+            transition: all 0.5s ease-in-out
+            background: rgba(14, 16, 26, 0.6)
+            border-radius: 0 0 30px 30px
+            padding: 16px 0
+            ul
+                background-color: inherit
+                border-radius: 0
+                .nav-item
+                    &.dropdown
+                        .dropdown-menu
+                            background-color: rgba(14, 16, 26, 0.5)
+                            margin-top: 15px
+                            .dropdown-item
+                                color: white
+                            .dropdown-item:focus, .dropdown-item:hover
+                                color: var(--bs-primary)
+                                background-color: inherit
         ul
             background-color: rgba(255, 255, 255, 0.28)
             border-radius: 6px
+
+            .nav-item
+                &.dropdown
+                    .dropdown-menu
+                        background-color: rgba(255, 255, 255, 0.28)
+                        border-radius: 0 0 6px 6px
+                        margin-top: 0
+                        .dropdown-item
+                            color: white
+                        .dropdown-item:focus, .dropdown-item:hover
+                            color: var(--bs-primary)
+                            background-color: inherit
             &.navbar-nav
                 li
                     &>div
@@ -57,7 +94,20 @@ section
                         line-height: 14.4px
                         &.active
                             color: var(--bs-primary)
-    
+                        &.show
+                            color: white
+                        &:hover
+                            color: var(--bs-primary)
+        a.btn
+            font-size: 0.75rem
+            font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+            font-weight: 600
+            color: var(--bs-primary)
+            &:hover
+                color: white !important
+                background-color: var(--bs-primary) !important
+                border-color: var(--bs-primary) !important
+
     &.stat__section
         padding: 50px 0
         .stat__section_block
@@ -69,7 +119,7 @@ section
                 background: rgba(7, 29, 67, 1)
                 position: absolute
                 left: -31px
-                top: 57px  
+                top: 57px
                 transform: rotate(90deg)
             &:last-child
                 &::after
@@ -80,11 +130,11 @@ section
                     background: rgba(7, 29, 67, 1)
                     position: absolute
                     right: -31px
-                    top: 57px  
+                    top: 57px
                     transform: rotate(90deg)
             p
                 margin-bottom: 8px
-            & > p 
+            & > p
                 margin-bottom: 0
                 line-height: 19.2px
         .number
@@ -100,7 +150,7 @@ section
                 family: "Raleway Regular", Arial, Helvetica, sans-serif
                 weight: 400
                 size: 0.875rem
-            color:#A2A8AF
+            color: #A2A8AF
             margin-bottom: 16px
         #pills-tab
             li:not(:last-child)
@@ -125,7 +175,7 @@ section
                 margin-top: -125px
         .services__section_block
             h3
-                font: 
+                font:
                     family: "Raleway Bold", Arial, Helvetica, sans-serif
                     weight: 700
                     size: 3rem
@@ -137,7 +187,7 @@ section
     &.industry__services
         padding: 50px 0
         h2
-            font: 
+            font:
                 family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                 weight: 600
                 size: 3rem
@@ -150,6 +200,7 @@ section
                     max-height: 305px
                     border-radius: 30px
                     object-fit: cover
+                    object-position: left
 
             > div
                 max-width: 261px
@@ -163,7 +214,7 @@ section
                             height: 305px
                 &:first-child
                     a > img
-                        object-position: left
+                    object-position: left
             .industry__services_cards_text
                 margin-top: 25px
                 img
@@ -179,26 +230,78 @@ section
         z-index: 10
         h2
             margin-bottom: 30px
-            font: 
+            font:
                 family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                 weight: 600
     &.geograph__section
-        background: url('../../images/geograph_section.png')
-        background-size: 100% 100%
-        padding: 100px 0
         position: relative
-        z-index: 1
-        top: -50px
+        padding: 65px 0
+        h2
+            color: white
+            margin-bottom: 30px
+            font:
+                family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                weight: 600
+        .img
+            background: url('../../images/geograph_section.png')
+            background-size: 100% 100%
+            position: absolute
+            z-index: -1
+            top: -50px
+            width: 100%
+            height: 120%
+        #geographic-tab
+            li:not(:last-child)
+                margin-right: 0.75rem
+                margin-bottom: 0.75rem
+            button
+                padding: 14.5px 16px
+                border-radius: 35px
+                border: 1px solid #E0E0E0
+                background-color: rgba(255, 255, 255, 0.1)
+                color: #FFF
+                font:
+                    family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                    weight: 600
+                    size: 0.75rem
+
+                &.active
+                    color: white
+                    border-color: var(--bs-primary)
+        .geograph__section_block
+            padding: 57px 0 57px 71px
+            background-color: rgba(255, 255, 255, 0.1)
+            border-radius: 30px 0 0 30px
+            .geograph__section_text
+                &:not(:last-child)
+                    margin-bottom: 32px
+                p
+                    margin-bottom: 0
+                    color: white
+                    &.p-main
+                        font:
+                            family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                            weight: 600
+                            size: 1.5rem
+                        line-height: 28.8px
+                    &.p-secondary
+                        font:
+                            family: "Raleway Regular", Arial, Helvetica, sans-serif
+                            weight: 400
+                            size: 0.75rem
+                        color: #BFBFBF
+        .geograph__section_block_img img
+            border-radius: 0 30px 30px 0
     &.form__section
         background: url('../../images/form.png') center center
         background-repeat: no-repeat
         background-size: 100% 100%
         border-top-left-radius: 30px
         border-top-right-radius: 30px
-        padding: 100px 0 150px 0
+        padding: 50px 0 60px 0
         position: relative
-        top: -100px
-        z-index: 10    
+        z-index: 10
+        margin-bottom: -30px
         .input-group
             width: 25%
             input
@@ -208,3 +311,34 @@ section
             padding: 16px 20px
             width: 20%
             border-radius: 35px
+        h2
+            font:
+                family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                weight: 600
+                size: 3rem
+        #customer__clients
+            margin-top: 40px
+            margin-bottom: 16px
+footer
+    position: relative
+    bottom: 0
+    z-index: 11
+    border-radius: 30px 30px 0 0
+    padding: 30px 0 30px 0
+    a
+        color: white
+        text-decoration: none
+        text-decoration-line: none
+        &:hover
+            color: var(--bs-primary)
+    .footer__section_links
+        .link_sect
+            margin-bottom: 16px
+    .block:nth-child(2)
+        p:nth-child(2)
+            margin-bottom: 0
+    .divider
+        margin: 30px 0
+    .footer__sections_tech_info
+        p
+            font-size: 0.75rem
