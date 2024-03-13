@@ -596,9 +596,10 @@
         }
 
         async function sendData(data) {
+            
             return await fetch('/php/sendmessage.php', {
                 method: 'POST',
-                headers: { 'Content-Type': 'multipart/form-data' },
+                headers: { 'content-type': 'multipart/form-data' },
                 body: data,
             })
         }
