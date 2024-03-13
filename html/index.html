@@ -510,7 +510,7 @@
         <div class="container">
             <h2 class="text-white text-center">Оставьте свой телефон
                 и получите консультацию</h2>
-            <form action="">
+            <form action="" id="customer__clients">
                 <div class="form__section_inputs row gx-3 justify-content-center">
                     <div class="input-group ">
                         <input type="text" class="form-control" placeholder="Введите имя" name="name" id="name"
@@ -564,6 +564,51 @@
                 }
             }
         });
+    </script>
+    <script>
+        async function handleForm(e) {
+            e.preventDefault();
+
+            const data = dataForm(e.target);
+            const response = await sendData(data);
+
+            if(response.status === 200){
+                console.log("Успех");
+            }else{
+                console.log(response.error);
+            }
+
+            
+        }
+
+        function dataForm(form) {
+            const { elements } = form;
+
+            const data = new FormData();
+            Array.from(elements)
+                .filter((item) => !!item.value)
+                .forEach((element) => {
+                    const { name, value } = element
+                    data.append(name, value)
+                });
+
+            return new FormData(form);
+        }
+
+        async function sendData(data) {
+            return await fetch('/php/sendmessage.php', {
+                method: 'POST',
+                headers: { 'Content-Type': 'multipart/form-data' },
+                body: data,
+            })
+        }
+
+
+        // Отправка формы
+        const form = document.getElementById('customer__clients');
+        form.addEventListener("submit", handleForm);
+
+
     </script>
 </body>
 
