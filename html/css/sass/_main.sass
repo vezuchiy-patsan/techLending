@@ -1,3 +1,5 @@
+@import '_valurables'
+
 body
     margin: 0 auto
     padding: 0
@@ -5,8 +7,12 @@ body
     font-variant-numeric: lining-nums
 
 div[class^=container]
-    width: 1116px
-    padding: 0
+    max-width: 1116px
+    padding:
+        left: 0
+        right: 0
+    @media screen and (max-width: $media-xl)
+        padding: 0 24px
 
 section
     &.head__section
@@ -22,6 +28,8 @@ section
             width: 32%
     .section__head_h
         padding: 62px 0 57px 0
+        @media screen and (max-width: $media-lg-991)
+            padding-bottom: 38px
         h1
             margin: 0
         h2
@@ -29,20 +37,42 @@ section
             font-weight: 600
             font-size: 3.625rem
             line-height: 70px
+            @media screen and (max-width: $media-md)
+                font-size: 1.5rem
+            @media screen and (max-width: $media-sm)
+                font-size: 1.25rem  
+                line-height: normal
+                    
+            
         .section__head_h_p
             padding-top: 34px
             width: 61%
+            @media screen and (max-width: $media-md)
+                width: 50%
+            @media screen and (max-width: 360px)
+                width: 75%
+            
             img
                 width: 257px
                 height: 100%
                 padding: 0 0 0 12px
+                @media screen and (max-width: $media-md)
+                    width:40%
             p
                 font-size: 1.5rem
                 padding-left: 29px
                 line-height: 28.8px
+                @media screen and (max-width: $media-md)
+                    font: 
+                        size: 0.75rem
+                    line-height: 16.8px
         > *
             color: white
     nav
+        .offcanvas
+            padding: 24px
+            @media screen and (min-width: $media-lg-991)
+                flex-direction: row
         &:not(.scroll)
             transition: all 0.1s ease-in-out
         &.scroll
@@ -63,46 +93,62 @@ section
                         .dropdown-menu
                             background-color: rgba(14, 16, 26, 0.5)
                             margin-top: 15px
-                            .dropdown-item
-                                color: white
                             .dropdown-item:focus, .dropdown-item:hover
                                 color: var(--bs-primary)
                                 background-color: inherit
         ul
             background-color: rgba(255, 255, 255, 0.28)
             border-radius: 6px
-
             .nav-item
                 &.dropdown
                     .dropdown-menu
                         background-color: rgba(255, 255, 255, 0.28)
                         border-radius: 0 0 6px 6px
                         margin-top: 0
-                        .dropdown-item
-                            color: white
+                        @media screen and (max-width: $media-lg-991)
+                            background-color: rgba(255, 255, 255, 0.0)
+                            border-color:  rgba(255, 255, 255, 0.0)
                         .dropdown-item:focus, .dropdown-item:hover
                             color: var(--bs-primary)
                             background-color: inherit
             &.navbar-nav
                 li
-                    &>div
-                        padding: 7px 0 5px 13px
-                    &:last-child > div
-                        padding-right: 12px
+                    @media screen and (min-width: $media-lg-991)
+                        &>div
+                            padding: 7px 0 5px 13px
+                        &:last-child > div
+                            padding-right: 12px
                     a.nav-link
-                        color: white
-                        line-height: 14.4px
+                        @media screen and (min-width: $media-lg-991)
+                            color: white
+                            line-height: 14.4px
                         &.active
                             color: var(--bs-primary)
                         &.show
                             color: white
                         &:hover
                             color: var(--bs-primary)
-        a.btn
+        #navbarOffcanvasLg
+            @media screen and (max-width: $media-lg-991)
+                justify-content: space-between
+            .newWrapper
+                width: 100%
+        .offcanvas__section
+            a.offcanvas_d
+                color: var(--bs-primary)
+                border-color: var(--bs-primary)
+            .offcanvas_d
+                @media screen and (min-width: $media-lg-991)
+                    display: none
+        a.btn:not(.offcanvas_d)
             font-size: 0.75rem
             font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
             font-weight: 600
             color: var(--bs-primary)
+            @media screen and (max-width: $media-lg-991)
+                font-size: 0.875rem
+                color: white !important
+                background-color: var(--bs-primary)
             &:hover
                 color: white !important
                 background-color: var(--bs-primary) !important
@@ -111,27 +157,29 @@ section
     &.stat__section
         padding: 50px 0
         .stat__section_block
-            &::before
-                content: ""
-                display: block
-                width: calc(25% - 10px)
-                height: 2px
-                background: rgba(7, 29, 67, 1)
-                position: absolute
-                left: -31px
-                top: 57px
-                transform: rotate(90deg)
-            &:last-child
-                &::after
+            @media screen and (min-width: $media-lg-991)
+                &::before
                     content: ""
                     display: block
                     width: calc(25% - 10px)
                     height: 2px
                     background: rgba(7, 29, 67, 1)
                     position: absolute
-                    right: -31px
+                    left: -31px
                     top: 57px
                     transform: rotate(90deg)
+            &:last-child
+                @media screen and (min-width: $media-lg-991)
+                    &::after
+                        content: ""
+                        display: block
+                        width: calc(25% - 10px)
+                        height: 2px
+                        background: rgba(7, 29, 67, 1)
+                        position: absolute
+                        right: -31px
+                        top: 57px
+                        transform: rotate(90deg)
             p
                 margin-bottom: 8px
             & > p

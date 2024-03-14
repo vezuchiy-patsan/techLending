@@ -14,20 +14,22 @@
 <body class="bg-secondary">
     <section class="head__section" id="main">
         <nav class="navbar navbar-expand-lg" id="menu">
-            <div class="container-fluid px-0">
+            <div class="container-fluid">
                 <div class="section__head_logo">
                     <a class="navbar-brand" href="./"> <img src="./images/icons/logo.svg"
                             alt="Garvex smart technologies">
                     </a>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Переключатель навигации">
+                <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-0">
+                <div class="collapse navbar-collapse offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                    aria-labelledby="navbarOffcanvasLgLabel">
+                    <div class="align-self-end offcanvas_off"><button type="button" class="btn-close"
+                            data-bs-dismiss="offcanvas" aria-label="Закрыть"></button></div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-0 offcanvas_off">
                         <li class="nav-item">
                             <div>
                                 <a class="nav-link" aria-current="page" href="#main">Главная</a>
@@ -56,13 +58,23 @@
                             </div>
                         </li>
                     </ul>
-                    <a href="https://azs-online.ru" role="button" target="_blank"
-                        class="btn text-primary btn-light bg-white rounded-5">Вход в «АЗС-Онлайн»</a>
+                    <div class="row direction-column offcanvas__section">
+                        <div class="offcanvas_d col-10 row direction-column">
+                            <p>г. Санкт-Петербург,
+                                Шоссе Революции, дом 69, литера А, офис 303.</p>
+                            <p>Пн-Пт 9:30 - 18:00</p>
+                        </div>
+                        <a href="tel:89211876899" role="button"
+                            class="offcanvas_d btn text-outline-primary btn-light bg-white rounded-5 mb-3">8 (921) 187 68
+                            99</a>
+                        <a href="https://azs-online.ru" role="button" target="_blank"
+                            class="btn text-primary btn-light bg-white rounded-5">Вход в «АЗС-Онлайн»</a>
+                    </div>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <div class="section__head_h col-9">
+            <div class="section__head_h col-md-9 col-12">
                 <h1 class="extra-h">Облачные
                     сервисы</h1>
                 <h2>Garvex Smart Technologies</h2>
@@ -76,25 +88,25 @@
     <section class="stat__section">
         <div class="container">
             <div class="row">
-                <div class="stat__section_block text-center px-0 col-3 position-relative">
+                <div class="stat__section_block text-center px-0 col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
                         <p>1 823</p>
                     </div>
                     <p>Пользователей</p>
                 </div>
-                <div class="stat__section_block text-center px-0  col-3 position-relative">
+                <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
                         <p>6 972</p>
                     </div>
                     <p>Транспортных <br> средств</p>
                 </div>
-                <div class="stat__section_block text-center px-0  col-3 position-relative">
+                <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
                         <p>1 534</p>
                     </div>
                     <p>Топливораздаточных <br> колонок</p>
                 </div>
-                <div class="stat__section_block text-center px-0  col-3 position-relative">
+                <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
                         <p>> 12 млн</p>
                     </div>
@@ -178,8 +190,9 @@
                         <div class="services__section_block col-5">
                             <h3>Склад</h3>
                             <div class="services__section_text col-10">
-                                <p>«Склад» является сервисом хранения и обработки данных по товарам, сырью, финансовым
-                                    ресурсам. Здесь фиксируются все операции, связанные с хранением и движением товаров,
+                                <p>«Склад» является сервисом хранения и обработки данных по товарам, сырью и
+                                    материальным ресурсам. Здесь фиксируются все операции, связанные с хранением и
+                                    движением товаров,
                                     благодаря чему возможно оперативно уточнить местоположение товара, его количество и
                                     общую стоимость. Система содействует упорядочиванию и сокращению времени составления
                                     документов за счет внедрения электронного документооборота, а также упрощает процесс
@@ -891,17 +904,36 @@
 
     </script>
     <script>
+        function menuResize() {
+            const div = document.createElement('div');
+            div.classList.add('newWrapper');
+
+            if (screen.width <= 991 && document.getElementsByClassName('newWrapper').length === 0) {
+                document.querySelectorAll('nav .offcanvas_off').forEach((item) => div.appendChild(item));
+                document.getElementById('navbarOffcanvasLg').prepend(div);
+            } else if (screen.width >= 991 && document.getElementsByClassName('newWrapper').length !== 0) {
+                const returnInOffcanvas = document.getElementById('navbarOffcanvasLg');
+                document.querySelectorAll('nav .offcanvas_off').forEach((item) => returnInOffcanvas.prepend(item));
+
+                document.querySelector('.newWrapper').remove();
+                returnInOffcanvas.insertBefore(returnInOffcanvas.children[1], returnInOffcanvas.firstChild);
+
+            }
+        }
+
         window.addEventListener('scroll', function () {
             var menu = document.getElementById('menu');
             var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-            console.log('scrollPosition: ', scrollPosition);
 
             if (scrollPosition > 700 && !menu.classList.contains('scroll')) { // Измените 100 на желаемое расстояние
                 menu.classList.add('scroll');
-            } else if(scrollPosition < 700 && menu.classList.contains('scroll')) {
+            } else if (scrollPosition < 700 && menu.classList.contains('scroll')) {
                 menu.classList.remove('scroll');
             }
         });
+        window.addEventListener('resize', menuResize)
+
+        menuResize();
 
     </script>
 </body>
