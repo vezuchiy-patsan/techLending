@@ -7,7 +7,7 @@
     <title>Гарвекс ГУТ</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/css/style.css">
+    <link rel="stylesheet" href="./css/css/style.css?v=1">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
@@ -27,7 +27,7 @@
                 </button>
                 <div class="collapse navbar-collapse offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
                     aria-labelledby="navbarOffcanvasLgLabel">
-                    <div class="align-self-end offcanvas_off"><button type="button" class="btn-close"
+                    <div class="align-self-end offcanvas_off text-end butt"><button type="button" class="btn-close"
                             data-bs-dismiss="offcanvas" aria-label="Закрыть"></button></div>
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-0 offcanvas_off">
                         <li class="nav-item">
@@ -65,7 +65,8 @@
                             <p>Пн-Пт 9:30 - 18:00</p>
                         </div>
                         <a href="tel:89211876899" role="button"
-                            class="offcanvas_d btn text-outline-primary btn-light bg-white rounded-5 mb-3">8 (921) 187 68
+                            class="offcanvas_d btn text-outline-primary btn-light bg-white rounded-5 mb-3">8 (921) 187
+                            68
                             99</a>
                         <a href="https://azs-online.ru" role="button" target="_blank"
                             class="btn text-primary btn-light bg-white rounded-5">Вход в «АЗС-Онлайн»</a>
@@ -115,38 +116,52 @@
             </div>
         </div>
     </section>
-    <section class="bg-white rounded-5 services__section">
+    <section class="bg-white rounded-5 services__section" id="services">
         <div class="container">
             <h2>Сервисы</h2>
-            <ul class="nav nav-pills mb-4 col-6" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                        aria-selected="true">АЗС-Онлайн</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">Мониторинг транспорта</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
-                        data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">Склад</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-utp-tab" data-bs-toggle="pill" data-bs-target="#pills-utp"
-                        type="button" role="tab" aria-controls="pills-utp" aria-selected="false">Сквозной учет
-                        топлива</button>
-                </li>
-            </ul>
+            <div class="overflow-x-scroll">
+                <ul class="nav nav-pills mb-4 col-lg-5" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                            aria-selected="true">АЗС-Онлайн</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                            aria-selected="false">Мониторинг транспорта</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
+                            aria-selected="false">Склад</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-utp-tab" data-bs-toggle="pill" data-bs-target="#pills-utp"
+                            type="button" role="tab" aria-controls="pills-utp" aria-selected="false">Управление
+                            транспортным
+                            предприятием</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-e-t-e-accounting-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-e-t-e-accounting" type="button" role="tab"
+                            aria-controls="pills-e-t-e-accounting" aria-selected="false">Сквозной учет
+                            топлива</button>
+                    </li>
+                </ul>
+            </div>
+
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                     tabindex="0">
                     <div class="row">
-                        <div class="services__section_block col-5">
+                        <div class="services__section_block col-lg-5 col-12">
                             <h3>АЗС-Онлайн</h3>
-                            <div class="services__section_text col-10">
+                            <div class="div__mobile_img">
+                                <img src="./images/azs_mac.png" class="mobile_img img-fluid"
+                                    alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
+                            </div>
+                            <div class="services__section_text col-lg-10 col-12">
                                 <p>Сервис «АЗС-Онлайн» обеспечивает контроль и учет топлива на предприятии. Наше решение
                                     базируется на фиксации данных с оборудования, их последующей выгрузке, создании
                                     отчетов и удаленном управлении системой выдачи топлива. Это обнаруживает
@@ -157,7 +172,7 @@
                             </div>
                             <img src="./images/arrows/arrow_right_up.png" alt="стрелка">
                         </div>
-                        <div class="services__section_block_img col-6"><img src="./images/azs_mac.png"
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="./images/azs_mac.png"
                                 alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
 
@@ -165,31 +180,39 @@
                 <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
                     tabindex="0">
                     <div class="row">
-                        <div class="services__section_block col-5">
+                        <div class="services__section_block col-lg-5 col-12">
                             <h3>Мониторинг транспорта</h3>
-                            <div class="services__section_text col-10">
-                                <p>Внедрение системы мониторинга транспорта – современный способ повысить эффективность
-                                    работы автопарка. Нерациональное использование ТС, хищение топлива и
-                                    недобросовестное выполнение трудовых обязанностей сотрудниками – проблемы, с
-                                    которыми сталкиваются руководители компаний без использования мониторинга.
+                            <div class="div__mobile_img">
+                                <img src="./images/azs_mac.png" class="mobile_img img-fluid"
+                                    alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
+                            </div>
+                            <div class="services__section_text col-lg-10 col-12">
+                                <p>Внедрение системы мониторинга транспорта является решением для сокращения проблем,
+                                    связанных с нерациональным использованием транспортных средств, кражей топлива и
+                                    недобросовестным исполнением трудовых обязанностей водителями. Наш сервис
+                                    обеспечивает возможность отслеживания маршрутов и истории перемещений, а также
+                                    контроля за ключевыми параметрами техники, такими как расход топлива, скорость,
+                                    сливы и заправки. Это позволяет руководителям обеспечить полный контроль за
+                                    автопарком. Таким образом, система мониторинга транспорта оптимизирует расходы и
+                                    повышает дисциплину водителей.
                                 </p>
-                                <p> Следите за маршрутами, изучайте историю перемещений, контролируйте расход топлива,
-                                    обороты двигателя, моточасы, скорость и многие другие параметры.
-                                    Решения компании «Гарвекс» обеспечивают полный контроль за работой автопарка,
-                                    оптимизируют ваши расходы и повышают дисциплину водителей.</p>
                             </div>
                             <img src="./images/arrows/arrow_right_up.png" alt="стрелка">
                         </div>
-                        <div class="services__section_block_img col-6"><img src="./images/azs_mac.png"
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="./images/azs_mac.png"
                                 alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
                     tabindex="0">
                     <div class="row">
-                        <div class="services__section_block col-5">
+                        <div class="services__section_block col-lg-5 col-12">
                             <h3>Склад</h3>
-                            <div class="services__section_text col-10">
+                            <div class="div__mobile_img">
+                                <img src="./images/azs_mac.png" class="mobile_img img-fluid"
+                                    alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
+                            </div>
+                            <div class="services__section_text col-lg-10 col-12">
                                 <p>«Склад» является сервисом хранения и обработки данных по товарам, сырью и
                                     материальным ресурсам. Здесь фиксируются все операции, связанные с хранением и
                                     движением товаров,
@@ -201,15 +224,19 @@
                             </div>
                             <img src="./images/arrows/arrow_right_up.png" alt="стрелка">
                         </div>
-                        <div class="services__section_block_img col-6"><img src="./images/azs_mac.png"
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="./images/azs_mac.png"
                                 alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-utp" role="tabpanel" aria-labelledby="pills-utp-tab" tabindex="0">
                     <div class="row">
-                        <div class="services__section_block col-5">
-                            <h3>Сквозной учет топлива</h3>
-                            <div class="services__section_text col-10">
+                        <div class="services__section_block col-lg-5 col-12">
+                            <h3>Управление транспортным предприятием</h3>
+                            <div class="div__mobile_img">
+                                <img src="./images/azs_mac.png" class="mobile_img img-fluid"
+                                    alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
+                            </div>
+                            <div class="services__section_text col-lg-10 col-12">
                                 <p>Управление транспортным предприятием (УТП)
                                     Система управления транспортной компании объединила все сервисы для автоматизации и
                                     цифровизации основных бизнес-процессов. Это позволяет руководителю удаленно
@@ -220,7 +247,34 @@
                             </div>
                             <img src="./images/arrows/arrow_right_up.png" alt="стрелка">
                         </div>
-                        <div class="services__section_block_img col-6"><img src="./images/azs_mac.png"
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="./images/azs_mac.png"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="pills-e-t-e-accounting" role="tabpanel"
+                    aria-labelledby="pills-e-t-e-accounting-tab" tabindex="0">
+                    <div class="row">
+                        <div class="services__section_block col-lg-5 col-12">
+                            <h3>Сквозной учет топлива</h3>
+                            <div class="div__mobile_img">
+                                <img src="./images/azs_mac.png" class="mobile_img img-fluid"
+                                    alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
+                            </div>
+                            <div class="services__section_text col-lg-10 col-12">
+                                <p>На многих предприятиях цепочка движения топлива представляет собой сложную и обширную
+                                    инфраструктуру, что затрудняет контроль и управление, а также приводит к серьезным
+                                    финансовым потерям – от 5% до 30% от общей стоимости закупаемого топлива. Решением
+                                    данной проблемы является применение системы сквозного учета топлива, которая
+                                    оперативно собирает данные о его движении из различных источников, обрабатывает и
+                                    анализирует их, генерируя детальные отчеты и аналитику. Это поможет вам эффективно
+                                    контролировать расходы, оптимизировать логистику и принимать управленческие решения.
+                                    Не допускайте излишних расходов и сделайте управление топливом на вашем предприятии
+                                    прозрачным и эффективным!
+                                </p>
+                            </div>
+                            <img src="./images/arrows/arrow_right_up.png" alt="стрелка">
+                        </div>
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="./images/azs_mac.png"
                                 alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
                 </div>
@@ -230,14 +284,14 @@
     <section class="industry__services">
         <div class="container">
             <p class="h-mini">С кем работаем</p>
-            <h2 class="col-7">Внедряем наши решения
+            <h2 class="col-lg-7 col-12">Внедряем наши решения
                 в следующих отраслях:</h2>
-            <div class="row gx-3 justify-content-between mx-0">
-                <div class="col-auto px-0">
+            <div class="row gap-3 justify-content-xl-between justify-content-md-center justify-content-sm-between justify-content-center mx-0">
+                <div class="col-auto industry__services_block px-0">
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#farmerModal">
                         <img src="./images/farmer-industry.webp" class="img-fluid" alt="Трактор в поле">
                         <div class="industry__services_cards_text row justify-content-between mx-0">
-                            <p class="col-5 card-text-p-24">Сельское хозяйство</p>
+                            <p class="col-5 card-text-p-24 card-text-p-14-sm">Сельское хозяйство</p>
                             <div class="col-3 px-0">
                                 <img src="./images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
                             </div>
@@ -269,11 +323,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-auto px-0">
+                <div class="col-auto industry__services_block px-0">
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#oilModal">
                         <img src="./images/oil-industry.webp" class="img-fluid" alt="Бензовоз">
                         <div class="industry__services_cards_text row justify-content-between mx-0">
-                            <p class="col-5 card-text-p-24">Топливная
+                            <p class="col-5 card-text-p-24 card-text-p-14-sm">Топливная
                                 промышленность</p>
                             <div class="col-3 px-0">
                                 <img src="./images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
@@ -306,11 +360,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-auto px-0">
+                <div class="col-auto industry__services_block px-0">
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#transportModal">
                         <img src="./images/transport-industry.webp" class="img-fluid" alt="Камаз">
                         <div class="industry__services_cards_text row justify-content-between mx-0">
-                            <p class="col-5 card-text-p-24">Транспортная
+                            <p class="col-5 card-text-p-24 card-text-p-14-sm">Транспортная
                                 отрасль</p>
                             <div class="col-3 px-0">
                                 <img src="./images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
@@ -343,11 +397,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-auto px-0">
+                <div class="col-auto industry__services_block px-0">
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#roadModal">
                         <img src="./images/road-industry.webp" class="img-fluid" alt="Дорожная техника">
                         <div class="industry__services_cards_text row justify-content-between mx-0">
-                            <p class="col-5 card-text-p-24">Дорожное
+                            <p class="col-5 card-text-p-24 card-text-p-14-sm">Дорожное
                                 строительство</p>
                             <div class="col-3 px-0">
                                 <img src="./images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
@@ -382,7 +436,7 @@
                 </div>
             </div>
     </section>
-    <section class="partners__section bg-white rounded-5" id="services">
+    <section class="partners__section bg-white rounded-5">
         <div class="container">
             <p class="h-mini">Клиенты</p>
             <h2 class="col-4">НАШИ ПАРТНЁРЫ</h2>
@@ -544,8 +598,8 @@
             <h2 class="text-white text-center">Оставьте свой телефон
                 и получите консультацию</h2>
             <form action="" id="customer__clients">
-                <div class="form__section_inputs row gx-3 justify-content-center">
-                    <div class="input-group ">
+                <div class="form__section_inputs row gx-3 justify-content-center flex-md-row flex-column gy-md-0 gy-3">
+                    <div class="input-group">
                         <input type="text" class="form-control" placeholder="Введите имя" name="name" id="name"
                             required="required" aria-required="true" aria-label="Введите имя">
                     </div>
@@ -556,7 +610,7 @@
                     <button type="submit" class="btn btn-dark" name="submit" id="submit">Отправить</button>
                 </div>
             </form>
-            <div class="form__section_agreement col-4 mx-auto text-white text-center ">
+            <div class="form__section_agreement col-md-4 col-sm-6 col-12 mx-auto text-white text-center ">
                 Нажимая на кнопку, вы соглашаетесь
                 с <a href="javascript:void(0)" class="text-white" role="button" data-bs-toggle="modal"
                     data-bs-target="#agreementModal">политикой конфиденциальности</a>
@@ -566,7 +620,7 @@
     <footer class="bg-black">
         <div class="container">
             <div class="footer__section_links" id="contacts">
-                <div class="link_sect">
+                <div class="link_sect text-sm-start text-center">
                     <div>
                         <a href="tel:89211876899" class="footer-main-link">8 (921) 187 68 99</a>
                     </div>
@@ -575,7 +629,7 @@
                     </div>
                 </div>
                 <div class="footer__section_links_main row justify-content-between">
-                    <div class="block_text row col-6">
+                    <div class="block_text row col-md-6 col-sm-7 col-12 gx-sm-0 gx-3">
                         <div class="block col-6">
                             <p class="footer-mini-p">Офис</p>
                             <p><a href="https://yandex.ru/maps/-/CDFkUFKf">195279, Россия, Санкт-Петербург, Шоссе
@@ -587,7 +641,7 @@
                             <p>Сб-Вс — Выходной</p>
                         </div>
                     </div>
-                    <div class="block_menu col-2 text-end">
+                    <div class="block_menu col-xl-2 col-md-4 col-sm-5 col-12 text-sm-end text-center">
                         <nav>
                             <div> <a href="#main" class="footer-link">
                                     Главная
@@ -615,8 +669,8 @@
                 </div>
                 <div class="divider"></div>
                 <div class="footer__sections_tech_info row align-items-center">
-                    <div class="logo col"><img src="./images/icons/logo.svg" alt="Логотип"></div>
-                    <div class="tech_text col-5 text-end">
+                    <div class="logo col text-sm-start text-center mb-sm-0 mb-3"><img src="./images/icons/logo.svg" alt="Логотип"></div>
+                    <div class="tech_text col-md-5 col-sm-6 col-12 text-sm-end text-center">
                         <p class="mb-0">© 2009 — 2024 ООО «Гарвекс Умные технологии»</p>
                         <p class="mb-0">Все права защищены.</p>
                         <p class="mb-0"><a href="javascript:void(0)" class="" role="button" data-bs-toggle="modal"
@@ -841,6 +895,10 @@
             // Responsive breakpoints
             breakpoints: {
                 // when window width is >= 320px
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10
+                },
                 320: {
                     slidesPerView: 2,
                     spaceBetween: 20
@@ -853,6 +911,10 @@
                 // when window width is >= 640px
                 640: {
                     slidesPerView: 4,
+                    spaceBetween: 40
+                },
+                991: {
+                    slidesPerView: 6,
                     spaceBetween: 40
                 }
             }

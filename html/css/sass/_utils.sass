@@ -45,7 +45,14 @@ input, button[type=submit]
     text-decoration: none
     color: #071D43
     line-height: 28.8px
-
+.card-text-p-14-sm
+    @media screen and ( max-width: $media-sm )  
+        font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+        font-weight: 600
+        font-size: 0.875rem
+        text-decoration: none
+        color: #071D43
+        line-height: 16.8px
 nav
     ul
         li
@@ -106,6 +113,10 @@ nav
         family: "Raleway SemiBold", Arial, Helvetica, sans-serif
         weight: 600
         size: 3rem
+    @media screen and ( max-width:  $media-sm)
+        font-size: 1.875rem
+    @media screen and ( max-width:  $media-sm-320)
+        font-size: 1.25rem
 footer
     p
         font:

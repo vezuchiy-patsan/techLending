@@ -26,6 +26,11 @@ section
         padding: 18px 0 12px 0
         .section__head_logo
             width: 32%
+            @media screen and ( max-width: $media-sm-320 )
+                width: 50%
+                img
+                    width: 100%
+
     .section__head_h
         padding: 62px 0 57px 0
         @media screen and (max-width: $media-lg-991)
@@ -70,7 +75,11 @@ section
             color: white
     nav
         .offcanvas
-            padding: 24px
+            @media screen and ( max-width:  $media-lg-991)
+                padding: 24px
+            .offcanvas_off.butt
+                @media screen and ( min-width:  $media-lg-991)
+                    display: none
             @media screen and (min-width: $media-lg-991)
                 flex-direction: row
         &:not(.scroll)
@@ -148,7 +157,7 @@ section
             @media screen and (max-width: $media-lg-991)
                 font-size: 0.875rem
                 color: white !important
-                background-color: var(--bs-primary)
+                background-color: var(--bs-primary) !important
             &:hover
                 color: white !important
                 background-color: var(--bs-primary) !important
@@ -193,6 +202,10 @@ section
                 line-height: 70px
     &.services__section
         padding-top: 54px
+        @media screen and (max-width: $media-xl)
+                overflow: hidden
+        @media screen and (max-width: $media-lg)
+            padding-bottom: 54px
         h2
             font:
                 family: "Raleway Regular", Arial, Helvetica, sans-serif
@@ -201,6 +214,10 @@ section
             color: #A2A8AF
             margin-bottom: 16px
         #pills-tab
+            @media screen and (max-width: $media-xl)
+                flex-direction: row
+                flex-wrap: nowrap
+                width: 900px
             li:not(:last-child)
                 margin-right: 0.75rem
                 margin-bottom: 0.75rem
@@ -219,19 +236,37 @@ section
                     color: var(--bs-primary)
                     border-color: var(--bs-primary)
         .services__section_block_img
+            @media screen and (max-width: $media-xl)
+                align-self: flex-end
             img
                 margin-top: -125px
+                @media screen and (max-width: $media-xl)
+                    width: 100%
+                    margin-top: 0px 
         .services__section_block
             h3
                 font:
                     family: "Raleway Bold", Arial, Helvetica, sans-serif
                     weight: 700
                     size: 3rem
+                @media screen and (max-width: $media-md)
+                    font-size: 1.75rem
                 margin-bottom: 1.5rem
+            .div__mobile_img
+                width: fit-content
+                margin: 0 auto
             img
+                &.mobile_img
+                    @media screen and (min-width: $media-lg)
+                        display: none
+            img:not(.mobile_img)
                 margin-top: 35px
+                @media screen and (max-width: $media-xl)
+                    margin-top: 20x
             p
                 font-size: 0.875rem
+                @media screen and (max-width: $media-md)
+                     font-size: 0.75rem
     &.industry__services
         padding: 50px 0
         h2
@@ -240,6 +275,8 @@ section
                 weight: 600
                 size: 3rem
             margin-bottom: 2.6875rem
+            @media screen and (max-width: $media-md)
+                font-size: 1.75rem
         .row
             a
                 text-decoration-line: none
@@ -252,14 +289,26 @@ section
 
             > div
                 max-width: 261px
+                @media screen and (max-width: $media-sm-320)
+                    &.industry__services_block
+                        width: 100%
                 &:nth-child(even)
                     .industry__services_cards_text
                         border-bottom: 2px solid #A2A8AF
+                    @media screen and (max-width: $media-xl)
+                        a
+                            > img
+                                height: 305px
+                                @media screen and ( max-width: $media-sm-320 )
+                                    width: 100%
+                                
                 &:nth-child(odd)
                     border-bottom: 2px solid #A2A8AF
                     a
                         > img
                             height: 305px
+                            @media screen and ( max-width: $media-sm-320 )
+                                width: 100%
                 &:first-child
                     a > img
                     object-position: left
@@ -270,6 +319,9 @@ section
                     position: relative
                     left: 30px
                     top: 15px
+                    @media screen and ( max-width: $media-sm )
+                        top: 0
+                        width: 20px
                 p
                     padding: 0
     &.partners__section
@@ -281,6 +333,8 @@ section
             font:
                 family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                 weight: 600
+            @media screen and (max-width: $media-md)
+                font-size: 1.75rem
     &.geograph__section
         position: relative
         padding: 65px 0
@@ -290,6 +344,8 @@ section
             font:
                 family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                 weight: 600
+            @media screen and (max-width: $media-md)
+                font-size: 1.75rem
         .img
             background: url('../../images/geograph_section.png')
             background-size: 100% 100%
@@ -352,6 +408,8 @@ section
         margin-bottom: -30px
         .input-group
             width: 25%
+            @media screen and (max-width: $media-md-768)
+                width: 100%
             input
                 border-radius: 35px
                 padding: 16px 20px
@@ -359,11 +417,15 @@ section
             padding: 16px 20px
             width: 20%
             border-radius: 35px
+            @media screen and (max-width: $media-md-768)
+                width: 100%
         h2
             font:
                 family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                 weight: 600
                 size: 3rem
+            @media screen and (max-width: $media-md)
+                font-size: 1.75rem
         #customer__clients
             margin-top: 40px
             margin-bottom: 16px
@@ -388,5 +450,8 @@ footer
     .divider
         margin: 30px 0
     .footer__sections_tech_info
+        .logo img
+            @media screen and ( max-width: $media-sm-320 )
+                width: 75%
         p
             font-size: 0.75rem

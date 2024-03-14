@@ -94,6 +94,17 @@ input, button[type=submit] {
   line-height: 28.8px;
 }
 
+@media screen and (max-width: 540px) {
+  .card-text-p-14-sm {
+    font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-decoration: none;
+    color: #071D43;
+    line-height: 16.8px;
+  }
+}
+
 nav ul li .nav-link {
   font-size: 0.75rem;
   font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
@@ -169,6 +180,16 @@ nav ul li .dropdown-item {
   font-weight: 600;
   font-size: 3rem;
 }
+@media screen and (max-width: 540px) {
+  .footer-main-link {
+    font-size: 1.875rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  .footer-main-link {
+    font-size: 1.25rem;
+  }
+}
 
 footer p {
   font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
@@ -216,6 +237,14 @@ section.head__section {
 }
 section.head__section .section__head_logo {
   width: 32%;
+}
+@media screen and (max-width: 320px) {
+  section.head__section .section__head_logo {
+    width: 50%;
+  }
+  section.head__section .section__head_logo img {
+    width: 100%;
+  }
 }
 section .section__head_h {
   padding: 62px 0 57px 0;
@@ -283,8 +312,15 @@ section .section__head_h .section__head_h_p p {
 section .section__head_h > * {
   color: white;
 }
-section nav .offcanvas {
-  padding: 24px;
+@media screen and (max-width: 992px) {
+  section nav .offcanvas {
+    padding: 24px;
+  }
+}
+@media screen and (min-width: 992px) {
+  section nav .offcanvas .offcanvas_off.butt {
+    display: none;
+  }
 }
 @media screen and (min-width: 992px) {
   section nav .offcanvas {
@@ -393,7 +429,7 @@ section nav a.btn:not(.offcanvas_d) {
   section nav a.btn:not(.offcanvas_d) {
     font-size: 0.875rem;
     color: white !important;
-    background-color: var(--bs-primary);
+    background-color: var(--bs-primary) !important;
   }
 }
 section nav a.btn:not(.offcanvas_d):hover {
@@ -450,12 +486,33 @@ section.stat__section .number p {
 section.services__section {
   padding-top: 54px;
 }
+@media screen and (max-width: 1140px) {
+  section.services__section {
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 960px) {
+  section.services__section {
+    padding-bottom: 54px;
+  }
+}
 section.services__section h2 {
   font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 0.875rem;
   color: #A2A8AF;
   margin-bottom: 16px;
+}
+@media screen and (max-width: 1140px) {
+  section.services__section #pills-tab {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 900px;
+  }
 }
 section.services__section #pills-tab li:not(:last-child) {
   margin-right: 0.75rem;
@@ -475,8 +532,20 @@ section.services__section #pills-tab button.active {
   color: var(--bs-primary);
   border-color: var(--bs-primary);
 }
+@media screen and (max-width: 1140px) {
+  section.services__section .services__section_block_img {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
 section.services__section .services__section_block_img img {
   margin-top: -125px;
+}
+@media screen and (max-width: 1140px) {
+  section.services__section .services__section_block_img img {
+    width: 100%;
+    margin-top: 0px;
+  }
 }
 section.services__section .services__section_block h3 {
   font-family: "Raleway Bold", Arial, Helvetica, sans-serif;
@@ -484,11 +553,37 @@ section.services__section .services__section_block h3 {
   font-size: 3rem;
   margin-bottom: 1.5rem;
 }
-section.services__section .services__section_block img {
+@media screen and (max-width: 720px) {
+  section.services__section .services__section_block h3 {
+    font-size: 1.75rem;
+  }
+}
+section.services__section .services__section_block .div__mobile_img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+@media screen and (min-width: 960px) {
+  section.services__section .services__section_block img.mobile_img {
+    display: none;
+  }
+}
+section.services__section .services__section_block img:not(.mobile_img) {
   margin-top: 35px;
+}
+@media screen and (max-width: 1140px) {
+  section.services__section .services__section_block img:not(.mobile_img) {
+    margin-top: 20x;
+  }
 }
 section.services__section .services__section_block p {
   font-size: 0.875rem;
+}
+@media screen and (max-width: 720px) {
+  section.services__section .services__section_block p {
+    font-size: 0.75rem;
+  }
 }
 section.industry__services {
   padding: 50px 0;
@@ -498,6 +593,11 @@ section.industry__services h2 {
   font-weight: 600;
   font-size: 3rem;
   margin-bottom: 2.6875rem;
+}
+@media screen and (max-width: 720px) {
+  section.industry__services h2 {
+    font-size: 1.75rem;
+  }
 }
 section.industry__services .row a {
   text-decoration-line: none;
@@ -514,14 +614,34 @@ section.industry__services .row a > img {
 section.industry__services .row > div {
   max-width: 261px;
 }
+@media screen and (max-width: 320px) {
+  section.industry__services .row > div.industry__services_block {
+    width: 100%;
+  }
+}
 section.industry__services .row > div:nth-child(even) .industry__services_cards_text {
   border-bottom: 2px solid #A2A8AF;
+}
+@media screen and (max-width: 1140px) {
+  section.industry__services .row > div:nth-child(even) a > img {
+    height: 305px;
+  }
+}
+@media screen and (max-width: 1140px) and (max-width: 320px) {
+  section.industry__services .row > div:nth-child(even) a > img {
+    width: 100%;
+  }
 }
 section.industry__services .row > div:nth-child(odd) {
   border-bottom: 2px solid #A2A8AF;
 }
 section.industry__services .row > div:nth-child(odd) a > img {
   height: 305px;
+}
+@media screen and (max-width: 320px) {
+  section.industry__services .row > div:nth-child(odd) a > img {
+    width: 100%;
+  }
 }
 section.industry__services .row > div:first-child {
   -o-object-position: left;
@@ -536,6 +656,12 @@ section.industry__services .row .industry__services_cards_text img {
   left: 30px;
   top: 15px;
 }
+@media screen and (max-width: 540px) {
+  section.industry__services .row .industry__services_cards_text img {
+    top: 0;
+    width: 20px;
+  }
+}
 section.industry__services .row .industry__services_cards_text p {
   padding: 0;
 }
@@ -549,6 +675,11 @@ section.partners__section h2 {
   font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
   font-weight: 600;
 }
+@media screen and (max-width: 720px) {
+  section.partners__section h2 {
+    font-size: 1.75rem;
+  }
+}
 section.geograph__section {
   position: relative;
   padding: 65px 0;
@@ -558,6 +689,11 @@ section.geograph__section h2 {
   margin-bottom: 30px;
   font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
   font-weight: 600;
+}
+@media screen and (max-width: 720px) {
+  section.geograph__section h2 {
+    font-size: 1.75rem;
+  }
 }
 section.geograph__section .img {
   background: url("../../images/geograph_section.png");
@@ -627,6 +763,11 @@ section.form__section {
 section.form__section .input-group {
   width: 25%;
 }
+@media screen and (max-width: 768px) {
+  section.form__section .input-group {
+    width: 100%;
+  }
+}
 section.form__section .input-group input {
   border-radius: 35px;
   padding: 16px 20px;
@@ -636,10 +777,20 @@ section.form__section button {
   width: 20%;
   border-radius: 35px;
 }
+@media screen and (max-width: 768px) {
+  section.form__section button {
+    width: 100%;
+  }
+}
 section.form__section h2 {
   font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 3rem;
+}
+@media screen and (max-width: 720px) {
+  section.form__section h2 {
+    font-size: 1.75rem;
+  }
 }
 section.form__section #customer__clients {
   margin-top: 40px;
@@ -669,6 +820,11 @@ footer .block:nth-child(2) p:nth-child(2) {
 }
 footer .divider {
   margin: 30px 0;
+}
+@media screen and (max-width: 320px) {
+  footer .footer__sections_tech_info .logo img {
+    width: 75%;
+  }
 }
 footer .footer__sections_tech_info p {
   font-size: 0.75rem;
