@@ -1,4 +1,6 @@
 <?php
+echo 'Message has been sent';
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
