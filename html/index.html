@@ -1033,9 +1033,9 @@
             var menu = document.getElementById('menu');
             var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollPosition > 500 && !menu.classList.contains('scroll')) { // Измените 100 на желаемое расстояние
+            if (scrollPosition > 100 && !menu.classList.contains('scroll')) { // Измените 100 на желаемое расстояние
                 menu.classList.add('scroll');
-            } else if (scrollPosition < 500 && menu.classList.contains('scroll')) {
+            } else if (scrollPosition < 100 && menu.classList.contains('scroll')) {
                 menu.classList.remove('scroll');
             }
         }
