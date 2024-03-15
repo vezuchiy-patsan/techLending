@@ -251,7 +251,7 @@ section.head__section {
   border-end-end-radius: 30px;
   padding: 18px 0 12px 0;
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1140px) {
   section.head__section {
     background-size: auto auto;
   }
@@ -964,4 +964,4 @@ body {
           box-shadow: none !important;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-}/*# sourceMappingURL=style.css.map *//
+}/*# sourceMappingURL=style.css.map */ourceMappingURL=style.css.map */
