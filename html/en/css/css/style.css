@@ -251,6 +251,11 @@ section.head__section {
   border-end-end-radius: 30px;
   padding: 18px 0 12px 0;
 }
+@media screen and (max-width: 960px) {
+  section.head__section {
+    background-size: auto auto;
+  }
+}
 section.head__section .section__head_logo {
   width: 32%;
 }
@@ -959,7 +964,4 @@ body {
           box-shadow: none !important;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-}/*# sourceMappingURL=style.css.map */t;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map *//
