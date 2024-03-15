@@ -226,6 +226,9 @@ body {
   font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
   font-variant-numeric: lining-nums;
 }
+body.modal-open {
+  overflow: auto !important;
+}
 
 div[class^=container] {
   max-width: 1116px;

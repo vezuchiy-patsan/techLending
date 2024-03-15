@@ -39,6 +39,7 @@
                             alt="Garvex smart technologies">
                     </a>
                 </div>
+
                 <button class="navbar-toggler bg-white" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                     <span class="navbar-toggler-icon"></span>
@@ -71,23 +72,30 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="nav-item dropdown">
+                            <div class="">
+                                <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Язык
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li class=""><a class="dropdown-item" href="../index.html">Русский</a></li>
+                                    <li class=""><a class="dropdown-item"
+                                            href="./index.html">English</a></li>
+                                </ul>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <div>
                                 <a class="nav-link" href="#contacts">Контакты</a>
                             </div>
                         </li>
                     </ul>
-                    <div class="row direction-column offcanvas__section col-lg-5">
+                    <div class="row direction-column offcanvas__section">
                         <div class="offcanvas_d col-10 row direction-column">
                             <p>г. Санкт-Петербург,
                                 Шоссе Революции, дом 69, литера А, офис 303.</p>
                             <p>Пн-Пт 9:30 - 18:00</p>
-                        </div>
-                        <div class="col-lg-4" id="languageSelector">
-                            <select class="form-select" aria-label="Выбор языка">
-                                <option value="ru" translate="no"  data-google-lang="ru" selected>ru</option>
-                                <option value="en" translate="no"  data-google-lang="en">en</option>
-                            </select>
                         </div>
                         <a href="tel:89211876899" role="button"
                             class="offcanvas_d btn text-outline-primary btn-light bg-white rounded-5 mb-3">8 (921) 187
@@ -95,7 +103,7 @@
                             99</a>
 
                         <a href="https://azs-online.ru" role="button" target="_blank"
-                            class="btn text-primary btn-light bg-white rounded-5 col-lg-8">Вход в «АЗС-Онлайн»</a>
+                            class="btn text-primary btn-light bg-white rounded-5 ">Вход в «АЗС-Онлайн»</a>
                     </div>
                 </div>
             </div>
@@ -362,8 +370,7 @@
                         </div>
                     </a>
                     <!-- Модальное окно -->
-                    <div class="modal fade" id="oilModal" tabindex="-1" aria-labelledby="oilModalLabel"
-                        aria-hidden="true">
+                    <div class="modal fade" id="oilModal" >
                         <div class="modal-dialog modal-dialog-centered">
                             <div class="modal-content">
                                 <div class="modal-header">
@@ -533,7 +540,7 @@
                             </div>
                             <div class="geograph__section_text">
                                 <p class="p-main">1 534</p>
-                                <p class="p-secondary">Топливораздаточного оборудования <br> (колонок)</p>
+                                <p class="p-secondary">Топливораздаточного оборудования</p>
                             </div>
                             <div class="geograph__section_text">
                                 <p class="p-main">101 478 468</p>
@@ -1032,9 +1039,9 @@
             var menu = document.getElementById('menu');
             var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollPosition > 500 && !menu.classList.contains('scroll')) { // Измените 100 на желаемое расстояние
+            if (scrollPosition > 400 && !menu.classList.contains('scroll')) { // Измените 100 на желаемое расстояние
                 menu.classList.add('scroll');
-            } else if (scrollPosition < 500 && menu.classList.contains('scroll')) {
+            } else if (scrollPosition < 400 && menu.classList.contains('scroll')) {
                 menu.classList.remove('scroll');
             }
         }
