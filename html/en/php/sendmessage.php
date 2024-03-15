@@ -25,7 +25,7 @@ $mail->Password = 'jp8k3kyTFrtcc2SirTiN';
 $mail->setFrom('info@garveks.ru', 'Info');
 
 // Кому
-$mail->addAddress('d.ahiyan@garveks.ru', 'Smart');
+$mail->addAddress('smart@garvex.tech', 'Smart');
 // $mail->addAddress('sale@garveks.ru', 'Sale');
 
 // Тема письма
