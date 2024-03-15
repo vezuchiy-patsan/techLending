@@ -1,0 +1,136 @@
+@import '_valurables.sass'
+
+*
+    margin: 0
+    padding: 0
+
+h1
+    font-family: "Raleway Extra Bold", Arial, Helvetica, sans-serif
+    font-weight: 800
+    &.extra-h
+        font-size: 5.25rem
+        line-height: 100px
+        text-transform: uppercase
+        @media screen and (max-width: $media-md)
+            font-size: 2.75rem  
+            line-height: 52.8px
+        @media screen and (max-width: $media-sm)
+            font-size: 1.75rem  
+            line-height: normal
+        
+h2
+    font-family: "Raleway Bold", Arial, Helvetica, sans-serif
+    font-weight: 700
+    font-size: 3rem
+
+.h-mini
+    font:
+        family: "Raleway Regular", Arial, Helvetica, sans-serif
+        weight: 400
+        size: 0.875rem
+    color: #A2A8AF
+
+p
+    font-family: "Raleway Regular", Arial, Helvetica, sans-serif
+    font-weight: 400
+
+input, button[type=submit]
+    font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+    font-weight: 600
+    font-size: 12px
+.card-text-p-24
+    font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+    font-weight: 600
+    font-size: 1.5rem
+    text-decoration: none
+    color: #071D43
+    line-height: 28.8px
+.card-text-p-14-sm
+    @media screen and ( max-width: $media-sm )  
+        font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+        font-weight: 600
+        font-size: 0.875rem
+        text-decoration: none
+        color: #071D43
+        line-height: 16.8px
+nav
+    ul
+        li
+            .nav-link
+                font-size: 0.75rem
+                font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                font-weight: 600
+                @media screen and (max-width: $media-lg-991)
+                    font-size: 1.5rem
+            .dropdown-item
+                font-size: 0.75rem
+                font-family: "Raleway Regular", Arial, Helvetica, sans-serif
+                font-weight: 400
+                text-decoration-line: underline
+                @media screen and (max-width: $media-lg-991)
+                    padding: 0
+                    margin-bottom: 16px
+                    font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                    font-size: 0.875rem
+                    font-weight: 600
+                    color: #000000e0
+                @media screen and (min-width: $media-lg-991)
+                    color: white
+
+.divider
+    width: 100%
+    height: 1px
+    background: #A2A8AF
+    margin-bottom: 11px
+.overflow-for-lg-scroll
+    @media screen and ( max-width: $media-lg )
+        overflow-x: scroll
+.modal
+    .modal-content
+        border-radius: 30px
+    .modal-header
+        padding-top: 38px
+        padding-left: 38px
+        padding-right: 38px
+        border-bottom: 0
+        .modal-mini-title
+            font:
+                family: "Raleway Regular", Arial, Helvetica, sans-serif
+                weight: 400
+                size: 0.875rem
+            color: #A2A8AF
+        .modal-title
+            font:
+                family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                weight: 600
+                size: 1.5rem
+        button
+            align-self: baseline
+    .modal-body
+        padding-top: 28px
+        padding-right: 38px
+        padding-left: 38px
+        padding-bottom: 38px
+.footer-main-link
+    font:
+        family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+        weight: 600
+        size: 3rem
+    @media screen and ( max-width:  $media-sm)
+        font-size: 1.875rem
+    @media screen and ( max-width:  $media-sm-320)
+        font-size: 1.25rem
+footer
+    p
+        font:
+            family: "Raleway Regular", Arial, Helvetica, sans-serif
+            weight: 400
+            size: 0.875rem
+        color: white
+        &.footer-mini-p
+            color: #A2A8AF
+            margin-bottom: 12px
+    .footer-link
+        font-size: 1.5rem
+        font-family: "Raleway Regular", Arial, Helvetica, sans-serif
+        font-weight: 400
