@@ -75,7 +75,8 @@ nav
                     font-weight: 600
                     color: #000000e0
                 @media screen and (min-width: $media-lg-991)
-                    color: white
+                    &:not(.group)
+                        color: white
 
 .divider
     width: 100%
