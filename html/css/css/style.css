@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Raleway Regular";
   src: local("Raleway-Regular"), url("/fonts/Raleway/Raleway-Regular.ttf") format("truetype"), url("/fonts/Raleway/Raleway-Regular.woff") format("woff"), url("/fonts/Raleway/Raleway-Regular.woff2") format("woff2");
@@ -32,6 +33,12 @@
 
 .navbar {
   --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='18' height='14' viewBox='0 0 18 14' fill='none'%3E%3Cpath d='M1 0.904785H17' stroke='black' stroke-width='1.52381' stroke-linecap='round'/%3E%3Cpath d='M1.00012 7.00024H17.0001' stroke='black' stroke-width='1.52381' stroke-linecap='round'/%3E%3Cpath d='M1 13.0952L10 13.0952' stroke='black' stroke-width='1.52381' stroke-linecap='round'/%3E%3C/svg%3E");
+}
+
+@media screen and (min-width: 992px) {
+  .form-select {
+    --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+  }
 }
 
 * {
@@ -142,6 +149,12 @@ nav ul li .dropdown-item {
   height: 1px;
   background: #A2A8AF;
   margin-bottom: 11px;
+}
+
+@media screen and (max-width: 960px) {
+  .overflow-for-lg-scroll {
+    overflow-x: scroll;
+  }
 }
 
 .modal .modal-content {
@@ -369,8 +382,9 @@ section nav ul .nav-item.dropdown .dropdown-menu {
 }
 @media screen and (max-width: 992px) {
   section nav ul .nav-item.dropdown .dropdown-menu {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, 0) !important;
     border-color: rgba(255, 255, 255, 0);
+    margin-top: 0 !important;
   }
 }
 section nav ul .nav-item.dropdown .dropdown-menu .dropdown-item:focus, section nav ul .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
@@ -419,11 +433,30 @@ section nav .offcanvas__section a.offcanvas_d {
     display: none;
   }
 }
+@media screen and (max-width: 992px) {
+  section nav #languageSelector {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (min-width: 992px) {
+  section nav #languageSelector .form-select {
+    width: 75% !important;
+    background-color: rgba(255, 255, 255, 0) !important;
+    padding-right: 16px !important;
+    color: white !important;
+    border: none;
+  }
+  section nav #languageSelector .form-select option {
+    color: black !important;
+    background-color: rgba(255, 255, 255, 0.28);
+  }
+}
 section nav a.btn:not(.offcanvas_d) {
   font-size: 0.75rem;
   font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
   font-weight: 600;
   color: var(--bs-primary);
+  line-height: 24px;
 }
 @media screen and (max-width: 992px) {
   section nav a.btn:not(.offcanvas_d) {
@@ -551,11 +584,11 @@ section.services__section .services__section_block h3 {
   font-family: "Raleway Bold", Arial, Helvetica, sans-serif;
   font-weight: 700;
   font-size: 3rem;
-  margin-bottom: 1.5rem;
 }
 @media screen and (max-width: 720px) {
   section.services__section .services__section_block h3 {
     font-size: 1.75rem;
+    margin-bottom: 1.5rem;
   }
 }
 section.services__section .services__section_block .div__mobile_img {
@@ -643,7 +676,7 @@ section.industry__services .row > div:nth-child(odd) a > img {
     width: 100%;
   }
 }
-section.industry__services .row > div:first-child {
+section.industry__services .row > div:first-child a > img {
   -o-object-position: left;
      object-position: left;
 }
@@ -704,6 +737,17 @@ section.geograph__section .img {
   width: 100%;
   height: 120%;
 }
+@media screen and (max-width: 1140px) {
+  section.geograph__section #geographic-tab {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 900px;
+  }
+}
 section.geograph__section #geographic-tab li:not(:last-child) {
   margin-right: 0.75rem;
   margin-bottom: 0.75rem;
@@ -727,8 +771,43 @@ section.geograph__section .geograph__section_block {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 30px 0 0 30px;
 }
+@media screen and (max-width: 768px) {
+  section.geograph__section .geograph__section_block {
+    padding-right: 57px;
+    border-radius: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+@media screen and (max-width: 540px) {
+  section.geograph__section .geograph__section_block {
+    padding: 30px 30px 30px 35px;
+  }
+}
 section.geograph__section .geograph__section_block .geograph__section_text:not(:last-child) {
   margin-bottom: 32px;
+}
+@media screen and (max-width: 768px) {
+  section.geograph__section .geograph__section_block .geograph__section_text {
+    text-align: center;
+    width: 25%;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 540px) {
+  section.geograph__section .geograph__section_block .geograph__section_text {
+    margin-bottom: 0px !important;
+  }
+}
+@media screen and (max-width: 720px) {
+  section.geograph__section .geograph__section_block .geograph__section_text {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 540px) {
+  section.geograph__section .geograph__section_block .geograph__section_text {
+    width: 100%;
+  }
 }
 section.geograph__section .geograph__section_block .geograph__section_text p {
   margin-bottom: 0;
@@ -745,6 +824,29 @@ section.geograph__section .geograph__section_block .geograph__section_text p.p-s
   font-weight: 400;
   font-size: 0.75rem;
   color: #BFBFBF;
+}
+section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img {
+  max-height: 397px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+@media screen and (max-width: 540px) {
+  section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img .position-absolute {
+    top: 35% !important;
+    font-size: 2rem !important;
+    line-height: normal !important;
+  }
+}
+section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img img {
+  border-radius: 30px;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: blur(10px) brightness(0.6) opacity(0.9);
+          filter: blur(10px) brightness(0.6) opacity(0.9);
+}
+section.geograph__section .geograph__section_block_img iframe {
+  height: 100%;
+  border-radius: 0 30px 30px 0;
 }
 section.geograph__section .geograph__section_block_img img {
   border-radius: 0 30px 30px 0;
@@ -821,6 +923,13 @@ footer .block:nth-child(2) p:nth-child(2) {
 footer .divider {
   margin: 30px 0;
 }
+@media screen and (max-width: 992px) {
+  footer .dropdown-menu {
+    background-color: rgb(255, 255, 255) !important;
+    border-color: rgba(255, 255, 255, 0);
+    padding: 8px 8px;
+  }
+}
 @media screen and (max-width: 320px) {
   footer .footer__sections_tech_info .logo img {
     width: 75%;
@@ -828,4 +937,29 @@ footer .divider {
 }
 footer .footer__sections_tech_info p {
   font-size: 0.75rem;
+}
+
+/* Виджет назначает height: 100% , что может привести к непредксказуемому результату, если вы этого не планировали */
+html {
+  height: auto !important;
+}
+
+/* Фиксируем позицию body, которую меняет панель гугла */
+body {
+  top: 0 !important;
+  position: static !important;
+}
+
+/* Прячем панель гугла */
+.skiptranslate {
+  display: none !important;
+}
+
+/* Убираем подсветку ссылок и текста при наведении */
+.goog-text-highlight, font > font {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
 }/*# sourceMappingURL=style.css.map */

@@ -45,10 +45,9 @@ section
             @media screen and (max-width: $media-md)
                 font-size: 1.5rem
             @media screen and (max-width: $media-sm)
-                font-size: 1.25rem  
+                font-size: 1.25rem
                 line-height: normal
-                    
-            
+
         .section__head_h_p
             padding-top: 34px
             width: 61%
@@ -56,19 +55,19 @@ section
                 width: 50%
             @media screen and (max-width: 360px)
                 width: 75%
-            
+
             img
                 width: 257px
                 height: 100%
                 padding: 0 0 0 12px
                 @media screen and (max-width: $media-md)
-                    width:40%
+                    width: 40%
             p
                 font-size: 1.5rem
                 padding-left: 29px
                 line-height: 28.8px
                 @media screen and (max-width: $media-md)
-                    font: 
+                    font:
                         size: 0.75rem
                     line-height: 16.8px
         > *
@@ -115,8 +114,9 @@ section
                         border-radius: 0 0 6px 6px
                         margin-top: 0
                         @media screen and (max-width: $media-lg-991)
-                            background-color: rgba(255, 255, 255, 0.0)
-                            border-color:  rgba(255, 255, 255, 0.0)
+                            background-color: rgba(255, 255, 255, 0.0) !important
+                            border-color: rgba(255, 255, 255, 0.0)
+                            margin-top: 0 !important
                         .dropdown-item:focus, .dropdown-item:hover
                             color: var(--bs-primary)
                             background-color: inherit
@@ -149,11 +149,26 @@ section
             .offcanvas_d
                 @media screen and (min-width: $media-lg-991)
                     display: none
+        #languageSelector
+            @media screen and (max-width: $media-lg-991)
+                margin-bottom: 16px
+            .form-select
+                @media screen and (min-width: $media-lg-991)
+                    width: 75% !important
+                    background-color: rgba(255, 255, 255, .0) !important
+                    padding-right: 16px !important
+                    color: white !important
+                    border: none
+                    option
+                        color: black !important
+                        background-color: rgba(255, 255, 255, 0.28)
+
         a.btn:not(.offcanvas_d)
             font-size: 0.75rem
             font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
             font-weight: 600
             color: var(--bs-primary)
+            line-height: 24px
             @media screen and (max-width: $media-lg-991)
                 font-size: 0.875rem
                 color: white !important
@@ -203,7 +218,7 @@ section
     &.services__section
         padding-top: 54px
         @media screen and (max-width: $media-xl)
-                overflow: hidden
+            overflow: hidden
         @media screen and (max-width: $media-lg)
             padding-bottom: 54px
         h2
@@ -242,7 +257,7 @@ section
                 margin-top: -125px
                 @media screen and (max-width: $media-xl)
                     width: 100%
-                    margin-top: 0px 
+                    margin-top: 0px
         .services__section_block
             h3
                 font:
@@ -251,7 +266,7 @@ section
                     size: 3rem
                 @media screen and (max-width: $media-md)
                     font-size: 1.75rem
-                margin-bottom: 1.5rem
+                    margin-bottom: 1.5rem
             .div__mobile_img
                 width: fit-content
                 margin: 0 auto
@@ -266,7 +281,7 @@ section
             p
                 font-size: 0.875rem
                 @media screen and (max-width: $media-md)
-                     font-size: 0.75rem
+                    font-size: 0.75rem
     &.industry__services
         padding: 50px 0
         h2
@@ -301,7 +316,7 @@ section
                                 height: 305px
                                 @media screen and ( max-width: $media-sm-320 )
                                     width: 100%
-                                
+
                 &:nth-child(odd)
                     border-bottom: 2px solid #A2A8AF
                     a
@@ -310,8 +325,9 @@ section
                             @media screen and ( max-width: $media-sm-320 )
                                 width: 100%
                 &:first-child
-                    a > img
-                    object-position: left
+                    a
+                        > img
+                            object-position: left
             .industry__services_cards_text
                 margin-top: 25px
                 img
@@ -355,6 +371,10 @@ section
             width: 100%
             height: 120%
         #geographic-tab
+            @media screen and (max-width: $media-xl)
+                flex-direction: row
+                flex-wrap: nowrap
+                width: 900px
             li:not(:last-child)
                 margin-right: 0.75rem
                 margin-bottom: 0.75rem
@@ -376,9 +396,25 @@ section
             padding: 57px 0 57px 71px
             background-color: rgba(255, 255, 255, 0.1)
             border-radius: 30px 0 0 30px
+            @media screen and ( max-width: $media-md-768 )
+                padding-right: 57px
+                border-radius: 30px
+                justify-content: space-between
+            @media screen and ( max-width: $media-sm )
+                padding: 30px 30px 30px 35px
+
             .geograph__section_text
                 &:not(:last-child)
                     margin-bottom: 32px
+                @media screen and ( max-width: $media-md-768 )
+                    text-align: center
+                    width: 25%
+                @media screen and ( max-width: $media-md-768 ) and (min-width: $media-sm)
+                    margin-bottom: 0px !important
+                @media screen and ( max-width: $media-md )
+                    width: 50%
+                @media screen and ( max-width: $media-sm )
+                    width: 100%
                 p
                     margin-bottom: 0
                     color: white
@@ -394,8 +430,28 @@ section
                             weight: 400
                             size: 0.75rem
                         color: #BFBFBF
-        .geograph__section_block_img img
-            border-radius: 0 30px 30px 0
+        .tab-pane
+            &:nth-child(n+3)
+                .geograph__section_block_img
+                    max-height: 397px
+                    overflow: hidden
+                    border-radius: 30px
+                    .position-absolute
+                        @media screen and ( max-width: $media-sm )
+                            top: 35% !important
+                            font-size: 2rem !important
+                            line-height: normal !important
+                    img
+                        border-radius: 30px
+                        height: 100%
+                        width: 100%
+                        filter: blur(10px) brightness(0.6) opacity(0.9)
+        .geograph__section_block_img
+            iframe
+                height: 100%
+                border-radius: 0 30px 30px 0
+            img
+                border-radius: 0 30px 30px 0
     &.form__section
         background: url('../../images/form.png') center center
         background-repeat: no-repeat
@@ -449,6 +505,11 @@ footer
             margin-bottom: 0
     .divider
         margin: 30px 0
+    .dropdown-menu
+        @media screen and (max-width: $media-lg-991)
+            background-color: rgba(255, 255, 255, 1.0) !important
+            border-color: rgba(255, 255, 255, 0.0)
+            padding: 8px 8px
     .footer__sections_tech_info
         .logo img
             @media screen and ( max-width: $media-sm-320 )
