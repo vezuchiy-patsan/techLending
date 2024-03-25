@@ -254,6 +254,7 @@ section.head__section {
 @media screen and (max-width: 1140px) {
   section.head__section {
     background-size: auto auto;
+    background-position: right;
   }
 }
 section.head__section .section__head_logo {
@@ -964,4 +965,4 @@ body {
           box-shadow: none !important;
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-}/*# sourceMappingURL=style.css.map */ourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
