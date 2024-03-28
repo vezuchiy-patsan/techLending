@@ -22,11 +22,15 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: 'html/index.html', // Укажите путь к вашему HTML файлу
             filename: 'ru/index.html',
+            title: 'Гарвекс умные технологии',
+            description: '«Гарвекс «Умные Технологии». Следующий уровень управления топливом, транспортом и предприятием.',
             inject: 'body', // Это автоматически добавит скрипты в ваш HTML
         }),
         new HtmlWebpackPlugin({
             template: 'html/index.html', // Укажите путь к вашему HTML файлу
             filename: 'en/index.html',
+            title: 'Garvex Smart Technologies',
+            description: 'Garvex Smart Technologies. The next level of fuel, transport and enterprise management.',
             inject: 'body', // Это автоматически добавит скрипты в ваш HTML
         }),
 

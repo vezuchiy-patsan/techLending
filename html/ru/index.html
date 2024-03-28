@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Гарвекс Умные Технологии</title>
+    <meta name="format-detection" content="telephone=no" />
+    <title>Гарвекс умные технологии</title>
     <meta name="description"
         content="«Гарвекс «Умные Технологии». Следующий уровень управления топливом, транспортом и предприятием.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -45,37 +46,37 @@
                     data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
+                <div class="collapse navbar-collapse offcanvas offcanvas-end users" tabindex="-1" id="navbarOffcanvasLg"
                     aria-labelledby="navbarOffcanvasLgLabel">
                     <div class="align-self-end offcanvas_off text-end butt"><button type="button" class="btn-close"
                             data-bs-dismiss="offcanvas" aria-label="Закрыть"></button></div>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-0 offcanvas_off">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-0 offcanvas_off ">
                         <li class="nav-item">
-                            <div class="users">
-                                <a class="nav-link" aria-current="page" href="#main" data-i18n="menu">Главная</a>
+                            <div class="">
+                                <a class="nav-link" aria-current="page" href="#main" data-i18n="nav.home">Главная</a>
                             </div>
                         </li>
                         <li class="nav-item">
                             <div>
-                                <a class="nav-link" href="#services">Сервисы</a>
+                                <a class="nav-link" href="#services" data-i18n="nav.services">Сервисы</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
                             <div class="">
                                 <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                    aria-expanded="false" data-i18n="nav.doc.documentation">
                                     Документация
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="d-none"><a class="dropdown-item" href="#">Сертификат.pdf</a></li>
-                                    <li class=""><a class="dropdown-item"
-                                            href="/files/НАЦИОНАЛЬНАЯ ПРЕМИЯ.pdf">Грамота.pdf</a></li>
+                                    <li class=""><a class="dropdown-item" href="/files/НАЦИОНАЛЬНАЯ ПРЕМИЯ.pdf"
+                                            data-i18n="nav.doc.sertificate">Грамота.pdf</a></li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
                             <div>
-                                <a class="nav-link" href="#contacts">Контакты</a>
+                                <a class="nav-link" href="#contacts" data-i18n="nav.contact">Контакты</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -85,8 +86,8 @@
                                     Язык
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li class=""><a class="dropdown-item" href="../ru/" id="ru">Русский</a></li>
-                                    <li class=""><a class="dropdown-item" href="../en/" id="en">English</a>
+                                    <li class=""><a class="dropdown-item" href="../ru/" id="ru">ru</a></li>
+                                    <li class=""><a class="dropdown-item" href="../en/" id="en">en</a>
                                     </li>
                                 </ul>
                             </div>
@@ -94,7 +95,7 @@
                     </ul>
                     <div class="row direction-column offcanvas__section">
                         <div class="offcanvas_d col-10 row direction-column">
-                            <p>г. Санкт-Петербург,
+                            <p data-i18n="nav.mobile-nav.adr">г. Санкт-Петербург,
                                 Шоссе Революции, дом 69, литера А, офис 303.</p>
                             <p>Пн-Пт 9:30 - 18:00</p>
                         </div>
@@ -104,20 +105,22 @@
                             99
                         </a>
                         <a class="btn text-primary btn-light bg-white rounded-5 offcanvas_d mb-3"
-                            href="https://azs-online.ru">Вход в «АЗС-Онлайн»</a>
+                            href="https://azs-online.ru" data-i18n="nav.login.azs">Вход в «АЗС-Онлайн»</a>
                         <a class="btn text-primary btn-light bg-white rounded-5 offcanvas_d mb-3"
-                            href="https://integrationtest.garveks.ru">Мониторинг транспорта</a>
+                            href="https://integrationtest.garveks.ru" data-i18n="nav.login.mon">Мониторинг
+                            транспорта</a>
 
                         <div class="btn-group d-lg-block d-none">
                             <a type="button" class="btn text-primary btn-light bg-white rounded-5 dropdown-toggle"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.login.service">
                                 Вход в сервисы
                             </a>
                             <ul class="dropdown-menu ">
-                                <li class=""><a class="dropdown-item group" href="https://azs-online.ru">АЗС-Онлайн</a>
+                                <li class=""><a class="dropdown-item group" href="https://azs-online.ru"
+                                        data-i18n="nav.login.azs">АЗС-Онлайн</a>
                                 </li>
-                                <li class=""><a class="dropdown-item group"
-                                        href="https://integrationtest.garveks.ru">Мониторинг транспорта</a></li>
+                                <li class=""><a class="dropdown-item group" href="https://integrationtest.garveks.ru"
+                                        data-i18n="nav.login.mon">Мониторинг транспорта</a></li>
                             </ul>
                         </div>
                     </div>
@@ -126,12 +129,12 @@
         </nav>
         <div class="container">
             <div class="section__head_h col-md-9 col-12">
-                <h1 class="extra-h">Облачные
+                <h1 class="extra-h" data-i18n="head.h1">Облачные
                     сервисы</h1>
                 <h2>Garvex Smart Technologies</h2>
                 <div class="row section__head_h_p flex-nowrap">
                     <img src="../images/arrows/right_arrow_lg.png">
-                    <p>Следующий уровень управления топливом, транспортом и предприятием</p>
+                    <p data-i18n="head.p">Следующий уровень управления топливом, транспортом и предприятием</p>
                 </div>
             </div>
         </div>
@@ -143,58 +146,60 @@
                     <div class="number">
                         <p>1 823</p>
                     </div>
-                    <p>Пользователей</p>
+                    <p data-i18n="stat.customer">Пользователей</p>
                 </div>
                 <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
                         <p>6 972</p>
                     </div>
-                    <p>Транспортных <br> средств</p>
+                    <p data-i18n="stat.transport">Транспортных <br> средств</p>
                 </div>
                 <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
                         <p>1 534</p>
                     </div>
-                    <p>Топливораздаточных <br> колонок</p>
+                    <p data-i18n="stat.fuel">Топливораздаточных <br> колонок</p>
                 </div>
                 <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
                         <p>> 12 млн</p>
                     </div>
-                    <p id="services">Заправок</p>
+                    <p id="services" data-i18n="stat.refils">Заправок</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="bg-white rounded-5 services__section">
         <div class="container">
-            <h2>Сервисы</h2>
+            <h2 data-i18n="services.h2">Сервисы</h2>
             <div class="overflow-for-lg-scroll">
                 <ul class="nav nav-pills mb-4 col-xl-6 col-lg-5" id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
-                            aria-selected="true">АЗС-Онлайн</button>
+                            aria-selected="true" data-i18n="buttons.azs">АЗС-Онлайн</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                            aria-selected="false">Мониторинг транспорта</button>
+                            aria-selected="false" data-i18n="buttons.mon">Мониторинг транспорта</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-e-t-e-accounting-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-e-t-e-accounting" type="button" role="tab"
-                            aria-controls="pills-e-t-e-accounting" aria-selected="false">Сквозной учет
+                            aria-controls="pills-e-t-e-accounting" aria-selected="false"
+                            data-i18n="buttons.ete">Сквозной учет
                             топлива</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact"
-                            aria-selected="false">Склад</button>
+                            aria-selected="false" data-i18n="buttons.warehouse">Склад</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-utp-tab" data-bs-toggle="pill" data-bs-target="#pills-utp"
-                            type="button" role="tab" aria-controls="pills-utp" aria-selected="false">Управление
+                            type="button" role="tab" aria-controls="pills-utp" aria-selected="false"
+                            data-i18n="buttons.tem">Управление
                             транспортным
                             предприятием</button>
                     </li>
@@ -206,13 +211,14 @@
                     tabindex="0">
                     <div class="row">
                         <div class="services__section_block col-xxl-6 col-lg-5 col-12">
-                            <h3>АЗС-Онлайн</h3>
+                            <h3 data-i18n="services.section-1.h">АЗС-Онлайн</h3>
                             <div class="div__mobile_img">
                                 <img src="../images/azs_mac_anfas.png" class="mobile_img img-fluid mb-2"
                                     alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
                             </div>
                             <div class="services__section_text col-xxl-11 col-lg-10 col-12">
-                                <p>Сервис «АЗС-Онлайн» обеспечивает контроль и учет топлива на предприятии. Наше решение
+                                <p data-i18n="services.section-1.p">Сервис «АЗС-Онлайн» обеспечивает контроль и учет
+                                    топлива на предприятии. Наше решение
                                     базируется на фиксации данных с оборудования, их последующей выгрузке, создании
                                     отчетов и удаленном управлении системой выдачи топлива. Это обнаруживает
                                     несанкционированные сливы топлива, делая движение топлива на предприятии
@@ -220,10 +226,10 @@
                                     затрат предприятия на ГСМ до 30%.
                                 </p>
                             </div>
-                            <p class="fs-3">— от 1875 рублей</p>
+                            <p class="fs-3" data-i18n="services.section-1.price">— от 1875 рублей</p>
                         </div>
-                        <div class="services__section_block_img col-6 d-lg-block d-none"><img
-                                src="../images/azs_mac.png" alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/test.png"
+                                class="img-fluid" alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
 
                 </div>
@@ -231,13 +237,14 @@
                     tabindex="0">
                     <div class="row">
                         <div class="services__section_block col-xxl-6 col-lg-5 col-12">
-                            <h3>Мониторинг транспорта</h3>
+                            <h3 data-i18n="services.section-2.h">Мониторинг транспорта</h3>
                             <div class="div__mobile_img">
                                 <img src="../images/mon_mac_anfas.png" class="mobile_img img-fluid mb-2"
                                     alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
                             </div>
                             <div class="services__section_text col-xxl-11 col-lg-10 col-12">
-                                <p>Внедрение системы мониторинга транспорта является решением для сокращения проблем,
+                                <p data-i18n="services.section-2.p">Внедрение системы мониторинга транспорта является
+                                    решением для сокращения проблем,
                                     связанных с нерациональным использованием транспортных средств, кражей топлива и
                                     недобросовестным исполнением трудовых обязанностей водителями. Наш сервис
                                     обеспечивает возможность отслеживания маршрутов и истории перемещений, а также
@@ -256,13 +263,14 @@
                     tabindex="0">
                     <div class="row">
                         <div class="services__section_block col-xxl-6 col-lg-5 col-12">
-                            <h3>Склад</h3>
+                            <h3 data-i18n="services.section-3.h">Склад</h3>
                             <div class="div__mobile_img">
                                 <img src="../images/war_mac_anfas.png" class="mobile_img img-fluid mb-2"
                                     alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
                             </div>
                             <div class="services__section_text col-xxl-11 col-lg-10 col-12">
-                                <p>«Склад» является сервисом хранения и обработки данных по товарам, сырью и
+                                <p data-i18n="services.section-3.p">«Склад» является сервисом хранения и обработки
+                                    данных по товарам, сырью и
                                     материальным ресурсам. Здесь фиксируются все операции, связанные с хранением и
                                     движением товаров,
                                     благодаря чему возможно оперативно уточнить местоположение товара, его количество и
@@ -279,13 +287,13 @@
                 <div class="tab-pane fade" id="pills-utp" role="tabpanel" aria-labelledby="pills-utp-tab" tabindex="0">
                     <div class="row">
                         <div class="services__section_block col-xxl-6 col-lg-5 col-12">
-                            <h3>Управление транспортным предприятием</h3>
+                            <h3 data-i18n="services.section-4.h">Управление транспортным предприятием</h3>
                             <div class="div__mobile_img">
                                 <img src="../images/azs_mac.png" class="mobile_img img-fluid mb-2"
                                     alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
                             </div>
                             <div class="services__section_text col-xxl-11 col-lg-10 col-12">
-                                <p>Управление транспортным предприятием (УТП)
+                                <p data-i18n="services.section-4.p">Управление транспортным предприятием (УТП)
                                     Система управления транспортной компании объединила все сервисы для автоматизации и
                                     цифровизации основных бизнес-процессов. Это позволяет руководителю удаленно
                                     контролировать компанию, оптимизировать планирование, повышать эффективность работы
@@ -302,13 +310,14 @@
                     aria-labelledby="pills-e-t-e-accounting-tab" tabindex="0">
                     <div class="row">
                         <div class="services__section_block col-xxl-6 col-lg-5 col-12">
-                            <h3>Сквозной учет топлива</h3>
+                            <h3 data-i18n="services.section-5.h">Сквозной учет топлива</h3>
                             <div class="div__mobile_img">
                                 <img src="../images/azs_mac.png" class="mobile_img img-fluid"
                                     alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
                             </div>
                             <div class="services__section_text col-xxl-12 col-lg-10 col-12">
-                                <p>На многих предприятиях цепочка движения топлива представляет собой сложную и обширную
+                                <p data-i18n="services.section-5.p">На многих предприятиях цепочка движения топлива
+                                    представляет собой сложную и обширную
                                     инфраструктуру, что затрудняет контроль и управление, а также приводит к серьезным
                                     финансовым потерям – от 5% до 30% от общей стоимости закупаемого топлива. Решением
                                     данной проблемы является применение системы сквозного учета топлива, которая
@@ -330,8 +339,8 @@
     </section>
     <section class="industry__services">
         <div class="container">
-            <p class="h-mini">С кем работаем</p>
-            <h2 class="col-lg-7 col-12">Внедряем наши решения
+            <p class="h-mini" data-i18n="working.p">С кем работаем</p>
+            <h2 class="col-lg-7 col-12" data-i18n="working.h2">Внедряем наши решения
                 в следующих отраслях:</h2>
             <div
                 class="row gap-3 justify-content-xl-between justify-content-md-center justify-content-sm-between justify-content-center mx-0">
@@ -339,7 +348,8 @@
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#farmerModal">
                         <img src="../images/farmer-industry.webp" class="img-fluid" alt="Трактор в поле">
                         <div class="industry__services_cards_text row justify-content-between mx-0">
-                            <p class="col-5 card-text-p-24 card-text-p-14-sm">Сельское хозяйство</p>
+                            <p class="col-5 card-text-p-24 card-text-p-14-sm" data-i18n="working.modals.section-1.h">
+                                Сельское хозяйство</p>
                             <div class="col-3 px-0">
                                 <img src="../images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
                             </div>
@@ -352,15 +362,16 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <div>
-                                        <p class="modal-mini-title">С кем работаем</p>
-                                        <h3 class="modal-title col-3" id="farmerModalLabel">Сельское хозяйство</h3>
+                                        <p class="modal-mini-title" data-i18n="working.p">С кем работаем</p>
+                                        <h3 class="modal-title col-3" id="farmerModalLabel"
+                                            data-i18n="working.modals.section-1.h">Сельское хозяйство</h3>
                                     </div>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Закрыть"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="divider"></div>
-                                    <p>
+                                    <p data-i18n="working.modals.section-1.p">
                                         Сервисы обеспечивают точное отслеживание местоположения и маршрутов
                                         сельхозтехники, повышая эффективность её использования и упрощая планирование
                                         работ. Они также помогают эффективно управлять расходом топлива, выявляя утечки,
@@ -375,7 +386,8 @@
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#oilModal">
                         <img src="../images/oil-industry.webp" class="img-fluid" alt="Бензовоз">
                         <div class="industry__services_cards_text row justify-content-between mx-0">
-                            <p class="col-5 card-text-p-24 card-text-p-14-sm">Топливная
+                            <p class="col-5 card-text-p-24 card-text-p-14-sm" data-i18n="working.modals.section-2.h">
+                                Топливная
                                 промышленность</p>
                             <div class="col-3 px-0">
                                 <img src="../images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
@@ -388,8 +400,9 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <div>
-                                        <p class="modal-mini-title">С кем работаем</p>
-                                        <h3 class="modal-title col-3" id="farmerModalLabel">Топливная промышленность
+                                        <p class="modal-mini-title" data-i18n="working.p">С кем работаем</p>
+                                        <h3 class="modal-title col-3" id="farmerModalLabel"
+                                            data-i18n="working.modals.section-2.h">Топливная промышленность
                                         </h3>
                                     </div>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
@@ -397,7 +410,7 @@
                                 </div>
                                 <div class="modal-body">
                                     <div class="divider"></div>
-                                    <p>
+                                    <p data-i18n="working.modals.section-2.p">
                                         Оптимизация управления топливными ресурсами повышает общую эффективность
                                         предприятий топливной промышленности. Сервисы отслеживают потребление и выдачу
                                         топлива на различных этапах транспортировки, уменьшая риски ошибок и хищений.
@@ -415,7 +428,8 @@
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#transportModal">
                         <img src="../images/transport-industry.webp" class="img-fluid" alt="Камаз">
                         <div class="industry__services_cards_text row justify-content-between mx-0">
-                            <p class="col-5 card-text-p-24 card-text-p-14-sm">Транспортная
+                            <p class="col-5 card-text-p-24 card-text-p-14-sm" data-i18n="working.modals.section-3.h">
+                                Транспортная
                                 отрасль</p>
                             <div class="col-3 px-0">
                                 <img src="../images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
@@ -429,15 +443,16 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <div>
-                                        <p class="modal-mini-title">С кем работаем</p>
-                                        <h3 class="modal-title col-3" id="farmerModalLabel">Транспортная отрасль</h3>
+                                        <p class="modal-mini-title" data-i18n="working.p">С кем работаем</p>
+                                        <h3 class="modal-title col-3" id="farmerModalLabel"
+                                            data-i18n="working.modals.section-3.h">Транспортная отрасль</h3>
                                     </div>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Закрыть"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="divider"></div>
-                                    <p>
+                                    <p data-i18n="working.modals.section-3.p">
                                         Сервисы компании обеспечивают постоянное отслеживание местоположения и поездок
                                         транспортных средств, улучшая планирование маршрутов, сокращая время в пути и
                                         повышая общую эффективность логистических процессов. Дополнительно, сервисы
@@ -454,7 +469,8 @@
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#roadModal">
                         <img src="../images/road-industry.webp" class="img-fluid" alt="Дорожная техника">
                         <div class="industry__services_cards_text row justify-content-between mx-0">
-                            <p class="col-5 card-text-p-24 card-text-p-14-sm">Дорожное
+                            <p class="col-5 card-text-p-24 card-text-p-14-sm" data-i18n="working.modals.section-4.h">
+                                Дорожное
                                 строительство</p>
                             <div class="col-3 px-0">
                                 <img src="../images/arrows/arrow_right_up.png" class="img-fluid" alt="Стрелка">
@@ -468,15 +484,16 @@
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <div>
-                                        <p class="modal-mini-title">С кем работаем</p>
-                                        <h3 class="modal-title col-3" id="farmerModalLabel">Дорожное строительство</h3>
+                                        <p class="modal-mini-title" data-i18n="working.p">С кем работаем</p>
+                                        <h3 class="modal-title col-3" id="farmerModalLabel"
+                                            data-i18n="working.modals.section-4.h">Дорожное строительство</h3>
                                     </div>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Закрыть"></button>
                                 </div>
                                 <div class="modal-body">
                                     <div class="divider"></div>
-                                    <p>
+                                    <p data-i18n="working.modals.section-4.p">
                                         Обеспечиваем контроль местоположения и маршрутов спецтехники для точного
                                         планирования логистики на стройплощадке. Системы контроля топлива помогают
                                         эффективно управлять затратами на топливо в процессе дорожных работ, минимизируя
@@ -491,8 +508,8 @@
     </section>
     <section class="partners__section bg-white rounded-5">
         <div class="container">
-            <p class="h-mini">Клиенты</p>
-            <h2 class="col-4">НАШИ ПАРТНЁРЫ</h2>
+            <p class="h-mini" data-i18n="partners.p">Клиенты</p>
+            <h2 class="col-4" data-i18n="partners.h2">НАШИ ПАРТНЁРЫ</h2>
             <div class="swiper partners__section_gallery">
                 <div class="swiper-wrapper align-items-center">
                     <div class="swiper-slide"><img src="../images/partners/logo_tpp_1.png" class="img-fluid w-100"
@@ -525,33 +542,36 @@
         <div class="img">
         </div>
         <div class="container">
-            <h2 class="col-md-3 col-5">ГЕОГРАФИЯ СЕРВИСОВ</h2>
+            <h2 class="col-md-3 col-5" data-i18n="geograph.h2">ГЕОГРАФИЯ СЕРВИСОВ</h2>
             <div class="overflow-for-lg-scroll">
                 <ul class="nav nav-pills mb-4 col-12" id="geographic-tab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="pills-azs-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-azs" type="button" role="tab" aria-controls="pills-azs"
-                            aria-selected="true">АЗС-Онлайн</button>
+                            aria-selected="true" data-i18n="buttons.azs">АЗС-Онлайн</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-mon-tab" data-bs-toggle="pill" data-bs-target="#pills-mon"
-                            type="button" role="tab" aria-controls="pills-mon" aria-selected="false">Мониторинг
+                            type="button" role="tab" aria-controls="pills-mon" aria-selected="false"
+                            data-i18n="buttons.mon">Мониторинг
                             транспорта</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-calc-tab" data-bs-toggle="pill" data-bs-target="#pills-calc"
-                            type="button" role="tab" aria-controls="pills-calc" aria-selected="false">Сквозной учет
+                            type="button" role="tab" aria-controls="pills-calc" aria-selected="false"
+                            data-i18n="buttons.ete">Сквозной учет
                             топлива</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-warehouse-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-warehouse" type="button" role="tab" aria-controls="pills-warehouse"
-                            aria-selected="false">Склад</button>
+                            aria-selected="false" data-i18n="buttons.warehouse">Склад</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="pills-ete-accounting-tab" data-bs-toggle="pill"
                             data-bs-target="#pills-ete-accounting" type="button" role="tab"
-                            aria-controls="pills-ete-accounting" aria-selected="false">Управление транспортным
+                            aria-controls="pills-ete-accounting" aria-selected="false"
+                            data-i18n="buttons.tem">Управление транспортным
                             предприятием</button>
                     </li>
 
@@ -564,19 +584,22 @@
                         <div class="geograph__section_block col-md-4 col-12 d-md-block d-flex flex-wrap">
                             <div class="geograph__section_text">
                                 <p class="p-main">92 038</p>
-                                <p class="p-secondary">Топливных карт</p>
+                                <p class="p-secondary" data-i18n="geograph.section-1.s1.p">Топливных карт</p>
                             </div>
                             <div class="geograph__section_text">
                                 <p class="p-main">1 534</p>
-                                <p class="p-secondary">Топливораздаточного оборудования</p>
+                                <p class="p-secondary" data-i18n="geograph.section-1.s2.p">Топливораздаточного
+                                    оборудования</p>
                             </div>
                             <div class="geograph__section_text">
                                 <p class="p-main">101 478 468</p>
-                                <p class="p-secondary">Учтенных литров топлива в месяц</p>
+                                <p class="p-secondary" data-i18n="geograph.section-1.s3.p">Учтенных литров топлива в
+                                    месяц</p>
                             </div>
                             <div class="geograph__section_text">
                                 <p class="p-main">89</p>
-                                <p class="p-secondary">Зафиксированных несанкционированных сливов</p>
+                                <p class="p-secondary" data-i18n="geograph.section-1.s4.p">Зафиксированных
+                                    несанкционированных сливов</p>
                             </div>
                         </div>
                         <div class="geograph__section_block_img px-0 col-8 d-md-block d-none">
@@ -591,19 +614,19 @@
                         <div class="geograph__section_block col-md-4 col-12  d-md-block d-flex flex-wrap">
                             <div class="geograph__section_text">
                                 <p class="p-main">6 972</p>
-                                <p class="p-secondary">Объектов</p>
+                                <p class="p-secondary" data-i18n="geograph.section-2.s1.p">Объектов</p>
                             </div>
                             <div class="geograph__section_text">
                                 <p class="p-main">18 968 032</p>
-                                <p class="p-secondary">Пробег ТС в месяц</p>
+                                <p class="p-secondary" data-i18n="geograph.section-2.s2.p">Пробег ТС в месяц</p>
                             </div>
                             <div class="geograph__section_text">
                                 <p class="p-main">1 213 128</p>
-                                <p class="p-secondary">Литров топлива в месяц</p>
+                                <p class="p-secondary" data-i18n="geograph.section-2.s3.p">Литров топлива в месяц</p>
                             </div>
                             <div class="geograph__section_text">
                                 <p class="p-main">9 230</p>
-                                <p class="p-secondary">Количество заправок</p>
+                                <p class="p-secondary" data-i18n="geograph.section-2.s4.p">Количество заправок</p>
                             </div>
                         </div>
                         <div class="geograph__section_block_img px-0 col-8 d-md-block d-none">
@@ -626,7 +649,7 @@
                                 font-family: 'Raleway Bold', Arial, Helvetica, sans-serif; 
                                 font-weight: 700; 
                                 font-size:3rem;
-                                ">Скоро он будет везде</div>
+                                " data-i18n="geograph.section-3.p">Скоро он будет везде</div>
                             <img src="../images/earth-bg.webp" class="img-fluid" alt="Земля на рассвете»">
                         </div>
                     </div>
@@ -644,7 +667,7 @@
                                 font-family: 'Raleway Bold', Arial, Helvetica, sans-serif; 
                                 font-weight: 700; 
                                 font-size:3rem;
-                                ">Скоро он будет везде</div>
+                                " data-i18n="geograph.section-4.p">Скоро он будет везде</div>
                             <img src="../images/earth-bg.webp" class="img-fluid" alt="Земля на рассвете»">
                         </div>
                     </div>
@@ -662,7 +685,7 @@
                                 font-family: 'Raleway Bold', Arial, Helvetica, sans-serif; 
                                 font-weight: 700; 
                                 font-size:3rem;
-                                ">Скоро он будет везде</div>
+                                " data-i18n="geograph.section-5.p">Скоро он будет везде</div>
                             <img src="../images/earth-bg.webp" class="img-fluid" alt="Земля на рассвете»">
                         </div>
                     </div>
@@ -673,25 +696,28 @@
     </section>
     <section class="form__section">
         <div class="container">
-            <h2 class="text-white text-center">Оставьте свой телефон
+            <h2 class="text-white text-center" data-i18n="form.h2">Оставьте свой телефон
                 и получите консультацию</h2>
             <form action="" id="customer__clients">
                 <div class="form__section_inputs row gx-3 justify-content-center flex-md-row flex-column gy-md-0 gy-3">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Введите имя" name="name" id="name"
-                            required="required" aria-required="true" aria-label="Введите имя">
+                            required="required" aria-required="true" aria-label="Введите имя"
+                            data-i18n="[placeholder]form.input.placeholder">
                     </div>
                     <div class="input-group">
                         <input type="tel" placeholder="+7 999 999 99 99" class="form-control" name="tel" maxlength="12"
                             id="tel" required="required" aria-required="true">
                     </div>
-                    <button type="submit" class="btn btn-dark" name="submit" id="submit">Отправить</button>
+                    <button type="submit" class="btn btn-dark" name="submit" id="submit"
+                        data-i18n="form.submit">Отправить</button>
                 </div>
             </form>
-            <div class="form__section_agreement col-md-4 col-sm-6 col-12 mx-auto text-white text-center ">
-                Нажимая на кнопку, вы соглашаетесь
-                с <a href="javascript:void(0)" class="text-white" role="button" data-bs-toggle="modal"
-                    data-bs-target="#agreementModal">политикой конфиденциальности</a>
+            <div class="form__section_agreement col-md-4 col-sm-6 col-12 mx-auto text-white text-center"><span
+                    data-i18n="form.agreement"> Нажимая на кнопку, вы соглашаетесь
+                    с </span>
+                <a href="javascript:void(0)" class="text-white" role="button" data-bs-toggle="modal"
+                    data-bs-target="#agreementModal" data-i18n="form.link">политикой конфиденциальности</a>
             </div>
         </div>
     </section>
@@ -709,36 +735,38 @@
                 <div class="footer__section_links_main row justify-content-between">
                     <div class="block_text row col-md-6 col-sm-7 col-12">
                         <div class="block col-6">
-                            <p class="footer-mini-p">Офис</p>
-                            <p><a href="https://yandex.ru/maps/-/CDFkUFKf">195279, Россия, Санкт-Петербург, Шоссе
+                            <p class="footer-mini-p" data-i18n="footer.top.p">Офис</p>
+                            <p><a href="https://yandex.ru/maps/-/CDFkUFKf" data-i18n="footer.top.p1">195279, Россия,
+                                    Санкт-Петербург, Шоссе
                                     Революции, дом 69, литера А, офис 303.</a></p>
                         </div>
                         <div class="block col-6">
-                            <p class="footer-mini-p">График работы</p>
-                            <p>Пн-Пт — С 9:30 до 18:00</p>
-                            <p>Сб-Вс — Выходной</p>
+                            <p class="footer-mini-p" data-i18n="footer.top.p2">График работы</p>
+                            <p data-i18n="footer.top.p3">Пн-Пт — С 9:30 до 18:00</p>
+                            <p data-i18n="footer.top.p4">Сб-Вс — Выходной</p>
                         </div>
                     </div>
                     <div class="block_menu col-xl-2 col-md-4 col-sm-5 col-12 text-sm-end text-center">
                         <nav>
-                            <div> <a href="#main" class="footer-link">
+                            <div> <a href="#main" class="footer-link" data-i18n="nav.home">
                                     Главная
                                 </a></div>
                             <div>
-                                <a href="#services" class="footer-link">Сервисы</a>
+                                <a href="#services" class="footer-link" data-i18n="nav.services">Сервисы</a>
                             </div>
                             <div>
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown">
                                         <a class="footer-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                                            data-i18n="nav.doc.documentation">
                                             Документы
                                         </a>
                                         <ul class="dropdown-menu dropdown-menu-dark"
                                             aria-labelledby="navbarDarkDropdownMenuLink">
                                             <li class="d-none"><a class="dropdown-item" href="#">Сертификат.pdf</a></li>
-                                            <li><a class="dropdown-item"
-                                                    href="/files/НАЦИОНАЛЬНАЯ ПРЕМИЯ.pdf">Грамота.pdf</a></li>
+                                            <li><a class="dropdown-item" href="/files/НАЦИОНАЛЬНАЯ ПРЕМИЯ.pdf"
+                                                    data-i18n="nav.doc.sertificate">Грамота.pdf</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -751,10 +779,11 @@
                     <div class="logo col text-sm-start text-center mb-sm-0 mb-3"><img src="../images/icons/logo.svg"
                             alt="Логотип"></div>
                     <div class="tech_text col-md-5 col-sm-6 col-12 text-sm-end text-center">
-                        <p class="mb-0">© 2009 — 2024 ООО «Гарвекс Умные технологии»</p>
-                        <p class="mb-0">Все права защищены.</p>
+                        <p class="mb-0" data-i18n="footer.bottom.p">© 2009 — 2024 ООО «Гарвекс Умные технологии»</p>
+                        <p class="mb-0" data-i18n="footer.bottom.p1">Все права защищены.</p>
                         <p class="mb-0"><a href="javascript:void(0)" class="" role="button" data-bs-toggle="modal"
-                                data-bs-target="#agreementModal">Соглашение об обработке персональных данных</a></p>
+                                data-bs-target="#agreementModal" data-i18n="footer.bottom.p2">Соглашение об обработке
+                                персональных данных</a></p>
                     </div>
                 </div>
             </div>
@@ -784,10 +813,15 @@
                         посетившего Сайт) с настоящей Политикой и указанными в ней условиями обработки его персональной
                         информации; в случае несогласия с этими условиями Пользователь должен воздержаться от посещения
                         Сайта, использования его информации и сервисов и покинуть Сайт.
-
+                    </p>
+                    <p>
                         1. ОБЩИЕ ПОЛОЖЕНИЯ
-
+                    </p>
+                    <p>
                         1.1. В рамках настоящей Политики под персональной информацией Пользователя понимаются:
+
+                    </p>
+                    <p>
                         1.1.1. Информация, которую Пользователь предоставляет о себе самостоятельно при регистрации на
                         Сайте (создании учётной записи) или в процессе использования Сайта, включая данные Пользователя,
                         в том числе:
@@ -798,6 +832,9 @@
                         - ссылки на профили (страницы) в социальных сетях;
                         - изображение;
                         - иная информация, предоставляемая Пользователем посредством Сайта;
+                    </p>
+                    <p>
+
                         1.1.2. Данные, которые автоматически передаются на Сайт в процессе их использования с помощью
                         установленного на устройстве Пользователя программного обеспечения, в том числе IP-адрес, данные
                         файлов cookie, информация о браузере Пользователя (или иной программе, с помощью которой
@@ -805,62 +842,114 @@
                         обеспечения, используемых Пользователем, дата и время доступа к сайту, адреса запрашиваемых
                         страниц Сайта и иная подобная информация. Данная информация не относится к персональным данным
                         так как не позволяет идентифицировать Пользователя.
+                    </p>
+                    <p>
                         1.1.3. Иная информация о Пользователе, которую последний предоставляет при работе с Сайтом или
                         использовании информации с Сайта.
+                    </p>
+                    <p>
                         1.1.4. Настоящая Политика конфиденциальности применяется только к Сайту, не контролирует и не
                         несёт ответственности за сайты третьих лиц, на которые Пользователь может перейти по ссылкам,
                         доступным на Сайте.
-
+                    </p>
+                    <p>
                         2. ЦЕЛИ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЕЙ
 
+                    </p>
+                    <p>
                         2.1. Сайт собирает и хранит только ту персональную информацию, которая необходима для и
                         исполнения соглашений и договоров с Пользователем.
+                    </p>
+                    <p>
                         2.2. Персональную информацию Пользователя Сайт обрабатывает в следующих целях:
+
+                    </p>
+                    <p>
                         2.2.1. Идентификации Пользователя, зарегистрированного на Сайте, для возможности получения
                         Пользователем доступа к информации.
+                    </p>
+                    <p>
                         2.2.2. Предоставления Пользователю доступа к персонализированным ресурсам Сайта.
+
+                    </p>
+                    <p>
                         2.2.3. Установления с Пользователем обратной связи, включая направление уведомлений, запросов,
                         касающихся использования Сайта, оказания услуг, обработку запросов и заявок от Пользователя.
+                    </p>
+                    <p>
+
                         2.2.4. Определения места нахождения Пользователя для обеспечения безопасности, предотвращения
                         мошенничества.
+                    </p>
+                    <p>
                         2.2.5. Подтверждения достоверности и полноты персональных данных, предоставленных Пользователем.
+
+                    </p>
+                    <p>
                         2.2.6. Создания учётной записи Пользователя.
+
+                    </p>
+                    <p>
                         2.2.7. Предоставления Пользователю эффективной клиентской и технической поддержки при
                         возникновении проблем, связанных с использованием Сайта.
+                    </p>
+                    <p>
                         2.2.8. Информирование Пользователя.
 
-
+                    </p>
+                    <p>
                         3. УСЛОВИЯ ОБРАБОТКИ ПЕРСОНАЛЬНОЙ ИНФОРМАЦИИ ПОЛЬЗОВАТЕЛЕЙ
                         И ЕЕ ПЕРЕДАЧИ ТРЕТЬИМ ЛИЦАМ
+                    </p>
+                    <p>
                         3.1. В отношении персональной информации Пользователя сохраняется её конфиденциальность, кроме
                         случаев добровольного предоставления Пользователем информации о себе для общего доступа
                         неограниченному кругу лиц.
+                    </p>
+                    <p>
                         3.2. Сайт вправе передать персональную информацию Пользователя третьим лицам в следующих
                         случаях:
+                    </p>
+                    <p>
+
                         3.2.1. Передача необходима для использования для исполнения определённого соглашения или
                         договора с Пользователем.
+                    </p>
+                    <p>
                         3.2.2. Передача предусмотрена российским или иным применимым законодательством в рамках
                         установленной законодательством процедуры.
+                    </p>
+                    <p>
                         3.2.3. В случае продажи Сайта к приобретателю переходят все обязательства по соблюдению условий
                         настоящей Политики применительно к полученной им персональной информации.
+                    </p>
+                    <p>
                         3.3. Обработка персональных данных Пользователя осуществляется без ограничения срока любым
                         законным способом, в том числе в информационных системах персональных данных с использованием
                         средств автоматизации или без использования таких средств. Обработка персональных данных
                         Пользователей осуществляется в соответствии с Федеральным законом от 27.07.2006 № 152-ФЗ "О
                         персональных данных".
+                    </p>
+                    <p>
                         3.4. Сайт обрабатывает персональные данные, техническую информацию и иную информацию о
                         Пользователе в течение всего срока действия соглашений, заключённых между Пользователем и
                         Администратором с целью их исполнения.
+                    </p>
+                    <p>
                         3.5. Настоящим Пользователь выражает согласие на использование загруженных на Сайт изображений
                         (в том числе изображения Пользователя), а также информации загруженной им при использовании
                         Сайта, в том числе на ресурсах третьих лиц. Пользователь имеет право в любой момент отозвать
                         своё согласие путём направления уведомления по адресу места нахождения Администратора.
+                    </p>
+                    <p>
                         3.6. Обработка персональных данных Пользователя означает запись, систематизацию, накопление,
                         хранение, уточнение (обновление, изменение), извлечение, использование, передачу
                         (распространение, предоставление, доступ), обезличивание, блокирование, удаление, уничтожение
                         персональных данных Пользователя, не подпадающих под специальные категории, на обработку которых
                         Администратору, согласно действующему законодательству Российской Федерации, требуется
                         письменное согласие Пользователя.
+                    </p>
+                    <p>
                         3.7. Пользователь даёт согласие Администратору на обработку своих персональных данных,
                         предоставляемых при использовании Сайта, в том числе на передачу таких персональных данных
                         третьим лицам во исполнение соглашений между Администратором и Пользователем, с целью исполнения
@@ -868,90 +957,152 @@
                         услугах, оставленных Пользователями, в различных источниках информации, а также для реализации
                         партнёрских программ с такими третьими лицами, даже когда такая передача осуществляется на
                         территорию иных государств.
+                    </p>
+                    <p>
                         3.8. Пользователь даёт согласие на получение информации и рекламных материалов от
                         Администратора, либо от иных лиц по поручению Администратора, на адрес электронной почты и
                         контактный телефон (в том числе путём путём обзвона и направления сообщений), указанные
                         Пользователем при регистрации на Сайте. Пользователь вправе в любое время отказаться от
                         получения таких материалов.
+                    </p>
+                    <p>
                         3.9. Обработка персональных данных Пользователя производится Администратором с использованием
                         баз данных на территории Российской Федерации, как с использованием средств автоматизации, так и
                         без такового.
+                    </p>
+                    <p>
                         3.10. При утрате или разглашении персональных данных Администратор информирует Пользователя об
                         утрате или разглашении персональных данных.
+                    </p>
+                    <p>
                         3.11. Администратор принимает необходимые организационные и технические меры для защиты
                         персональной информации Пользователя от неправомерного или случайного доступа, уничтожения,
                         изменения, блокирования, копирования, распространения, а также от иных неправомерных действий
                         третьих лиц.
+                    </p>
+                    <p>
                         3.12. Администратор совместно с Пользователем принимает все необходимые меры по предотвращению
                         убытков или иных отрицательных последствий, вызванных утратой или разглашением персональных
                         данных Пользователя.
-                        3.14. Третьи лица, могут использовать файлы cookie, веб-маяки и другие технологии хранения
+                    </p>
+                    <p>
+                        3.13. Третьи лица, могут использовать файлы cookie, веб-маяки и другие технологии хранения
                         данных для сбора или получения информации с Сайта и использовать эту информацию для сбора
                         статистических данных, измерения и таргетинга рекламы. Отключение Пользователем файлов cookie
                         блокирует данную возможность.
-                        3.13. Отключение Пользователем файлов cookie при использовании Сайта может повлечь невозможность
+                    </p>
+                    <p>
+                        3.14. Отключение Пользователем файлов cookie при использовании Сайта может повлечь невозможность
                         доступа к частям Сайта, требующим авторизации.
-
-
-
+                    </p>
+                    <p>
                         4. ОБЯЗАТЕЛЬСТВА СТОРОН
 
+                    </p>
+                    <p>
                         4.1. Пользователь обязан:
+
+                    </p>
+                    <p>
                         4.1.1. Предоставить информацию и персональную информацию, необходимую для пользования Сайтом.
+
+                    </p>
+                    <p>
                         4.1.2. Обновлять, дополнять предоставленную информацию о персональных данных в случае их
                         изменения.
+                    </p>
+                    <p>
                         4.2. Администратор обязан:
+
+                    </p>
+                    <p>
                         4.2.1. Использовать полученную информацию исключительно для целей, указанных в настоящей
                         Политике конфиденциальности.
+                    </p>
+                    <p>
                         4.2.2. Обеспечить хранение конфиденциальной информации в тайне, не разглашать без
                         предварительного письменного разрешения Пользователя, а также не осуществлять продажу, обмен,
                         опубликование либо разглашение иными возможными способами переданных персональных данных
                         Пользователя, за исключением предусмотренных настоящей Политикой конфиденциальности.
+                    </p>
+                    <p>
                         4.2.3. Принимать меры предосторожности для защиты конфиденциальности персональных данных
                         Пользователя согласно порядку, обычно используемому для защиты такого рода информации в
                         существующем деловом обороте.
+                    </p>
+                    <p>
                         4.2.4. Осуществить блокирование и удаление персональных данных, относящихся к соответствующему
                         Пользователю, с момента обращения или запроса Пользователя или его законного представителя либо
                         уполномоченного органа по защите прав субъектов персональных данных на период проверки в случае
                         выявления недостоверных персональных данных или неправомерных действий.
+                    </p>
+                    <p>
                         4.2.5. Отвечать на запросы Пользователя, поступившие на электронный почтовый адрес
                         Администратора, или через форму обратной связи Сайта не позднее, чем в течение 30 (тридцати)
                         календарных дней с момента поступления.
+                    </p>
+                    <p>
                         4.2.6. Отвечать на юридические обращения Пользователя в течение 15 (пятнадцати) календарных дней
                         с момента их поступления.
-
+                    </p>
+                    <p>
                         5. ОТВЕТСТВЕННОСТЬ СТОРОН
+
+                    </p>
+                    <p>
 
                         5.1. Администратор, не исполнивший свои обязательства, несёт ответственность за убытки,
                         понесённые Пользователем в связи с неправомерным использованием персональных данных, в
                         соответствии с законодательством Российской Федерации.
+                    </p>
+                    <p>
                         5.2. В случае утраты или разглашения конфиденциальной информации Администратор не несёт
                         ответственности, если данная конфиденциальная информация:
+                    </p>
+                    <p>
                         5.2.1. Стала публичным достоянием до её утраты или разглашения.
+
+                    </p>
+                    <p>
                         5.2.2. Была получена от третьей стороны до момента её получения Администрацией Сайта.
+
+                    </p>
+                    <p>
                         5.2.3. Была разглашена с согласия Пользователя.
 
+                    </p>
+                    <p>
                         6. РАЗРЕШЕНИЕ СПОРОВ
 
+                    </p>
+                    <p>
                         6.1. До обращения в суд с иском по спорам, возникающим из отношений между Пользователем и
                         Администрацией, обязательным является предъявление претензии (письменного предложения о
                         добровольном урегулировании спора).
+                    </p>
+                    <p>
                         6.2. Получатель претензии в течение 15 (пятнадцати) календарных дней со дня получения претензии
                         письменно уведомляет заявителя претензии о результатах рассмотрения претензии.
+                    </p>
+                    <p>
                         6.3. При недостижении соглашения спор будет передан на рассмотрение в суд в соответствии с
                         действующим законодательством Российской Федерации.
+                    </p>
+                    <p>
                         6.4. К настоящей Политике конфиденциальности и отношениям между Пользователем и Администрацией
                         Сайта применяется действующее законодательство Российской Федерации.
-
+                    </p>
+                    <p>
                         7. ДОПОЛНИТЕЛЬНЫЕ УСЛОВИЯ
 
+                    </p>
+                    <p>
                         7.1. Администратор вправе вносить изменения в настоящую Политику конфиденциальности без согласия
                         Пользователя. При внесении изменений, Администратор информирует Пользователя по электронному
                         почтовому адресу, путём предоставления ссылки на новую редакцию Политики.
-                        7.2. Новая Политика конфиденциальности вступает в силу с момента её размещения на Сайте, если
-                        иное не предусмотрено новой редакцией Политики конфиденциальности.
-
                     </p>
+                    <p> 7.2. Новая Политика конфиденциальности вступает в силу с момента её размещения на Сайте, если
+                        иное не предусмотрено новой редакцией Политики конфиденциальности.</p>
                 </div>
             </div>
         </div>
@@ -1103,6 +1254,6 @@
         }
     </script>
 
-<script defer src="../main.2a55f3394db0634ede92.js"></script></body>
+<script defer src="../main.cf877d3d0afe02fa0846.js"></script></body>
 
 </html>

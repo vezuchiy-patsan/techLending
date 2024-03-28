@@ -1,3 +1,153 @@
 {
+    "nav": {
+        "home": "Home",
+        "services": "About",
+        "doc": {
+            "documentation": "Documentation",
+            "sertificate": "Certificate.pdf"
+        },
+        "contact": "Contacts",
+        "login": {
+            "service": "Services",
+            "azs": "Login to \"PetrolStation-Online\"",
+            "mon": "Login to \"Transport Monitoring\""
+        },
+        "mobile-nav": {
+            "adr": "195279, Russia, St. Petersburg, Revolution Highway, 69, Liter A, office 303"
+        }
+    },
+    "head": {
+        "h1": "Cloud services",
+        "p": "Next level of fuel, transport, enterprise management"
+    },
+    "stat": {
+        "customer": "Customers",
+        "transport": "Transport vehicles",
+        "fuel": "Fuel dispensers",
+        "refils": "Refills"
+    },
+    "buttons": {
+        "azs": "Petrol Station-Online",
+        "mon": "Transport monitoring",
+        "ete": "End-to-end fuel accounting",
+        "warehouse": "Warehouse",
+        "tem" : "Transport Enterprise Management"
     
+    },
+    "services": {
+        "h2": "Services",
+        "section-1": {
+            "h": "Petrol Station-Online",
+            "p": "Service \"Petrol Station-Online\" provides control and accounting of fuel at the enterprise. Our solution is based on the data fixation from the equipment, its further uploading, reporting and remote management of the fuel dispensing system. This detects unauthorised fuel discharges, making the movement of fuel at the enterprise centralised and transparent. The implementation of the \"Petrol Station-Online\" service leads to a reduction of the company's expenses on fuel up to 30%.",
+            "price": "— from 1875 rubles"
+        },
+        "section-2": {
+            "h": "Transport monitoring",
+            "p": "Implementation of a transport monitoring system is a modern way to improve the efficiency of the fleet. Irrational use of vehicles, fuel theft and unscrupulous performance of labour duties by employees are problems faced by company managers without the use of monitoring. Keep track of routes, study the history of movements, control fuel consumption, engine speed, operating hours, vehicle speed and many other parameters. Garvex solutions provide complete fleet control, optimise your costs and improve driver discipline."
+        },
+        "section-3": {
+            "h": "Warehouse",
+            "p": "Warehouse is a service for storing and processing data on goods, raw materials and financial resources. All operations related to the storage and movement of goods are recorded here, which makes it possible to quickly clarify the location of goods, their quantity and total cost. The system helps to streamline and reduce the time required to prepare documents through the implementation of electronic document management, and simplifies the process of acceptance, movement and disposal of goods from the warehouse."
+        },
+        "section-4": {
+            "h": "End-to-end fuel accounting",
+            "p": "At many enterprises, the chain of fuel movement is a complex and extensive infrastructure, which complicates control and management, and leads to serious financial losses - from 5% to 30% of the total cost of purchased fuel. The solution to this problem is the use of an end-to-end fuel accounting system that promptly collects data on its movement from various sources, processes and analyses it, generating detailed reports and analytics. This will help you effectively control costs, optimise logistics and make management decisions. Avoid unnecessary expenses and make fuel management at your enterprise transparent and efficient!"
+        },
+        "section-5": {
+            "h": "Transport Enterprise Management (TEM)",
+            "p": "The transport enterprise management system combines all services for the automatisation and digitalisation of core business processes. This allows the manager to remotely control the company, optimise planning, improve fleet efficiency, reduce staff and company costs, and automate all business processes from ordering to delivery of goods to the customer."
+        }
+    },
+    "working": {
+        "p": "Who we work with",
+        "h2": "Implement our solutions in the following industries:",
+        "modals": {
+            "section-1": {
+                "h": "Agricultural sector",
+                "p": "Services provide accurate tracking of the location and routes of agricultural equipment, improving utilisation and simplifying work planning. They also help to efficiently manage fuel consumption by detecting leaks, preventing unauthorised use and optimising costs."
+            },
+            "section-2": {
+                "h": "Fuel industry",
+                "p": "Optimising fuel management improves the overall efficiency of fuel industry companies. Services track fuel consumption and distribution at various stages of transportation, reducing the risks of errors and theft. This optimises the use of fuel reserves and ensures prompt response to emergency situations. Analytical reports based on service data provide valuable information for making reasoned decisions in planning, procurement and logistics optimisation."
+            },
+            "section-3": {
+                "h": "Transport industry",
+                "p": "The company's services provide continuous tracking of vehicle locations and trips, improving route planning, reducing road time and increasing the overall efficiency of logistics processes. In addition, fuel control and accounting services prevent unauthorised discharges and provide accurate monitoring of fuel consumption, facilitating fuel cost optimisation and green driving."
+            },
+            "section-4": {
+                "h": "Road construction",
+                "p": "We provide control over the location and routes of specialised vehicles for accurate logistics planning at the construction site. Fuel management systems help to effectively manage fuel costs during road works, minimising expenses and optimising the use of resources in the construction process."
+            }
+        }
+    },
+    "partners": {
+        "p": "Customers",
+        "h2": "Our partners"
+    },
+    "geograph": {
+        "h2": "Geography of software services",
+        "section-1": {
+            "s1": {
+                "p": "Fuel cards"
+            },
+            "s2": {
+                "p": "Fuel-dispensing equipment"
+            },
+            "s3": {
+                "p": "Accounted litres of fuel per month"
+            },
+            "s4": {
+                "p": "Unauthorised discharges recorded"
+            }
+        },
+        "section-2": {
+            "s1": {
+                "p": "Objects"
+            },
+            "s2": {
+                "p": "Litres of fuel per month"
+            },
+            "s3": {
+                "p": "Exceeded speeds recorded"
+            },
+            "s4": {
+                "p": "Number of fills"
+            }
+        },
+        "section-3": {
+            "p": "In the process of developing"
+        },
+        "section-4": {
+            "p": "It will be everywhere soon!"
+        },
+        "section-5": {
+            "p": "Writing the code"
+        }
+    },
+    "form": {
+        "h2": "Leave your phone number and get a consultation",
+        "input": {
+            "placeholder": "Enter your name"
+        },
+        "submit": "Send",
+        "agreement": "By clicking on the button, you agree to our",
+        "link": "privacy policy"
+    },
+    "footer": {
+        "top": {
+            "p": "Office",
+            "p1": "195279, Russia, St. Petersburg, Revolution Highway, 69, Liter A, office 303",
+            "p2": "Work schedule",
+            "p3": "Mon-Fri — from 9:30 a.m. to 6:00 p.m.",
+            "p4": "Sat-Fri — Day off"
+        },
+        "bottom": {
+            "p": "© 2009 - 2024 Garvex Smart Technologies Ltd.",
+            "p1": "All rights reserved.",
+            "p2": "Agreement on personal data processing"
+        }
+    },
+    "agreement": {
+        
+    }
 }
