@@ -17,7 +17,7 @@ if (url.includes('/en/')) {
             ns: 'users',
             defaultNS: 'users',
             fallbackNS: false,
-            debug: true,
+            debug: false,
             backend: {
                 loadPath: '/i18n/{{lng}}/{{ns}}.json',
             },
