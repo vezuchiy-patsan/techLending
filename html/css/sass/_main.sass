@@ -1,6 +1,5 @@
 @import '_valurables'
 
-
 body
     margin: 0 auto
     padding: 0
@@ -167,11 +166,13 @@ section
                         background-color: rgba(255, 255, 255, 0.28)
 
         a.btn:not(.offcanvas_d)
-            font-size: 0.75rem
+            font-size: 0.875rem
             font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
             font-weight: 600
             color: var(--bs-primary)
             line-height: 24px
+            @media screen and (min-width: $media-xs)
+                font-size: 1rem
             @media screen and (max-width: $media-lg-991)
                 font-size: 0.875rem
                 color: white !important
@@ -248,8 +249,9 @@ section
                 font:
                     family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                     weight: 600
-                    size: 0.75rem
-
+                    size: 0.8125rem
+                @media screen and (min-width: $media-xs)
+                    font-size: 0.875rem
                 &.active
                     color: var(--bs-primary)
                     border-color: var(--bs-primary)
@@ -283,6 +285,8 @@ section
                     margin-top: 20x
             p
                 font-size: 0.875rem
+                @media screen and (min-width: $media-xs)
+                    font-size: 1.125rem
                 @media screen and (max-width: $media-md)
                     font-size: 0.75rem
     &.industry__services
@@ -380,18 +384,20 @@ section
                 width: 900px
             li:not(:last-child)
                 margin-right: 0.75rem
-                margin-bottom: 0.75rem
+                // margin-bottom: 0.75rem
             button
                 padding: 14.5px 16px
                 border-radius: 35px
                 border: 1px solid #E0E0E0
                 background-color: rgba(255, 255, 255, 0.1)
                 color: #FFF
+                height: 100%
                 font:
                     family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                     weight: 600
-                    size: 0.75rem
-
+                    size: 0.8125rem
+                @media screen and (min-width: $media-xs)
+                    font-size: 0.875rem
                 &.active
                     color: white
                     border-color: var(--bs-primary)
@@ -399,6 +405,8 @@ section
             padding: 57px 0 57px 71px
             background-color: rgba(255, 255, 255, 0.1)
             border-radius: 30px 0 0 30px
+            @media screen and ( min-width: $media-xs )
+                height: 450px
             @media screen and ( max-width: $media-md-768 )
                 padding-right: 57px
                 border-radius: 30px
@@ -427,18 +435,25 @@ section
                             weight: 600
                             size: 1.5rem
                         line-height: 28.8px
+                        @media screen and ( min-width: $media-xs )
+                            font-size: 1.875rem
                     &.p-secondary
                         font:
                             family: "Raleway Regular", Arial, Helvetica, sans-serif
                             weight: 400
                             size: 0.75rem
                         color: #BFBFBF
+                        @media screen and ( min-width: $media-xs )
+                            font-size: 1rem
         .tab-pane
             &:nth-child(n+3)
                 .geograph__section_block_img
                     max-height: 397px
                     overflow: hidden
                     border-radius: 30px
+                    @media screen and ( min-width: $media-xs )
+                        max-height: 450px
+                        height: 450px
                     .position-absolute
                         @media screen and ( max-width: $media-sm )
                             top: 35% !important
@@ -472,10 +487,16 @@ section
             input
                 border-radius: 35px
                 padding: 16px 20px
+                @media screen and ( min-width: $media-xs )
+                    padding: 10px 15px
+                    font-size: 18px
         button
             padding: 16px 20px
             width: 20%
             border-radius: 35px
+            @media screen and ( min-width: $media-xs )
+                padding: 10px 15px
+                font-size: 18px
             @media screen and (max-width: $media-md-768)
                 width: 100%
         h2

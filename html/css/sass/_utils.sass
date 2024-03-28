@@ -10,7 +10,7 @@ h1
     &.extra-h
         font-size: 5.25rem
         line-height: 100px
-        text-transform: uppercase
+        text-transform: uppercase            
         @media screen and (max-width: $media-md)
             font-size: 2.75rem  
             line-height: 52.8px
@@ -57,16 +57,20 @@ nav
     ul
         li
             .nav-link
-                font-size: 0.75rem
+                font-size: 0.875rem
                 font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                 font-weight: 600
+                @media screen and (min-width: $media-xs)
+                    font-size: 1rem
                 @media screen and (max-width: $media-lg-991)
                     font-size: 1.5rem
             .dropdown-item
-                font-size: 0.75rem
+                font-size: 0.875rem
                 font-family: "Raleway Regular", Arial, Helvetica, sans-serif
                 font-weight: 400
                 text-decoration-line: underline
+                @media screen and (min-width: $media-xs)
+                    font-size: 1rem
                 @media screen and (max-width: $media-lg-991)
                     padding: 0
                     margin-bottom: 16px
@@ -128,6 +132,8 @@ footer
             weight: 400
             size: 0.875rem
         color: white
+        @media screen and ( min-width: $media-xs )
+            font-size: 1rem
         &.footer-mini-p
             color: #A2A8AF
             margin-bottom: 12px
@@ -135,3 +141,5 @@ footer
         font-size: 1.5rem
         font-family: "Raleway Regular", Arial, Helvetica, sans-serif
         font-weight: 400
+        @media screen and ( min-width: $media-xs )
+            font-size: 1.625rem
