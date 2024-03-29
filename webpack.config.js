@@ -1,6 +1,7 @@
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const path = require('path');
 
 module.exports = {
@@ -8,7 +9,7 @@ module.exports = {
     entry: path.resolve(__dirname, 'html/js/'),
     output: {
         path: path.resolve(__dirname, 'html'),
-        filename: '[name].[contenthash].js',
+        filename: '[name].js',
         publicPath: '../'
     },
     watch: true,
@@ -19,12 +20,14 @@ module.exports = {
                 '!js/**/*.js', // Исключает JS файлы в папке html/js
             ],
         }),
+
         new HtmlWebpackPlugin({
             template: 'html/index.html', // Укажите путь к вашему HTML файлу
             filename: 'ru/index.html',
             title: 'Гарвекс умные технологии',
             description: '«Гарвекс «Умные Технологии». Следующий уровень управления топливом, транспортом и предприятием.',
             inject: 'body', // Это автоматически добавит скрипты в ваш HTML
+            hash: true,
         }),
         new HtmlWebpackPlugin({
             template: 'html/index.html', // Укажите путь к вашему HTML файлу
@@ -32,9 +35,8 @@ module.exports = {
             title: 'Garvex Smart Technologies',
             description: 'Garvex Smart Technologies. The next level of fuel, transport and enterprise management.',
             inject: 'body', // Это автоматически добавит скрипты в ваш HTML
+            hash: true,
         }),
 
-
-
-    ],
+    ]
 };

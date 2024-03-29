@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <title>
         <%= htmlWebpackPlugin.options.title %>
     </title>
     <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/css/style.css?v=12">
+    <link rel="stylesheet" href="../css/css/style.css?v=12111">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!--  google-translate -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> -->
@@ -34,6 +37,17 @@
 </head>
 
 <body class="bg-secondary">
+    <div class="loading">
+        <div class="loading-text">
+            <span class="loading-text-words">L</span>
+            <span class="loading-text-words">O</span>
+            <span class="loading-text-words">A</span>
+            <span class="loading-text-words">D</span>
+            <span class="loading-text-words">I</span>
+            <span class="loading-text-words">N</span>
+            <span class="loading-text-words">G</span>
+        </div>
+    </div>
     <section class="head__section" id="main">
         <nav class="navbar navbar-expand-lg" id="menu">
             <div class="container-fluid">
@@ -80,7 +94,7 @@
                                 <a class="nav-link" href="#contacts" data-i18n="nav.contact">Контакты</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <div class="">
                                 <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false" id="lang">
@@ -92,9 +106,54 @@
                                     </li>
                                 </ul>
                             </div>
-                        </li>
+                        </li> -->
+                        <!-- <li class="nav-item  d-lg-none d-block">
+                            <div class="select col-auto">
+                                <div class="select__header d-flex flex-nowrap">
+                                    <span class="select__current" id="lang">RU</span>
+                                    <div class="select__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                            class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="select__body">
+                                    <a href="../ru/">
+                                        <div class="select__item" data-lang="ru">ru</div>
+                                    </a>
+                                    <a href="../en/">
+                                        <div class="select__item" data-lang="en">en</div>
+                                    </a>
+        
+                                </div>
+                            </div>
+                        </li> -->
                     </ul>
-                    <div class="row direction-column offcanvas__section">
+
+                    <div class="row flex-lg-nowrap offcanvas__section align-items-center">
+                        <div class="select col-auto d-lg-block d-none">
+                            <div class="select__header d-flex flex-nowrap">
+                                <span class="select__current" id="lang">RU</span>
+                                <div class="select__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+                                        class="bi bi-arrow-down-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="select__body">
+                                <a href="../ru/">
+                                    <div class="select__item" data-lang="ru">ru</div>
+                                </a>
+                                <a href="../en/">
+                                    <div class="select__item" data-lang="en">en</div>
+                                </a>
+
+                            </div>
+                        </div>             
                         <div class="offcanvas_d col-10 row direction-column">
                             <p data-i18n="nav.mobile-nav.adr">г. Санкт-Петербург,
                                 Шоссе Революции, дом 69, литера А, офис 303.</p>
@@ -163,7 +222,7 @@
                 </div>
                 <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
-                        <p>> 12 млн</p>
+                        <p data-i18n="stat.ml">> 12 млн</p>
                     </div>
                     <p id="services" data-i18n="stat.refils">Заправок</p>
                 </div>
@@ -1216,22 +1275,19 @@
         menuScroll();
 
         // Получаем текущий URL
-        var currentUrl = window.location.href;
+        const currentUrl = window.location.href;
 
         // Получаем элемент div, в который нужно изменить текст
-        var myDiv = document.getElementById('lang');
-        var ru = document.getElementById('ru');
-        var en = document.getElementById('en');
+        let myDiv = document.getElementById('lang');
+        let list_lang = document.querySelectorAll('.select .select__item');
 
         // Проверяем путь URL и изменяем текст в div
         if (currentUrl.includes('/ru/')) {
-            myDiv.textContent = 'Русский';
-            ru.style.display = 'none';
-
+            myDiv.textContent = 'RU';
+            Array.from(list_lang).find(el => el.getAttribute('data-lang') === 'ru').classList.add("d-none");
         } else if (currentUrl.includes('/en/')) {
-            myDiv.textContent = 'English';
-            en.style.display = 'none';
-
+            myDiv.textContent = 'EN';
+            Array.from(list_lang).find(el => el.getAttribute('data-lang') === 'en').classList.add("d-none");
         } else {
             myDiv.textContent = 'Язык'
         }

@@ -35,7 +35,12 @@ if (url.includes('/en/')) {
         });
 }
 
+var element = document.querySelector(".loading-text-words:last-child");
+element.addEventListener("animationiteration", function () {  
+    const loader = document.querySelector(".loading");
+    loader.classList.add("loader_none")
 
+}, false);
 
 // export { loci18n as loci18n, i18next as i18n };
 

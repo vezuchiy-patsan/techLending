@@ -1,5 +1,68 @@
 @import '_valurables'
 
+@keyframes arrow_lang 
+  0%
+    transform: rotate(0deg) translateY(0px)
+
+  100%
+    transform: rotate(180deg) translateY(3px)
+@keyframes blur-text 
+  0% 
+    filter: blur(0px)
+  100% 
+    filter: blur(4px)
+@keyframes fadeOut
+ from 
+    opacity: 1
+    display: block
+ to 
+    opacity: 0
+    display: none
+
+.loader_none
+    display: none
+    animation: fadeOut 0.8s forwards
+
+@mixin position-center($text-align: center) 
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  margin: auto
+  text-align: $text-align
+
+
+.loading 
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: #000
+  z-index: 9999
+  opacity: 1
+
+
+.loading-text 
+  @include position-center
+  width: 100%
+  height: 100px
+  line-height: 100px
+  span 
+    display: inline-block
+    margin: 0 5px
+    color: #fff
+    @for $i from 0 through 6 
+      &:nth-child(#{$i + 1}) 
+        filter: blur(0px)
+        animation: blur-text 0.8s calc($i / 7)+s infinite linear alternate
+      
+    
+  
+
+
+
 body
     margin: 0 auto
     padding: 0
@@ -139,6 +202,44 @@ section
                             color: white
                         &:hover
                             color: var(--bs-primary)
+        .select
+            color: white
+            position: relative
+            .select__header
+                width: 40px
+                height: 30px
+                .select__icon
+                    width: 20px
+                    text-align: center
+                    transform: rotateZ(0deg) translateY(0px)
+                .select__current
+                    font-size: 14px
+                    font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                    font-weight: 600
+                    line-height: 28px
+            &:hover
+                .select__body
+                    display: block
+                .select__icon
+                    transform: rotateZ(180deg) translateY(3px)
+                    animation: arrow_lang 0.5s ease 0s 
+            .select__body
+                position: absolute
+                left: 12px
+                right: 0
+                display: none
+                top: 100%
+                a
+                    color: inherit
+                    text-decoration: auto
+                .select__item
+                    cursor: pointer
+                    font-size: 14px
+                    font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
+                    font-weight: 600
+                    text-transform: uppercase
+                    &:hover
+                        color: var(--bs-primary)
         #navbarOffcanvasLg
             @media screen and (max-width: $media-lg-991)
                 justify-content: space-between

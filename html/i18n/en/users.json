@@ -24,6 +24,7 @@
         "customer": "Customers",
         "transport": "Transport vehicles",
         "fuel": "Fuel dispensers",
+        "ml": "> 12 ml",
         "refils": "Refills"
     },
     "buttons": {

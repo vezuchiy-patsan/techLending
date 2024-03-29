@@ -156,3 +156,5 @@ function TranslateMutationObserver(word, isOrigin) {
 		});
 	}
 }
+
+export default TranslateMutationObserver;
