@@ -1,7 +1,7 @@
 {
     "nav": {
         "home": "Home",
-        "services": "About",
+        "services": "Services",
         "doc": {
             "documentation": "Documentation",
             "sertificate": "Certificate.pdf"
@@ -31,8 +31,7 @@
         "mon": "Transport monitoring",
         "ete": "End-to-end fuel accounting",
         "warehouse": "Warehouse",
-        "tem" : "Transport Enterprise Management"
-    
+        "tem": "Transport Enterprise Management"
     },
     "services": {
         "h2": "Services",
@@ -148,6 +147,68 @@
         }
     },
     "agreement": {
-        
+        "agree": "Agreement",
+        "privacy": "Privacy and Personal Data Processing Policy",
+        "p1": "This Privacy and Personal Data Processing Policy (hereinafter referred to as the Policy) applies to all information posted on this website on the Internet at: https://garvex.tech /, including a content management system (CMS) and an embedded database (hereinafter referred to as the Website). The Policy was developed by the Site Administrator (Administrator). Use of the Site's services and visiting its pages means the unconditional consent of the User (i.e. any person who visited the Site) with this Policy and the conditions for processing his personal information specified therein information; in case of disagreement with these terms, the User must refrain from visiting The Site, the use of its information and services and leave the Site.",
+        "p2": "1. GENERAL PROVISIONS",
+        "p3": "1.1. Within the framework of this Policy, the User's personal information is understood as:",
+        "p4": "1.1.1. Information that the User provides about himself/herself when registering on Website (account creation) or in the process of using the Site, including User data, including: - last name, first name, patronymic; - date of birth; - email address; - contact phone number; - links to social media profiles (pages); - image; - other information provided by the User through the Website;",
+        "p5": "1.1.2. Data that is automatically transmitted to the Site during their use using the software installed on the User's device, including the IP address, data cookies, information about the User's browser (or other program using which access to services is provided), technical specifications of the equipment and software the software used by the User, the date and time of access to the site, the addresses of the requested Site pages and other similar information. This information does not apply to personal data because it does not allow you to identify the User.",
+        "p6": "1.1.3. Other information about the User that the latter provides when working with the Site or using information from the Site.",
+        "p7": "1.1.4. This Privacy Policy applies only to the Site, does not control and does not is responsible for the websites of third parties to which the User can click on links, available on the Website.",
+        "p8": "2. PURPOSES OF PROCESSING USERS' PERSONAL INFORMATION",
+        "p9": "2.1. The Site collects and stores only the personal information that is necessary for and execution of agreements and contracts with the User.",
+        "p10": "2.2. The Site processes the User's personal information for the following purposes:",
+        "p11": "2.2.1. Identification of the User registered on the Site for the possibility of obtaining The user of access to information.",
+        "p12": "2.2.2. Providing the User with access to personalized Website resources.",
+        "p13": "2.2.3. Establishing feedback with the User, including sending notifications, requests, regarding the use of the Site, the provision of services, the processing of requests and requests from the User.",
+        "p14": "2.2.4. Determining the User's location to ensure safety, prevent fraud.",
+        "p15": "2.2.5. Confirmation of the accuracy and completeness of the personal data provided by the User.",
+        "p16": "2.2.6. Creating a User account.",
+        "p17": "2.2.7. Providing the User with effective customer and technical support in case of problems related to the use of the Site.",
+        "p18": "2.2.8. Informing the User.",
+        "p19": "3. CONDITIONS FOR PROCESSING USERS' PERSONAL INFORMATION AND ITS TRANSFER TO THIRD PARTIES",
+        "p20": "3.1. The confidentiality of the User's personal information is maintained, except for cases where the User voluntarily provides information about himself for public access to an unlimited number of people .",
+        "p21": "3.2. The Site has the right to transfer the User's personal information to third parties in the following cases cases:",
+        "p22": "3.2.1. The transfer is necessary for use to fulfill a certain agreement or agreement with the User.",
+        "p23": "3.2.2. The transfer is provided for by Russian or other applicable legislation within the framework of the procedure established by law.",
+        "p24": "3.2.3. In case of sale of the Site, all obligations to comply with the terms and conditions are transferred to the buyer this Policy applies to the personal information received by him.",
+        "p25": "3.3. The processing of the User's personal data is carried out without time limit in any way in a legal manner, including in personal data information systems using automation tools or without the use of such tools. Processing of personal data Users are carried out in accordance with Federal Law No. 152-FZ dated 07/27/2006 \"On personal data\".",
+        "p26": "3.4. The Website processes personal data, technical information and other information about The User during the entire term of the agreements concluded between the User and By the administrator for the purpose of their execution.",
+        "p27": "3.5. The User hereby agrees to use the images uploaded to the Site (including the User's image), as well as information uploaded by them when using The Site, including on the resources of third parties. The User has the right to withdraw at any time your consent by sending a notification to the address of the Administrator's location.",
+        "p28": "3.6. Processing of the User's personal data means recording, systematization, accumulation, storage, refinement (update, modification), extraction, use, transfer (distribution, provision, access), depersonalization, blocking, deletion, destruction personal data of the User that do not fall under special categories for the processing of which According to the current legislation of the Russian Federation, the Administrator is required to written consent of the User.",
+        "p29": "3.7. The User gives consent to the Administrator to process his personal data, provided when using the Site, including the transfer of such personal data to third parties in fulfillment of agreements between the Administrator and the User, in order to fulfill agreements with the User, including for posting reviews about services provided by the Administrator services left by Users, in various sources of information, as well as for implementation partnership programs with such third parties, even when such transfer is carried out on the territory of other states.",
+        "p30": "3.8. The User agrees to receive information and promotional materials from the Administrator, or from other persons on behalf of the Administrator, to the email address and contact phone number (including by calling and sending messages) specified By the User when registering on the Site. The User has the right to refuse to receive such materials at any time.",
+        "p31": "3.9. The processing of the User's personal data is carried out by the Administrator using databases on the territory of the Russian Federation, both with and without automation tools .",
+        "p32": "3.10. In case of loss or disclosure of personal data, the Administrator informs the User about loss or disclosure of personal data.",
+        "p33": "3.11. The Administrator takes the necessary organizational and technical measures to protect protection of the User's personal information from unauthorized or accidental access, destruction, modification, blocking, copying, distribution, as well as from other illegal actions third parties.",
+        "p34": "3.12. The Administrator, together with the User, takes all necessary measures to prevent losses or other negative consequences caused by the loss or disclosure of personal data User data.",
+        "p35": "3.13. Third parties may use cookies, web beacons and other storage technologies to collect or receive information from the Site and use this information to collect statistical data, measurement and targeting of advertising. Disabling cookies by the User blocks this feature.",
+        "p36": "3.14. Disabling cookies by the User when using the Site may result in the inability to access to parts of the Site that require authorization.",
+        "p37": "4. OBLIGATIONS OF THE PARTIES",
+        "p38": "4.1. The User is obliged to:",
+        "p39": "4.1.1. Provide information and personal information necessary to use the Site.",
+        "p40": "4.1.2. Update and supplement the provided information about personal data in case of their changes.",
+        "p41": "4.2. The Administrator is obliged to:",
+        "p42": "4.2.1. Use the information received exclusively for the purposes specified in this article The Privacy Policy.",
+        "p43": "4.2.2. Ensure that confidential information is kept confidential, not disclosed without prior written permission of the User, as well as not to sell, exchange, publish or disclose the transferred personal data in other possible ways The User, except as provided for in this Privacy Policy.",
+        "p44": "4.2.3. Take precautions to protect the confidentiality of personal data The User according to the procedure usually used to protect this kind of information in the existing business turnover.",
+        "p45": "4.2.4. To block and delete personal data related to the relevant To the User, from the moment of the request or request of the User or his legal representative, or the authorized body for the protection of the rights of personal data subjects for the period of verification in the case of identification of false personal data or illegal actions.",
+        "p46": "4.2.5. Respond to User requests received by e-mail The Administrator, or through the feedback form of the Site no later than within 30 (thirty) calendar days from the date of receipt.",
+        "p47": "4.2.6. Respond to the User's legal requests within 15 (fifteen) calendar days from the moment they were received.",
+        "p48": "5. RESPONSIBILITY OF THE PARTIES",
+        "p49": "5.1. The Administrator, who has not fulfilled his obligations, is responsible for losses, incurred by the User in connection with the misuse of personal data, in particular in accordance with the legislation of the Russian Federation.",
+        "p50": "5.2. In case of loss or disclosure of confidential information, the Administrator is not responsible liability if this confidential information:",
+        "p51": "5.2.1. Became public domain before its loss or disclosure.",
+        "p52": "5.2.2. It was received from a third party before it was received by the Site Administration.",
+        "p53": "5.2.3. It was disclosed with the User's consent.",
+        "p54": "6. DISPUTE RESOLUTION",
+        "p55": "6.1. Before filing a lawsuit on disputes arising from the relationship between the User and By the Administration, it is mandatory to submit a claim (a written proposal for voluntary settlement of the dispute).",
+        "p56": "6.2. The recipient of the claim within 15 (fifteen) calendar days from the date of receipt of the claim notifies the applicant of the claim in writing about the results of the claim review.",
+        "p57": "6.3. If an agreement is not reached, the dispute will be referred to the court in accordance with the current legislation of the Russian Federation.",
+        "p58": "6.4. To this Privacy Policy and the relationship between the User and the Administration The current legislation of the Russian Federation applies to the Site.",
+        "p59": "7. ADDITIONAL CONDITIONS",
+        "p60": "7.1. The Administrator has the right to make changes to this Privacy Policy without consent The user. When making changes, the Administrator informs the User by e-mail by providing a link to the new version of the Policy.",
+        "p61": "7.2. The new Privacy Policy comes into force from the moment it is posted on the Site if the new version of the Privacy Policy does not provide otherwise."
     }
 }
