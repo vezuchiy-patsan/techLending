@@ -153,7 +153,7 @@ nav ul li .dropdown-item {
   }
 }
 nav .drop__services {
-  width: 80%;
+  width: 81%;
 }
 nav .dropdown-menu-services {
   padding: 11.5px 21.5px;
@@ -187,8 +187,8 @@ nav .dropdown-menu-services:hover .dropdown_menu--animated {
 nav .dropdown-menu-services .dropdown_menu {
   position: absolute;
   top: 100%;
-  left: 0;
-  width: 100%;
+  left: 0px;
+  width: inherit;
   z-index: -1;
   background-color: white;
   border-top-left-radius: 0;
