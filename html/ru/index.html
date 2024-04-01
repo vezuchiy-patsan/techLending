@@ -133,15 +133,10 @@
                     </ul>
 
                     <div class="row flex-lg-nowrap offcanvas__section align-items-center">
-                        <div class="select col-auto d-lg-block d-none">
+                        <div class="select col-auto d-lg-block d-none lang-select">
                             <div class="select__header d-flex flex-nowrap">
                                 <span class="select__current" id="lang">RU</span>
-                                <div class="select__icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
-                                        class="bi bi-arrow-down-short" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd"
-                                            d="M8 4a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5A.5.5 0 0 1 8 4z" />
-                                    </svg>
+                                <div class="select__icon white__icon">
                                 </div>
                             </div>
                             <div class="select__body">
@@ -153,7 +148,7 @@
                                 </a>
 
                             </div>
-                        </div>             
+                        </div>
                         <div class="offcanvas_d col-10 row direction-column">
                             <p data-i18n="nav.mobile-nav.adr">г. Санкт-Петербург,
                                 Шоссе Революции, дом 69, литера А, офис 303.</p>
@@ -170,17 +165,20 @@
                             href="https://integrationtest.garveks.ru" data-i18n="nav.login.mon">Мониторинг
                             транспорта</a>
 
-                        <div class="btn-group d-lg-block d-none">
-                            <a type="button" class="btn text-primary btn-light bg-white rounded-5 dropdown-toggle"
-                                data-bs-toggle="dropdown" aria-expanded="false" data-i18n="nav.login.service">
-                                Вход в сервисы
-                            </a>
-                            <ul class="dropdown-menu ">
-                                <li class=""><a class="dropdown-item group" href="https://azs-online.ru"
-                                        data-i18n="nav.login.azs">АЗС-Онлайн</a>
+                        <div class="d-lg-block d-none select drop__services">
+                            <ul class="dropdown-menu-services mb-0">
+                                <li class="dropdown dropdown-services" data-i18n="nav.login.service">
+                                    Вход в сервисы
                                 </li>
-                                <li class=""><a class="dropdown-item group" href="https://integrationtest.garveks.ru"
-                                        data-i18n="nav.login.mon">Мониторинг транспорта</a></li>
+                                <div class="select__icon"></div>
+                                <ul class="dropdown_menu dropdown_menu--animated dropdown_menu-services">
+                                    <li class="dropdown_item-1"><a class="dropdown-item group"
+                                            href="https://azs-online.ru" data-i18n="nav.login.azs">АЗС-Онлайн</a>
+                                    </li>
+                                    <li class="dropdown_item-2"><a class="dropdown-item group"
+                                            href="https://integrationtest.garveks.ru"
+                                            data-i18n="nav.login.mon">Мониторинг транспорта</a></li>
+                                </ul>
                             </ul>
                         </div>
                     </div>
@@ -1293,6 +1291,6 @@
         }
     </script>
 
-<script defer src="../main.js?7ef5d761be182c9cc333"></script></body>
+<script defer src="../main.js?5abd9b5fe24d4f3c158d"></script></body>
 
 </html>

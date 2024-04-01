@@ -10,14 +10,14 @@ h1
     &.extra-h
         font-size: 5.25rem
         line-height: 100px
-        text-transform: uppercase            
+        text-transform: uppercase
         @media screen and (max-width: $media-md)
-            font-size: 2.75rem  
+            font-size: 2.75rem
             line-height: 52.8px
         @media screen and (max-width: $media-sm)
-            font-size: 1.75rem  
+            font-size: 1.75rem
             line-height: normal
-        
+
 h2
     font-family: "Raleway Bold", Arial, Helvetica, sans-serif
     font-weight: 700
@@ -46,7 +46,7 @@ input, button[type=submit]
     color: #071D43
     line-height: 28.8px
 .card-text-p-14-sm
-    @media screen and ( max-width: $media-sm )  
+    @media screen and ( max-width: $media-sm )
         font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
         font-weight: 600
         font-size: 0.875rem
@@ -81,7 +81,98 @@ nav
                 @media screen and (min-width: $media-lg-991)
                     &:not(.group)
                         color: white
+    .drop__services
+        width: 80%
+    .dropdown-menu-services
+        padding: 11.5px 21.5px
+        border-radius: 30px
+        color: var(--bs-primary)
+        background-color: white
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        position: relative
+        transition: 0.1s 0s ease-in-out forwards
+        &:hover
+            border-bottom-left-radius: 0
+            border-bottom-right-radius: 0
+            transition: 0.01s 0s ease-in-out forwards
+            .dropdown_menu--animated
+                display: block
+                z-index: 25
+        .dropdown_menu
+            position: absolute
+            top: 100%
+            left: 0
+            width: 100%
+            z-index: -1
+            background-color: white
+            border-top-left-radius: 0
+            border-top-right-radius: 0
+            padding: 0
+            li
+                display: none
+                opacity: 0
+                padding: 10px 20px
+                text-align: center
+                &:last-child
+                    &::after
+                        content: ""
+                        position: absolute
+                        bottom: -10px
+                        width: 100%
+                        left: 50%
+                        transform: translateX(-50%)
+                        border-left: 8px solid transparent
+                        border-right: 8px solid transparent
+                        border-top: 10px solid #fff
+                        border-bottom: 17px solid #fff
+                        border-radius: 50%
+                        z-index: -1
+                a
+                    color: var(--bs-primary)
+                    text-decoration: none
+                    white-space: normal
+                    &:hover
+                        color: #1a3085
 
+        li
+            list-style-type: none
+        .dropdown_menu--animated
+            display: none
+            li
+                display: block
+                opacity: 1
+        .dropdown_menu-services
+            animation: rotateMenu 400ms ease-in-out forwards
+            transform-origin: top center
+    &.scroll
+        .dropdown-menu-services
+            .dropdown_menu
+                box-shadow: 0px 20px 20px 0px rgba(34, 60, 80, 0.2)
+                li
+                    &:last-child
+                        &::after
+                            box-shadow: 0px 20px 20px 0px rgba(34, 60, 80, 0.2)
+
+@keyframes rotateMenu
+    0%
+        transform: rotateX(-90deg)
+
+    70%
+        transform: rotateX(20deg)
+
+    100%
+        transform: rotateX(0deg)
+.select__icon
+    background: url("../../images/arrows/arrow_dropdown.svg") no-repeat center
+    width: 20px
+    height: 25px
+    text-align: center
+    transform: rotateZ(0deg)
+    &.white__icon
+        background: url("../../images/arrows/arrow_dropdown_white.svg")
 .divider
     width: 100%
     height: 1px
