@@ -1,6 +1,7 @@
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const path = require('path');
 
 module.exports = {
@@ -36,6 +37,18 @@ module.exports = {
             inject: 'body', // Это автоматически добавит скрипты в ваш HTML
             hash: true,
         }),
-
-    ]
+        new MiniCssExtractPlugin({
+            filename: "css/css/[name].css",
+            chunkFilename: "css/css/[id].css",
+        }),
+    ],
+    module: {
+        rules: [
+            // другие правила...
+            {
+                test: /\.css$/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+        ]
+    },
 };

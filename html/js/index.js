@@ -2,6 +2,7 @@ import i18next from "i18next";
 import I18nXHR from 'i18next-xhr-backend'
 import locI18next from 'loc-i18next'
 import LngDetector from 'i18next-browser-languagedetector'
+import 'animate.css';
 
 const url = document.location.pathname;
 
