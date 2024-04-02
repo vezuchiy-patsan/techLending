@@ -381,23 +381,23 @@ footer .footer-link {
 
 @-webkit-keyframes arrow_lang {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg) translateY(0px);
+            transform: rotate(0deg) translateY(0px);
   }
   100% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(180deg) translateY(3px);
+            transform: rotate(180deg) translateY(3px);
   }
 }
 
 @keyframes arrow_lang {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(0deg) translateY(0px);
+            transform: rotate(0deg) translateY(0px);
   }
   100% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(180deg) translateY(3px);
+            transform: rotate(180deg) translateY(3px);
   }
 }
 @-webkit-keyframes blur-text {
@@ -539,10 +539,10 @@ div[class^=container] {
 }
 
 section.head__section {
-  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, rgb(0, 0, 0))), url("../../images/head_back.png");
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 70%), url("../../images/head_back.png");
-  background-position: right center;
+  background-image: url("../../images/head_back.png");
+  background-position: center center;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
   height: auto;
   border-end-start-radius: 30px;
   border-end-end-radius: 30px;
@@ -551,7 +551,7 @@ section.head__section {
 @media screen and (max-width: 1140px) {
   section.head__section {
     background-size: auto auto;
-    background-position: 70% center;
+    background-position: right;
   }
 }
 section.head__section .section__head_logo {
@@ -659,15 +659,15 @@ section nav.scroll {
   border-radius: 0 0 30px 30px;
   padding: 16px 0;
 }
-section nav.scroll ul:not(.dropdown-menu-services) {
+section nav.scroll ul {
   background-color: inherit;
   border-radius: 0;
 }
-section nav.scroll ul:not(.dropdown-menu-services) .nav-item.dropdown .dropdown-menu {
+section nav.scroll ul .nav-item.dropdown .dropdown-menu {
   background-color: rgba(14, 16, 26, 0.5);
   margin-top: 15px;
 }
-section nav.scroll ul:not(.dropdown-menu-services) .nav-item.dropdown .dropdown-menu .dropdown-item:focus, section nav.scroll ul:not(.dropdown-menu-services) .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
+section nav.scroll ul .nav-item.dropdown .dropdown-menu .dropdown-item:focus, section nav.scroll ul .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
   color: var(--bs-primary);
   background-color: inherit;
 }
@@ -718,12 +718,16 @@ section nav .select {
   color: white;
   position: relative;
 }
-section nav .select.lang-select {
-  width: 20%;
-}
 section nav .select .select__header {
   width: 40px;
   height: 30px;
+}
+section nav .select .select__header .select__icon {
+  width: 20px;
+  text-align: center;
+  -webkit-transform: rotateZ(0deg) translateY(0px);
+      -ms-transform: rotate(0deg) translateY(0px);
+          transform: rotateZ(0deg) translateY(0px);
 }
 section nav .select .select__header .select__current {
   font-size: 14px;
@@ -735,9 +739,9 @@ section nav .select:hover .select__body {
   display: block;
 }
 section nav .select:hover .select__icon {
-  -webkit-transform: rotateZ(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotateZ(180deg);
+  -webkit-transform: rotateZ(180deg) translateY(3px);
+      -ms-transform: rotate(180deg) translateY(3px);
+          transform: rotateZ(180deg) translateY(3px);
   -webkit-animation: arrow_lang 0.5s ease 0s;
           animation: arrow_lang 0.5s ease 0s;
 }
@@ -1248,8 +1252,6 @@ section.form__section {
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   padding: 50px 0 60px 0;
-  position: relative;
-  z-index: 10;
   margin-bottom: -30px;
 }
 section.form__section .input-group {
@@ -1263,6 +1265,7 @@ section.form__section .input-group {
 section.form__section .input-group input {
   border-radius: 35px;
   padding: 16px 20px;
+  font-variant-numeric: lining-nums;
 }
 @media screen and (min-width: 1500px) {
   section.form__section .input-group input {
@@ -1302,9 +1305,6 @@ section.form__section #customer__clients {
 }
 
 footer {
-  position: relative;
-  bottom: 0;
-  z-index: 11;
   border-radius: 30px 30px 0 0;
   padding: 30px 0 30px 0;
 }
@@ -1339,4 +1339,25 @@ footer .divider {
 }
 footer .footer__sections_tech_info p {
   font-size: 0.75rem;
+}
+
+.iti__globe {
+  background-image: url("../../images/globe.png");
+}
+
+.iti__flag {
+  background-image: url("../../images/flags.png");
+}
+
+.iti {
+  width: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2x) {
+  .iti__globe {
+    background-image: url("../../images/globe@2x.png");
+  }
+  .iti__flag {
+    background-image: url("../../images/flags@2x.png");
+  }
 }/*# sourceMappingURL=style.css.map */
