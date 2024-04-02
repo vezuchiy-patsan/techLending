@@ -1,48 +1,46 @@
 @import '_valurables'
 
-@keyframes arrow_lang 
-  0%
-    transform: rotate(0deg) translateY(0px)
+@keyframes arrow_lang
+    0%
+        transform: rotate(0deg) translateY(0px)
 
-  100%
-    transform: rotate(180deg) translateY(3px)
-@keyframes blur-text 
-  0% 
-    filter: blur(0px)
-  100% 
-    filter: blur(4px)
+    100%
+        transform: rotate(180deg) translateY(3px)
+@keyframes blur-text
+    0%
+        filter: blur(0px)
+    100%
+        filter: blur(4px)
 @keyframes fadeOut
- from 
-    opacity: 1
-    display: block
- to 
-    opacity: 0
-    display: none
+    from
+        opacity: 1
+        display: block
+    to
+        opacity: 0
+        display: none
 
 .loader_none
     display: none
     animation: fadeOut 0.8s forwards
 
-@mixin position-center($text-align: center) 
-  position: absolute
-  top: 0
-  bottom: 0
-  left: 0
-  right: 0
-  margin: auto
-  text-align: $text-align
+@mixin position-center($text-align: center)
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    text-align: $text-align
 
-
-.loading 
-  position: fixed
-  top: 0
-  left: 0
-  width: 100%
-  height: 100%
-  background: #000
-  z-index: 9999
-  opacity: 1
-
+.loading
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: #000
+    z-index: 9999
+    opacity: 1
 
 .loading-text 
   @include position-center
@@ -58,11 +56,6 @@
         filter: blur(0px)
         animation: blur-text 0.8s calc($i / 7)+s infinite linear alternate
       
-    
-  
-
-
-
 body
     margin: 0 auto
     padding: 0
@@ -159,16 +152,24 @@ section
             border-radius: 0 0 30px 30px
             padding: 16px 0
             ul
-                background-color: inherit
-                border-radius: 0
+                &:not(.dropdown-menu-services)
+                    background-color: inherit
+                    border-radius: 0
                 .nav-item
                     &.dropdown
                         .dropdown-menu
                             background-color: rgba(14, 16, 26, 0.5)
                             margin-top: 15px
+                            @media screen and ( min-width: $media-xs )
+                                margin-top: 18px
                             .dropdown-item:focus, .dropdown-item:hover
                                 color: var(--bs-primary)
                                 background-color: inherit
+                            li:hover
+                                a.dropdown-item
+                                    color: var(--bs-primary)
+                                div[class^=svg]
+                                    color: var(--bs-primary)
         ul
             background-color: rgba(255, 255, 255, 0.28)
             border-radius: 6px
@@ -185,6 +186,12 @@ section
                         .dropdown-item:focus, .dropdown-item:hover
                             color: var(--bs-primary)
                             background-color: inherit
+                        li:hover
+                            a
+                                color: var(--bs-primary)
+                            div[class^=svg]
+                                path
+                                    fill: var(--bs-primary)
             &.navbar-nav
                 li
                     @media screen and (min-width: $media-lg-991)
@@ -196,12 +203,12 @@ section
                         @media screen and (min-width: $media-lg-991)
                             color: white
                             line-height: 14.4px
-                        &.active
-                            color: var(--bs-primary)
-                        &.show
-                            color: white
-                        &:hover
-                            color: var(--bs-primary)
+                            &.active
+                                color: var(--bs-primary)
+                            &.show
+                                color: white
+                            &:hover
+                                color: var(--bs-primary)
         .select
             color: white
             position: relative
@@ -222,7 +229,7 @@ section
                     display: block
                 .select__icon
                     transform: rotateZ(180deg) translateY(3px)
-                    animation: arrow_lang 0.5s ease 0s 
+                    animation: arrow_lang 0.5s ease 0s
             .select__body
                 position: absolute
                 left: 12px
@@ -636,6 +643,11 @@ footer
             background-color: rgba(255, 255, 255, 1.0) !important
             border-color: rgba(255, 255, 255, 0.0)
             padding: 8px 8px
+        li
+            &:hover
+                background-color: var(--bs-dropdown-link-hover-bg)
+                .dropdown-item, .dropdown-item:hover
+                    background-color: #ffffff00
     .footer__sections_tech_info
         .logo img
             @media screen and ( max-width: $media-sm-320 )

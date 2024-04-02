@@ -54,6 +54,8 @@ input, button[type=submit]
         color: #071D43
         line-height: 16.8px
 nav
+    .navbar-toggler:focus
+        box-shadow: none !important
     ul
         li
             .nav-link
@@ -68,12 +70,10 @@ nav
                 font-size: 0.875rem
                 font-family: "Raleway Regular", Arial, Helvetica, sans-serif
                 font-weight: 400
-                text-decoration-line: underline
                 @media screen and (min-width: $media-xs)
                     font-size: 1rem
                 @media screen and (max-width: $media-lg-991)
                     padding: 0
-                    margin-bottom: 16px
                     font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                     font-size: 0.875rem
                     font-weight: 600
@@ -134,8 +134,10 @@ nav
                     color: var(--bs-primary)
                     text-decoration: none
                     white-space: normal
-                    &:hover
-                        color: #1a3085
+                &:hover
+                    color: #1a3085
+                    path
+                        fill: #1a3085
 
         li
             list-style-type: none
@@ -234,3 +236,22 @@ footer
         font-weight: 400
         @media screen and ( min-width: $media-xs )
             font-size: 1.625rem
+.svg_pdf
+    padding: 4px 10px !important
+    margin-bottom: 3px
+    @media screen and ( min-width: $media-lg )
+        path
+            fill: #fff
+.svg_azs
+    padding: 4px 5px !important
+    margin-bottom: 3px
+    @media screen and ( min-width: $media-lg )
+        path
+            fill: var(--bs-primary)
+.svg_mon
+    padding: 4px 5px !important
+    margin-bottom: 3px
+    @media screen and ( min-width: $media-lg )
+        path
+            fill: var(--bs-primary)
+

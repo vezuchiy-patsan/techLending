@@ -14,8 +14,8 @@ if (url.includes('/en/')) {
         .use(LngDetector)
         .init({
             fallbackLng: 'en',
-            whitelist: ['en', 'ru'],
-            preload: ['en', 'ru'],
+            whitelist: ['en'],
+            preload: ['en'],
             ns: 'users',
             defaultNS: 'users',
             fallbackNS: false,
@@ -44,7 +44,7 @@ element.addEventListener("animationiteration", function () {
 
 }, false);
 
-telMask()
+telMask();
 
 // export { loci18n as loci18n, i18next as i18n };
 
