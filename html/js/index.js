@@ -3,6 +3,7 @@ import I18nXHR from 'i18next-xhr-backend'
 import locI18next from 'loc-i18next'
 import LngDetector from 'i18next-browser-languagedetector'
 import 'animate.css';
+import telMask from "./utils/telMask";
 
 const url = document.location.pathname;
 
@@ -42,6 +43,8 @@ element.addEventListener("animationiteration", function () {
     loader.classList.add("loader_none")
 
 }, false);
+
+telMask()
 
 // export { loci18n as loci18n, i18next as i18n };
 

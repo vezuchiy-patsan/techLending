@@ -41,6 +41,14 @@ module.exports = {
             filename: "css/css/[name].css",
             chunkFilename: "css/css/[id].css",
         }),
+        new CopyPlugin({
+            patterns: [
+                {
+                    from: path.resolve(__dirname, 'node_modules/intl-tel-input/build/js/utils.js'),
+                    to: path.resolve(__dirname, 'html/js/utils/mask/'),
+                },
+            ],
+        }),
     ],
     module: {
         rules: [
@@ -48,6 +56,14 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: [MiniCssExtractPlugin.loader, 'css-loader']
+            },
+
+            {
+                test: /\.(png|jpg|gif)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: './images/[name][ext]',
+                },
             },
         ]
     },
