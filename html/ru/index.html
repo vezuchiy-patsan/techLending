@@ -33,7 +33,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-<link href="../css/css/main.css?9f66da04310c6abc195c" rel="stylesheet"></head>
+<link href="../css/css/main.css?45fced4ff70e93bcb685" rel="stylesheet"></head>
 <link rel="stylesheet" href="../css/css/style.css?v=1445">
 
 <body class="bg-secondary">
@@ -379,13 +379,13 @@
                 <div class="tab-pane fade" id="pills-utp" role="tabpanel" aria-labelledby="pills-utp-tab" tabindex="0">
                     <div class="row">
                         <div class="services__section_block col-xxl-6 col-lg-5 col-12">
-                            <h3 data-i18n="services.section-4.h">Управление транспортным предприятием</h3>
+                            <h3 data-i18n="services.section-5.h">Управление транспортным предприятием</h3>
                             <div class="div__mobile_img">
                                 <img src="../images/azs_mac.png" class="mobile_img img-fluid mb-2"
                                     alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
                             </div>
                             <div class="services__section_text col-xxl-11 col-lg-10 col-12">
-                                <p data-i18n="services.section-4.p">Управление транспортным предприятием (УТП)
+                                <p data-i18n="services.section-5.p">Управление транспортным предприятием (УТП)
                                     Система управления транспортной компании объединила все сервисы для автоматизации и
                                     цифровизации основных бизнес-процессов. Это позволяет руководителю удаленно
                                     контролировать компанию, оптимизировать планирование, повышать эффективность работы
@@ -402,13 +402,13 @@
                     aria-labelledby="pills-e-t-e-accounting-tab" tabindex="0">
                     <div class="row">
                         <div class="services__section_block col-xxl-6 col-lg-5 col-12">
-                            <h3 data-i18n="services.section-5.h">Сквозной учет топлива</h3>
+                            <h3 data-i18n="services.section-4.h">Сквозной учет топлива</h3>
                             <div class="div__mobile_img">
                                 <img src="../images/azs_mac.png" class="mobile_img img-fluid"
                                     alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
                             </div>
                             <div class="services__section_text col-xxl-12 col-lg-10 col-12">
-                                <p data-i18n="services.section-5.p">На многих предприятиях цепочка движения топлива
+                                <p data-i18n="services.section-4.p">На многих предприятиях цепочка движения топлива
                                     представляет собой сложную и обширную
                                     инфраструктуру, что затрудняет контроль и управление, а также приводит к серьезным
                                     финансовым потерям – от 5% до 30% от общей стоимости закупаемого топлива. Решением
@@ -615,7 +615,7 @@
                             alt=""></div>
                     <div class="swiper-slide"><img src="../images/partners/logobelgoroddorstroy.png"
                             class="img-fluid w-100" alt=""></div>
-                    <div class="swiper-slide"><img src="../images/partners/logogasprom-nn.png" class="img-fluid w-100"
+                    <div class="swiper-slide"><img src="../images/partners/logolsr.png" class="img-fluid w-100"
                             alt="">
                     </div>
                     <div class="swiper-slide"><img src="../images/partners/logoigs.png" class="img-fluid w-100" alt="">
@@ -1201,35 +1201,28 @@
             loop: true,
             pauseOnMouseEnter: true,
             autoplay: {
-                delay: 300000,
+                delay: 3000,
             },
-            slidesPerView: 5,
+            slidesPerView: 6,
             spaceBetween: 10,
-            // width: 2500,
-            // Responsive breakpoints
             breakpoints: {
                 // when window width is >= 320px
                 0: {
                     slidesPerView: 1,
-                    spaceBetween: 10
                 },
                 320: {
                     slidesPerView: 2,
-                    spaceBetween: 10
                 },
                 // when window width is >= 480px
                 480: {
                     slidesPerView: 3,
-                    spaceBetween: 10
                 },
                 // when window width is >= 640px
                 640: {
                     slidesPerView: 4,
-                    spaceBetween: 10
                 },
                 991: {
-                    slidesPerView: 5,
-                    spaceBetween: 10
+                    slidesPerView: 6,
                 }
             }
         });
@@ -1280,59 +1273,71 @@
 
     </script>
     <script>
+        const idMenuDoudle = 'menuDouble';
+
         function menuResize() {
+            const nav = document.getElementById("menu");
             const div = document.createElement('div');
             div.classList.add('newWrapper');
 
             if (screen.width <= 991 && document.getElementsByClassName('newWrapper').length === 0) {
-                document.querySelectorAll('nav .offcanvas_off').forEach((item) => div.appendChild(item));
+                nav.querySelectorAll('.offcanvas_off').forEach((item) => div.appendChild(item));
                 document.getElementById('navbarOffcanvasLg').prepend(div);
             } else if (screen.width >= 991 && document.getElementsByClassName('newWrapper').length !== 0) {
                 const returnInOffcanvas = document.getElementById('navbarOffcanvasLg');
-                document.querySelectorAll('nav .offcanvas_off').forEach((item) => returnInOffcanvas.prepend(item));
-
+                nav.querySelectorAll('.offcanvas_off').forEach((item) => returnInOffcanvas.prepend(item));
                 document.querySelector('.newWrapper').remove();
                 returnInOffcanvas.insertBefore(returnInOffcanvas.children[1], returnInOffcanvas.firstChild);
 
             }
         }
 
-        function menuScroll() {
-            var menu = document.getElementById('menu');
-            var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+        function menuScroll(id) {
+            const idMenu = typeof id === 'string' ? id : idMenuDoudle;
+            const menu = document.getElementById(idMenu);
+            let scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
 
-            if (scrollPosition > 400 && !menu.classList.contains('scroll')) { // Измените 100 на желаемое расстояние
+            if (scrollPosition > 500 && !menu.classList.contains('scroll')) { // Измените 100 на желаемое расстояние
                 menu.classList.add('scroll');
-            } else if (scrollPosition < 400 && menu.classList.contains('scroll')) {
+            } else if (scrollPosition < 500 && menu.classList.contains('scroll')) {
                 menu.classList.remove('scroll');
             }
         }
 
+        function doubleMenu(id) {
+            const main = document.getElementById('main');
+            const menu = main.querySelector('nav').cloneNode(true);
+            menu.id = id;
+
+            main.appendChild(menu);
+        }
+
+        doubleMenu(idMenuDoudle);
+        menuResize();
+        menuScroll(idMenuDoudle);
+
         window.addEventListener('scroll', menuScroll);
         window.addEventListener('resize', menuResize)
-
-        menuResize();
-        menuScroll();
 
         // Получаем текущий URL
         const currentUrl = window.location.href;
 
         // Получаем элемент div, в который нужно изменить текст
-        let myDiv = document.getElementById('lang');
+        let myDiv = document.querySelectorAll('#lang');
         let list_lang = document.querySelectorAll('.select .select__item');
 
         // Проверяем путь URL и изменяем текст в div
         if (currentUrl.includes('/ru/')) {
-            myDiv.textContent = 'RU';
-            Array.from(list_lang).find(el => el.getAttribute('data-lang') === 'ru').classList.add("d-none");
+            myDiv.forEach(el => el.textContent = 'RU');
+            Array.from(list_lang).filter(el => el.getAttribute('data-lang') === 'ru').forEach(element => element.classList.add("d-none"));
         } else if (currentUrl.includes('/en/')) {
-            myDiv.textContent = 'EN';
-            Array.from(list_lang).find(el => el.getAttribute('data-lang') === 'en').classList.add("d-none");
+            myDiv.forEach(el => el.textContent = 'EN');
+            Array.from(list_lang).filter(el => el.getAttribute('data-lang') === 'en').forEach(element => element.classList.add("d-none"));
         } else {
-            myDiv.textContent = 'Язык'
+            myDiv.forEach(el => el.textContent = 'Язык');
         }
     </script>
 
-<script defer src="../main.js?9f66da04310c6abc195c"></script></body>
+<script defer src="../main.js?45fced4ff70e93bcb685"></script></body>
 
 </html>

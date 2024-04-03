@@ -133,6 +133,16 @@ section
                     line-height: 16.8px
         > *
             color: white
+    @mixin fixedMenu($topValue)
+        position: fixed
+        z-index: 100
+        top: $topValue
+        left: 0
+        width: 100%
+        background: rgba(14, 16, 26, 0.6)
+        border-radius: 0 0 30px 30px
+        padding: 16px 0
+        transition: top 0.5s ease
     nav
         .offcanvas
             @media screen and ( max-width:  $media-lg-991)
@@ -142,15 +152,10 @@ section
                     display: none
             @media screen and (min-width: $media-lg-991)
                 flex-direction: row
-        &.scroll
-            position: fixed
-            z-index: 100
-            top: 0
-            left: 0
-            width: 100%
-            background: rgba(14, 16, 26, 0.6)
-            border-radius: 0 0 30px 30px
-            padding: 16px 0
+        &#menuDouble
+            @include fixedMenu(-100px)
+            &.scroll
+                top: 0px
             ul
                 &:not(.dropdown-menu-services)
                     background-color: inherit
