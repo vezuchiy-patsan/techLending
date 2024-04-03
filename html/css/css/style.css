@@ -111,6 +111,10 @@ input, button[type=submit] {
   }
 }
 
+body.modal-open nav#menuDouble {
+  width: calc(100% - 17px);
+}
+
 nav .navbar-toggler:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
@@ -558,9 +562,6 @@ body {
   font-family: "Raleway Regular", Arial, Helvetica, sans-serif;
   font-variant-numeric: lining-nums;
 }
-body.modal-open {
-  overflow: auto !important;
-}
 
 div[class^=container] {
   max-width: 1116px;
@@ -574,10 +575,10 @@ div[class^=container] {
 }
 
 section.head__section {
-  background-image: url("../../images/head_back.png");
-  background-position: center center;
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(70%, rgb(0, 0, 0))), url("../../images/head_back.png");
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 70%), url("../../images/head_back.png");
+  background-position: right center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
   height: auto;
   border-end-start-radius: 30px;
   border-end-end-radius: 30px;
@@ -585,8 +586,10 @@ section.head__section {
 }
 @media screen and (max-width: 1140px) {
   section.head__section {
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(70%, rgb(0, 0, 0))), url("../../images/head_back.png");
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 70%), url("../../images/head_back.png");
     background-size: auto auto;
-    background-position: right;
+    background-position: 75%;
   }
 }
 section.head__section .section__head_logo {
@@ -962,9 +965,13 @@ section.services__section h2 {
     width: 900px;
   }
 }
+@media screen and (min-width: 992px) {
+  section.services__section #pills-tab li {
+    margin-bottom: 0.75rem;
+  }
+}
 section.services__section #pills-tab li:not(:last-child) {
   margin-right: 0.75rem;
-  margin-bottom: 0.75rem;
 }
 section.services__section #pills-tab button {
   padding: 14.5px 16px;
@@ -972,6 +979,10 @@ section.services__section #pills-tab button {
   border: 1px solid #E0E0E0;
   background-color: rgba(255, 255, 255, 0);
   color: #071D43;
+  height: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 0.8125rem;
@@ -1183,6 +1194,9 @@ section.geograph__section #geographic-tab button {
   background-color: rgba(255, 255, 255, 0.1);
   color: #FFF;
   height: 100%;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   font-family: "Raleway SemiBold", Arial, Helvetica, sans-serif;
   font-weight: 600;
   font-size: 0.8125rem;
@@ -1375,6 +1389,11 @@ footer a:hover {
 }
 footer .footer__section_links .link_sect {
   margin-bottom: 16px;
+}
+@media screen and (max-width: 540px) {
+  footer .footer__section_links nav .nav-item {
+    margin-left: 20px;
+  }
 }
 footer .block:nth-child(2) p:nth-child(2) {
   margin-bottom: 0;

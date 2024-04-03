@@ -51,18 +51,16 @@
     display: inline-block
     margin: 0 5px
     color: #fff
-    @for $i from 0 through 6 
-      &:nth-child(#{$i + 1}) 
+    @for $i from 0 through 6
+     &:nth-child(#{$i + 1})
         filter: blur(0px)
         animation: blur-text 0.8s calc($i / 7)+s infinite linear alternate
-      
+
 body
     margin: 0 auto
     padding: 0
     font-family: "Raleway Regular", Arial, Helvetica, sans-serif
     font-variant-numeric: lining-nums
-    &.modal-open
-        overflow: auto !important
 
 div[class^=container]
     max-width: 1116px
@@ -74,17 +72,17 @@ div[class^=container]
 
 section
     &.head__section
-        background-image: url('../../images/head_back.png')
-        background-position: center center
+        background-image:  linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 70%), url("../../images/head_back.png")
+        background-position: right center
         background-repeat: no-repeat
-        background-size: 100% 100%
         height: auto
         border-end-start-radius: 30px
         border-end-end-radius: 30px
         padding: 18px 0 12px 0
         @media screen and ( max-width: $media-xl )
+            background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 70%), url("../../images/head_back.png")
             background-size: auto auto
-            background-position: right
+            background-position: 75%
         .section__head_logo
             width: 32%
             @media screen and ( max-width: $media-sm-320 )
@@ -350,15 +348,20 @@ section
                 flex-direction: row
                 flex-wrap: nowrap
                 width: 900px
-            li:not(:last-child)
-                margin-right: 0.75rem
-                margin-bottom: 0.75rem
+            li
+                @media screen and ( min-width: $media-lg-991 )
+                    margin-bottom: 0.75rem
+                &:not(:last-child)
+                    margin-right: 0.75rem
+
             button
                 padding: 14.5px 16px
                 border-radius: 35px
                 border: 1px solid #E0E0E0
                 background-color: rgba(255, 255, 255, 0)
                 color: #071D43
+                height: 100%
+                width: max-content
                 font:
                     family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                     weight: 600
@@ -505,6 +508,7 @@ section
                 background-color: rgba(255, 255, 255, 0.1)
                 color: #FFF
                 height: 100%
+                width: max-content
                 font:
                     family: "Raleway SemiBold", Arial, Helvetica, sans-serif
                     weight: 600
@@ -638,6 +642,10 @@ footer
     .footer__section_links
         .link_sect
             margin-bottom: 16px
+        nav
+            .nav-item
+                @media screen and ( max-width: $media-sm )
+                    margin-left: 20px
     .block:nth-child(2)
         p:nth-child(2)
             margin-bottom: 0

@@ -33,7 +33,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-<link href="../css/css/main.css?27c17fe6cef8bd2b9bfd" rel="stylesheet"></head>
+<link href="../css/css/main.css?9d787f6d73abeb494f49" rel="stylesheet"></head>
 <link rel="stylesheet" href="../css/css/style.css?v=15">
 
 <body class="bg-secondary">
@@ -826,7 +826,7 @@
                 </div>
                 <div class="footer__section_links_main row justify-content-between">
                     <div class="block_text row col-md-6 col-sm-7 col-12">
-                        <div class="block col-6">
+                        <div class="block col-6 text-sm-start text-end">
                             <p class="footer-mini-p" data-i18n="footer.top.p">Офис</p>
                             <p><a href="https://yandex.ru/maps/-/CDFkUFKf" data-i18n="footer.top.p1">195279, Россия,
                                     Санкт-Петербург, Шоссе
@@ -891,7 +891,7 @@
     </footer>
     <!-- Модальное окно -->
     <div class="modal fade" id="agreementModal" tabindex="-1" aria-labelledby="agreementModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="col-6">
@@ -1278,6 +1278,8 @@
         function menuResize() {
             const nav = document.getElementById("menu");
             const div = document.createElement('div');
+            const hSection = document.querySelector(".geograph__section h2");
+            const pSection = document.querySelectorAll(".geograph__section .geograph__section_block_img > div");
             div.classList.add('newWrapper');
 
             if (screen.width <= 991 && document.getElementsByClassName('newWrapper').length === 0) {
@@ -1288,7 +1290,13 @@
                 nav.querySelectorAll('.offcanvas_off').forEach((item) => returnInOffcanvas.prepend(item));
                 document.querySelector('.newWrapper').remove();
                 returnInOffcanvas.insertBefore(returnInOffcanvas.children[1], returnInOffcanvas.firstChild);
-
+            }
+            if(screen.width <= 768 && hSection.innerHTML !== "Статистика сервисов"){
+                hSection.innerHTML = "Статистика сервисов";
+                pSection.forEach(el => el.innerHTML = "Калькулируем данные");
+            }else if (screen.width >= 768 && hSection.innerHTML !== "География сервисов"){
+                hSection.innerHTML = "География сервисов";
+                pSection.forEach(el => el.innerHTML = "Скоро он будет везде");
             }
         }
 
@@ -1338,6 +1346,6 @@
         }
     </script>
 
-<script defer src="../main.js?27c17fe6cef8bd2b9bfd"></script></body>
+<script defer src="../main.js?9d787f6d73abeb494f49"></script></body>
 
 </html>
