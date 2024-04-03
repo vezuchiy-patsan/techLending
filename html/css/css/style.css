@@ -586,8 +586,7 @@ section.head__section {
 }
 @media screen and (max-width: 1140px) {
   section.head__section {
-    background-image: -webkit-gradient(linear, right top, left top, color-stop(50%, rgba(0, 0, 0, 0)), color-stop(70%, rgb(0, 0, 0))), url("../../images/head_back.png");
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 50%, rgb(0, 0, 0) 70%), url("../../images/head_back.png");
+    background-image: url("../../images/head_back.png");
     background-size: auto auto;
     background-position: 75%;
   }
