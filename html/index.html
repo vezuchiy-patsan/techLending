@@ -1318,10 +1318,10 @@
                 document.querySelector('.newWrapper').remove();
                 returnInOffcanvas.insertBefore(returnInOffcanvas.children[1], returnInOffcanvas.firstChild);
             }
-            if (screen.width <= 768 && hSection.innerHTML !== "Статистика сервисов") {
+            if (screen.width <= 768 && hSection.innerHTML !== "Статистика сервисов" && currentUrl.includes('/ru/')) {
                 hSection.innerHTML = "Статистика сервисов";
                 pSection.forEach(el => el.innerHTML = "Калькулируем данные");
-            } else if (screen.width >= 768 && hSection.innerHTML !== "География сервисов") {
+            } else if (screen.width >= 768 && hSection.innerHTML !== "География сервисов" && currentUrl.includes('/ru/')) {
                 hSection.innerHTML = "География сервисов";
                 pSection.forEach(el => el.innerHTML = "Скоро он будет везде");
             }

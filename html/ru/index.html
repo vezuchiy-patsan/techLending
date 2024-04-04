@@ -33,7 +33,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-<link href="../css/css/main.css?8c2ed0dc732dc94da158" rel="stylesheet"></head>
+<link href="../css/css/main.css?f8df163ee73ad96dc5ab" rel="stylesheet"></head>
 <link rel="stylesheet" href="../css/css/style.css?v=15">
 
 <body class="bg-secondary">
@@ -1318,10 +1318,10 @@
                 document.querySelector('.newWrapper').remove();
                 returnInOffcanvas.insertBefore(returnInOffcanvas.children[1], returnInOffcanvas.firstChild);
             }
-            if (screen.width <= 768 && hSection.innerHTML !== "Статистика сервисов") {
+            if (screen.width <= 768 && hSection.innerHTML !== "Статистика сервисов" && currentUrl.includes('/ru/')) {
                 hSection.innerHTML = "Статистика сервисов";
                 pSection.forEach(el => el.innerHTML = "Калькулируем данные");
-            } else if (screen.width >= 768 && hSection.innerHTML !== "География сервисов") {
+            } else if (screen.width >= 768 && hSection.innerHTML !== "География сервисов" && currentUrl.includes('/ru/')) {
                 hSection.innerHTML = "География сервисов";
                 pSection.forEach(el => el.innerHTML = "Скоро он будет везде");
             }
@@ -1372,6 +1372,6 @@
         }
     </script>
 
-<script defer src="../main.js?8c2ed0dc732dc94da158"></script></body>
+<script defer src="../main.js?f8df163ee73ad96dc5ab"></script></body>
 
 </html>
