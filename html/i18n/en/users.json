@@ -105,10 +105,10 @@
                 "p": "Objects"
             },
             "s2": {
-                "p": "Litres of fuel per month"
+                "p": "Vehicle mileage per month"
             },
             "s3": {
-                "p": "Exceeded speeds recorded"
+                "p": "Liters of fuel per month"
             },
             "s4": {
                 "p": "Number of fills"
