@@ -33,7 +33,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-<link href="../css/css/main.css?fdd170d27bc3a5e352b6" rel="stylesheet"></head>
+<link href="../css/css/main.css?8c2ed0dc732dc94da158" rel="stylesheet"></head>
 <link rel="stylesheet" href="../css/css/style.css?v=15">
 
 <body class="bg-secondary">
@@ -68,13 +68,13 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 px-0 offcanvas_off ">
                         <li class="nav-item">
                             <div class="">
-                                <a class="nav-link" aria-current="page" href="#main" data-bs-toggle="offcanvas"
+                                <a class="nav-link" aria-current="page" href="#main" data-bs-dismiss="offcanvas"
                                     data-bs-target="#navbarOffcanvasLg" data-i18n="nav.home">Главная</a>
                             </div>
                         </li>
                         <li class="nav-item">
                             <div>
-                                <a class="nav-link" href="#services" data-bs-toggle="offcanvas"
+                                <a class="nav-link" href="#services" data-bs-dismiss="offcanvas"
                                     data-bs-target="#navbarOffcanvasLg" data-i18n="nav.services">Сервисы</a>
                             </div>
                         </li>
@@ -103,7 +103,7 @@
                         </li>
                         <li class="nav-item">
                             <div>
-                                <a class="nav-link" href="#contacts" data-bs-toggle="offcanvas"
+                                <a class="nav-link" href="#contacts" data-bs-dismiss="offcanvas"
                                     data-bs-target="#navbarOffcanvasLg" data-i18n="nav.contact">Контакты</a>
                             </div>
                         </li>
@@ -1281,16 +1281,10 @@
         const currentUrl = window.location.href;
         const idMenuDoudle = 'menuDouble';
 
-
-
-        const removeClass = (element, classEl) => {
-            // element.classList.remove(classEl);
-        }
-
         function clickLinkInMobile(nav) {
-            const navLink = nav.querySelectorAll(".nav-link:not(.dropdown-toggle)");
-            var offcanvasElement = document.getElementById('navbarOffcanvasLg');
-            var bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
+            const navLink = document.querySelectorAll(".offcanvas_off .nav-link:not(.dropdown-toggle)");
+            // var offcanvasElement = document.getElementById('navbarOffcanvasLg');
+            // var bsOffcanvas = new bootstrap.Offcanvas(offcanvasElement);
 
             // Функция обработчика, которую мы будем добавлять и удалять
             const handleClick = (event) => {
@@ -1304,16 +1298,9 @@
                     window.location.hash = target;
                 }, 500);
             };
-            // Добавление обработчика события для каждой ссылки
-            if (screen.width <= 991) {
-                navLink.forEach(link => {
+            navLink.forEach(link => {
                     link.addEventListener("click", handleClick);
                 });
-            } else if (screen.width >= 991) {
-                navLink.forEach(link => {
-                    link.removeEventListener("click", handleClick);
-                });
-            }
         }
 
         function menuResize() {
@@ -1322,13 +1309,10 @@
             const hSection = document.querySelector(".geograph__section h2");
             const pSection = document.querySelectorAll(".geograph__section .geograph__section_block_img > div");
             div.classList.add('newWrapper');
-
             if (screen.width <= 991 && document.getElementsByClassName('newWrapper').length === 0) {
-                clickLinkInMobile(nav);
                 nav.querySelectorAll('.offcanvas_off').forEach((item) => div.appendChild(item));
                 document.getElementById('navbarOffcanvasLg').prepend(div);
             } else if (screen.width >= 991 && document.getElementsByClassName('newWrapper').length !== 0) {
-                clickLinkInMobile(nav);
                 const returnInOffcanvas = document.getElementById('navbarOffcanvasLg');
                 nav.querySelectorAll('.offcanvas_off').forEach((item) => returnInOffcanvas.prepend(item));
                 document.querySelector('.newWrapper').remove();
@@ -1366,6 +1350,7 @@
         doubleMenu(idMenuDoudle);
         menuResize();
         menuScroll(idMenuDoudle);
+        clickLinkInMobile(document.getElementById("menu"));
 
         window.addEventListener('scroll', menuScroll);
         window.addEventListener('resize', menuResize)
@@ -1387,6 +1372,6 @@
         }
     </script>
 
-<script defer src="../main.js?fdd170d27bc3a5e352b6"></script></body>
+<script defer src="../main.js?8c2ed0dc732dc94da158"></script></body>
 
 </html>
