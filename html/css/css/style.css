@@ -200,28 +200,14 @@ nav .dropdown-menu-services .dropdown_menu {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
   padding: 0;
+  border-bottom-left-radius: 30px !important;
+  border-bottom-right-radius: 30px !important;
 }
 nav .dropdown-menu-services .dropdown_menu li {
   display: none;
   opacity: 0;
   padding: 10px 20px;
   text-align: center;
-}
-nav .dropdown-menu-services .dropdown_menu li:last-child::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  width: 100%;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
-  border-left: 8px solid transparent;
-  border-right: 8px solid transparent;
-  border-top: 10px solid #fff;
-  border-bottom: 17px solid #fff;
-  border-radius: 50%;
-  z-index: -1;
 }
 nav .dropdown-menu-services .dropdown_menu li a {
   color: var(--bs-primary);
@@ -953,6 +939,10 @@ section.services__section h2 {
   color: #A2A8AF;
   margin-bottom: 16px;
 }
+section.services__section #pills-tab {
+  position: relative;
+  z-index: 10;
+}
 @media screen and (max-width: 1140px) {
   section.services__section #pills-tab {
     -webkit-box-orient: horizontal;
@@ -1003,11 +993,44 @@ section.services__section #pills-tab button.active {
 }
 section.services__section .services__section_block_img img {
   margin-top: -125px;
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
+}
+@media screen and (max-width: 1500px) and (min-width: 1400px) {
+  section.services__section .services__section_block_img img {
+    margin-top: -210px;
+  }
+}
+@media screen and (max-width: 1201px) {
+  section.services__section .services__section_block_img img {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 @media screen and (max-width: 1140px) {
   section.services__section .services__section_block_img img {
     width: 100%;
     margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  section.services__section .tab-pane:nth-child(2) .services__section_block_img img {
+    margin-top: -12px;
+  }
+}
+section.services__section .tab-pane:nth-child(4) .services__section_block_img img {
+  margin-top: -70px;
+}
+@media screen and (min-width: 1500px) {
+  section.services__section .tab-pane:nth-child(5) .services__section_block_img img {
+    margin-top: -12px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  section.services__section .tab-pane:nth-child(5) .services__section_block_img img {
+    margin-top: -45px;
   }
 }
 section.services__section .services__section_block h3 {

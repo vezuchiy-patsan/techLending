@@ -115,25 +115,28 @@ nav
             border-top-left-radius: 0
             border-top-right-radius: 0
             padding: 0
+            border-bottom-left-radius: 30px !important
+            border-bottom-right-radius: 30px !important
             li
                 display: none
                 opacity: 0
                 padding: 10px 20px
                 text-align: center
-                &:last-child
-                    &::after
-                        content: ""
-                        position: absolute
-                        bottom: -10px
-                        width: 100%
-                        left: 50%
-                        transform: translateX(-50%)
-                        border-left: 8px solid transparent
-                        border-right: 8px solid transparent
-                        border-top: 10px solid #fff
-                        border-bottom: 17px solid #fff
-                        border-radius: 50%
-                        z-index: -1
+                // &:last-child
+
+                    // &::after
+                    //     content: ""
+                    //     position: absolute
+                    //     bottom: -10px
+                    //     width: 100%
+                    //     left: 50%
+                    //     transform: translateX(-50%)
+                    //     border-left: 8px solid transparent
+                    //     border-right: 8px solid transparent
+                    //     border-top: 10px solid #fff
+                    //     border-bottom: 17px solid #fff
+                    //     border-radius: 50%
+                    //     z-index: -1
                 a
                     color: var(--bs-primary)
                     text-decoration: none
@@ -258,4 +261,3 @@ footer
     @media screen and ( min-width: $media-lg )
         path
             fill: var(--bs-primary)
-

@@ -42,7 +42,7 @@
     z-index: 9999
     opacity: 1
 
-.loading-text 
+.loading-text
   @include position-center
   width: 100%
   height: 100px
@@ -72,7 +72,7 @@ div[class^=container]
 
 section
     &.head__section
-        background-image:  linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 70%), url("../../images/head_back.png")
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 70%), url("../../images/head_back.png")
         background-position: right center
         background-repeat: no-repeat
         height: auto
@@ -344,6 +344,8 @@ section
             color: #A2A8AF
             margin-bottom: 16px
         #pills-tab
+            position: relative
+            z-index: 10
             @media screen and (max-width: $media-xl)
                 flex-direction: row
                 flex-wrap: nowrap
@@ -376,9 +378,32 @@ section
                 align-self: flex-end
             img
                 margin-top: -125px
+                transform: scale(1.5)
+                @media screen and ( max-width: $media-xs ) and (min-width: 1400px)
+                    margin-top: -210px
+                @media screen and ( max-width: 1201px )
+                    transform: scale(1.2)
                 @media screen and (max-width: $media-xl)
                     width: 100%
                     margin-top: 0px
+        .tab-pane
+            &:nth-child(2)
+                .services__section_block_img
+                    img
+                        @media screen and ( min-width: $media-xs )
+                            margin-top: -12px
+            &:nth-child(4)
+                .services__section_block_img
+                    img
+                        margin-top: -70px
+            &:nth-child(5)
+                .services__section_block_img
+                    img
+                        @media screen and ( min-width: $media-xs )
+                            margin-top: -12px
+                        @media screen  and (max-width: 1400px)
+                            margin-top: -45px
+                        
         .services__section_block
             h3
                 font:
