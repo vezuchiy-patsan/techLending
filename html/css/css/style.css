@@ -993,43 +993,39 @@ section.services__section #pills-tab button.active {
 }
 section.services__section .services__section_block_img img {
   margin-top: -125px;
-  -webkit-transform: scale(1.5);
-      -ms-transform: scale(1.5);
-          transform: scale(1.5);
 }
-@media screen and (max-width: 1500px) and (min-width: 1400px) {
-  section.services__section .services__section_block_img img {
-    margin-top: -210px;
-  }
-}
-@media screen and (max-width: 1201px) {
+@media screen and (min-width: 1200px) {
   section.services__section .services__section_block_img img {
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2);
   }
 }
-@media screen and (max-width: 1140px) {
+@media screen and (min-width: 1500px) {
   section.services__section .services__section_block_img img {
-    width: 100%;
-    margin-top: 0px;
+    -webkit-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+            transform: scale(1.5);
   }
 }
 @media screen and (min-width: 1500px) {
-  section.services__section .tab-pane:nth-child(2) .services__section_block_img img {
+  section.services__section:nth-child(2) .services__section_block_img img {
     margin-top: -12px;
   }
 }
 section.services__section .tab-pane:nth-child(4) .services__section_block_img img {
-  margin-top: -70px;
+  margin-top: -65px;
+}
+section.services__section .tab-pane:nth-child(5) .services__section_block_img img {
+  margin-top: -30px;
 }
 @media screen and (min-width: 1500px) {
-  section.services__section .tab-pane:nth-child(5) .services__section_block_img img {
+  section.services__section:nth-child(5) .services__section_block_img img {
     margin-top: -12px;
   }
 }
 @media screen and (max-width: 1400px) {
-  section.services__section .tab-pane:nth-child(5) .services__section_block_img img {
+  section.services__section:nth-child(5) .services__section_block_img img {
     margin-top: -45px;
   }
 }
