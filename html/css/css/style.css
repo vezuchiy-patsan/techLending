@@ -1315,9 +1315,14 @@ section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img 
 }
 @media screen and (max-width: 540px) {
   section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img .position-absolute {
-    top: 35% !important;
     font-size: 2rem !important;
     line-height: normal !important;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img .position-absolute {
+    top: 43% !important;
+    font-size: 1rem !important;
   }
 }
 section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img img {

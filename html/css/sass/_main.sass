@@ -597,9 +597,11 @@ section
                         height: 450px
                     .position-absolute
                         @media screen and ( max-width: $media-sm )
-                            top: 35% !important
                             font-size: 2rem !important
                             line-height: normal !important
+                        @media screen and ( max-width: $media-sm-320 )
+                            top: 43% !important
+                            font-size: 1rem !important
                     img
                         border-radius: 30px
                         height: 100%
