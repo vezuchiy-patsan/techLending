@@ -214,6 +214,8 @@ section
                                 color: var(--bs-primary)
         .select
             color: white
+            @media screen and ( max-width: $media-lg-991 )
+                color: black
             position: relative
             .select__header
                 width: 40px
@@ -239,6 +241,8 @@ section
                 right: 0
                 display: none
                 top: 100%
+                @media screen and ( max-width: $media-lg-991 )
+                    left: 0
                 a
                     color: inherit
                     text-decoration: auto
@@ -256,6 +260,8 @@ section
             .newWrapper
                 width: 100%
         .offcanvas__section
+            @media screen and (min-width: $media-lg-991)
+                width: 36%
             a.offcanvas_d
                 color: var(--bs-primary)
                 border-color: var(--bs-primary)

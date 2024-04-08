@@ -28,6 +28,7 @@
   --bs-primary-rgb: 14, 98, 240;
   --bs-secondary: #E8ECF0;
   --bs-secondary-rgb: 232, 236, 240;
+  --scroll-padding: 17px;
 }
 
 .navbar {
@@ -112,7 +113,7 @@ input, button[type=submit] {
 }
 
 body.modal-open nav#menuDouble {
-  width: calc(100% - 17px);
+  width: calc(100% - var(--scroll-padding));
 }
 
 nav .navbar-toggler:focus {
@@ -286,6 +287,11 @@ nav.scroll .dropdown-menu-services .dropdown_menu li:last-child::after {
 }
 .select__icon.white__icon {
   background: url("../../images/arrows/arrow_dropdown_white.svg");
+}
+@media screen and (max-width: 992px) {
+  .select__icon.white__icon {
+    background: url("../../images/arrows/arrow_dropdown_black.svg");
+  }
 }
 
 .divider {
@@ -763,6 +769,11 @@ section nav .select {
   color: white;
   position: relative;
 }
+@media screen and (max-width: 992px) {
+  section nav .select {
+    color: black;
+  }
+}
 section nav .select .select__header {
   width: 40px;
   height: 30px;
@@ -797,6 +808,11 @@ section nav .select .select__body {
   display: none;
   top: 100%;
 }
+@media screen and (max-width: 992px) {
+  section nav .select .select__body {
+    left: 0;
+  }
+}
 section nav .select .select__body a {
   color: inherit;
   -webkit-text-decoration: auto;
@@ -821,6 +837,11 @@ section nav .select .select__body .select__item:hover {
 }
 section nav #navbarOffcanvasLg .newWrapper {
   width: 100%;
+}
+@media screen and (min-width: 992px) {
+  section nav .offcanvas__section {
+    width: 36%;
+  }
 }
 section nav .offcanvas__section a.offcanvas_d {
   color: var(--bs-primary);

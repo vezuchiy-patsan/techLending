@@ -56,7 +56,7 @@ input, button[type=submit]
 body
     &.modal-open
         nav#menuDouble
-            width: calc( 100% - 17px )
+            width: calc( 100% - var(--scroll-padding) )
 nav
     .navbar-toggler:focus
         box-shadow: none !important
@@ -182,6 +182,8 @@ nav
     transform: rotateZ(0deg)
     &.white__icon
         background: url("../../images/arrows/arrow_dropdown_white.svg")
+        @media screen and ( max-width: $media-lg-991 )
+            background: url("../../images/arrows/arrow_dropdown_black.svg")
 .divider
     width: 100%
     height: 1px
