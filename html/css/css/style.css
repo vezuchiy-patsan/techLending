@@ -1013,6 +1013,11 @@ section.services__section .services__section_block_img img {
     margin-top: -12px;
   }
 }
+@media screen and (min-width: 1500px) {
+  section.services__section .tab-pane:nth-child(2) .services__section_block_img img {
+    margin-top: -25px;
+  }
+}
 section.services__section .tab-pane:nth-child(4) .services__section_block_img img {
   margin-top: -65px;
 }
