@@ -49,6 +49,14 @@ module.exports = {
                     from: path.resolve(__dirname, 'node_modules/intl-tel-input/build/js/utils.js'),
                     to: path.resolve(__dirname, 'html/js/utils/mask/'),
                 },
+                {
+                    from: path.resolve(__dirname, 'node_modules/fslightbox/index.js'),
+                    to: ({ absoluteFilename }) => {
+                        // Измените имя файла здесь, если нужно
+                        const newFileName = 'fsbox.js'; // Пример нового имени файла
+                        return path.resolve(__dirname, 'html/js/utils/', newFileName);
+                      },
+                },
             ],
         }),
     ],

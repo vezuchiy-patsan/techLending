@@ -298,7 +298,7 @@
                 </ul>
             </div>
 
-            <div class="tab-content" id="pills-tabContent">
+            <div class="tab-content" id="pills-tabContentService">
                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                     tabindex="0">
                     <div class="row">
@@ -320,8 +320,9 @@
                             </div>
                             <p class="fs-3" data-i18n="services.section-1.price">— от 1875 рублей</p>
                         </div>
-                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/test.png"
-                                class="img-fluid" width="618" height="670" alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/test.png" data-id="azs"
+                                class="img-fluid" width="618" height="670"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
 
                 </div>
@@ -347,8 +348,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="services__section_block_img col-6 d-lg-block d-none"><img
-                                src="../images/test.png" width="618" height="670" class="img-fluid" alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/test.png"
+                                width="618" height="670" class="img-fluid" data-id="mon"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
@@ -372,8 +374,9 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="services__section_block_img col-6 d-lg-block d-none"><img
-                                src="../images/test.png" width="618" height="670" class="img-fluid" alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/test.png"
+                                width="618" height="670" class="img-fluid"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-utp" role="tabpanel" aria-labelledby="pills-utp-tab" tabindex="0">
@@ -394,8 +397,8 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="services__section_block_img col-6 d-lg-block d-none"><img
-                                src="../images/test.png" class="img-fluid" alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/test.png"
+                                class="img-fluid" alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-e-t-e-accounting" role="tabpanel"
@@ -422,8 +425,9 @@
                             </div>
 
                         </div>
-                        <div class="services__section_block_img col-6 d-lg-block d-none"><img
-                                src="../images/test.png" width="618" height="670" class="img-fluid" alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/test.png"
+                                width="618" height="670" class="img-fluid"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
                 </div>
             </div>
@@ -1195,6 +1199,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="../js/utils/fsbox.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
             direction: 'horizontal',
@@ -1295,8 +1300,8 @@
                 }, 500);
             };
             navLink.forEach(link => {
-                    link.addEventListener("click", handleClick);
-                });
+                link.addEventListener("click", handleClick);
+            });
         }
 
         function menuResize() {

@@ -34,8 +34,8 @@
   "dependencies": {
     "animate.css": "^4.1.1",
     "css-loader": "^6.10.0",
+    "fslightbox": "^3.4.1",
     "intl-tel-input": "^20.3.0",
-    "lightgallery": "^2.7.2",
     "style-loader": "^3.3.4"
   }
 }

@@ -5,6 +5,8 @@ import LngDetector from 'i18next-browser-languagedetector'
 import 'animate.css';
 import telMask from "./utils/telMask";
 
+
+
 const url = document.location.pathname;
 
 if (url.includes('/en/')) {
@@ -38,13 +40,61 @@ if (url.includes('/en/')) {
 }
 
 var element = document.querySelector(".loading-text-words:last-child");
-element.addEventListener("animationiteration", function () {  
+element.addEventListener("animationiteration", function () {
     const loader = document.querySelector(".loading");
     loader.classList.add("loader_none")
 
 }, false);
 
+
+
 telMask();
+
+function createLightboxWithProps(type, sources) {
+    let lightbox = new FsLightbox();
+    lightbox.props.type = type;
+    lightbox.props.sources = sources;
+    return lightbox;
+}
+
+const lightbox = () => {
+    const imagesSources = {
+        "azs": {
+            sources: ["../images/gallery/azs/new_azs1.png", "../images/gallery/azs/new_azs2.png", 
+            "../images/gallery/azs/new_azs3.png", "../images/gallery/azs/new-design_fuel_section.jpg","../images/gallery/azs/new-design_fuel.jpg", 
+            "../images/gallery/azs/new-design_limits.jpg"],
+        },
+        "mon": {
+            sources: ["../images/gallery/monitoring/mon1.png", "../images/gallery/monitoring/mon2.png", "../images/gallery/monitoring/mon3.png", 
+            "../images/gallery/monitoring/mon4.png", "../images/gallery/monitoring/mon5.png", "../images/gallery/monitoring/mon6.png"],
+        }
+    }
+
+    const imgPills = document.getElementById("pills-tabContentService");
+    const images = imgPills.querySelectorAll(".services__section_block_img img");
+
+    for (const key in imagesSources) {
+        if (imagesSources.hasOwnProperty(key)) {
+            const imgSources = imagesSources[key].sources;
+            // Создание экземпляра FsLightbox для каждого набора изображений
+            const lightbox = createLightboxWithProps("image", imgSources);
+
+            imagesSources[key].lightbox = lightbox;
+        }
+    }
+
+    [...images].forEach((img) => {
+        img.addEventListener("click", function () {
+            imagesSources[this.dataset.id].lightbox.open();
+        })
+
+    });
+
+
+};
+
+document.addEventListener("DOMContentLoaded", lightbox);
+
 
 // export { loci18n as loci18n, i18next as i18n };
 
