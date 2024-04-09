@@ -560,11 +560,18 @@ section
             @media screen and ( min-width: $media-xs )
                 height: 450px
             @media screen and ( max-width: $media-md-768 )
+                height: 200px
                 padding-right: 57px
+                padding-left: 57px
                 border-radius: 30px
                 justify-content: space-between
+            @media screen and ( max-width: 570px )
+                height: 230px
             @media screen and ( max-width: $media-sm )
-                padding: 30px 30px 30px 35px
+                padding: 30px 30px 30px 30px
+                height: 350px
+            @media screen and ( max-width: $media-sm-320 )
+                height: 420px
 
             .geograph__section_text
                 &:not(:last-child)
@@ -606,7 +613,13 @@ section
                     @media screen and ( min-width: $media-xs )
                         max-height: 450px
                         height: 450px
+                    @media screen and ( max-width: $media-sm-320 )
+                        max-height: 420px
                     .position-absolute
+                        @media screen and ( max-width: $media-md-768 ) and (min-width: 571px)
+                            top: 33% !important
+                        @media screen and ( max-width: 570px ) and (min-width: $media-sm)
+                            top: 17% !important
                         @media screen and ( max-width: $media-sm )
                             font-size: 2rem !important
                             line-height: normal !important
@@ -618,6 +631,14 @@ section
                         height: 100%
                         width: 100%
                         filter: blur(10px) brightness(0.6) opacity(0.9)
+                        @media screen and ( max-width: $media-md-768 )
+                            height: 200px
+                        @media screen and ( max-width: 570px )
+                            height: 230px
+                        @media screen and ( max-width: $media-sm )
+                            height: 350px
+                        @media screen and ( max-width: $media-sm-320 )
+                            height: 420px
         .geograph__section_block_img
             iframe
                 height: 100%

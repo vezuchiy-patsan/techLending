@@ -1266,16 +1266,29 @@ section.geograph__section .geograph__section_block {
 }
 @media screen and (max-width: 768px) {
   section.geograph__section .geograph__section_block {
+    height: 200px;
     padding-right: 57px;
+    padding-left: 57px;
     border-radius: 30px;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
 }
+@media screen and (max-width: 570px) {
+  section.geograph__section .geograph__section_block {
+    height: 230px;
+  }
+}
 @media screen and (max-width: 540px) {
   section.geograph__section .geograph__section_block {
-    padding: 30px 30px 30px 35px;
+    padding: 30px 30px 30px 30px;
+    height: 350px;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.geograph__section .geograph__section_block {
+    height: 420px;
   }
 }
 section.geograph__section .geograph__section_block .geograph__section_text:not(:last-child) {
@@ -1339,6 +1352,21 @@ section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img 
     height: 450px;
   }
 }
+@media screen and (max-width: 320px) {
+  section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img {
+    max-height: 420px;
+  }
+}
+@media screen and (max-width: 768px) and (min-width: 571px) {
+  section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img .position-absolute {
+    top: 33% !important;
+  }
+}
+@media screen and (max-width: 570px) and (min-width: 540px) {
+  section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img .position-absolute {
+    top: 17% !important;
+  }
+}
 @media screen and (max-width: 540px) {
   section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img .position-absolute {
     font-size: 2rem !important;
@@ -1357,6 +1385,26 @@ section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img 
   width: 100%;
   -webkit-filter: blur(10px) brightness(0.6) opacity(0.9);
           filter: blur(10px) brightness(0.6) opacity(0.9);
+}
+@media screen and (max-width: 768px) {
+  section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img img {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 570px) {
+  section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img img {
+    height: 230px;
+  }
+}
+@media screen and (max-width: 540px) {
+  section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img img {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 320px) {
+  section.geograph__section .tab-pane:nth-child(n+3) .geograph__section_block_img img {
+    height: 420px;
+  }
 }
 section.geograph__section .geograph__section_block_img iframe {
   height: 100%;
