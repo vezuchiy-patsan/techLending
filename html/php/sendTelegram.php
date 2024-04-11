@@ -18,7 +18,7 @@ enum MyEnum: int
 }
 
 $botApiToken = '6938885385:AAGJlfJeG98ufjh91bvR4OcPdKtq059cl_4';
-$channelId = MyEnum::test_dan;
+$channelId = MyEnum::gut_id;
 $text = 'Новая заявка ГУТ';
 $text .= PHP_EOL.'<b>Сайт</b>: <a href="'.$_POST['link'].'">'.$_POST['title'].'</a>';
 $text .= PHP_EOL.'<b>Название формы</b>: '.$_POST['name_form'];
