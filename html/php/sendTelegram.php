@@ -10,8 +10,8 @@ enum MyEnum: int
 
 $botApiToken = '6938885385:AAGJlfJeG98ufjh91bvR4OcPdKtq059cl_4';
 $channelId = MyEnum::test_dan;
-$text = '<b>Привет </b> фываааааааааааааааааааааааааааааааааааааааааааааааааааааааа';
-$text .=  '<strong>bold</strong>
+$text = '<b>ФИО</b>: ФИО';
+$text .=  PHP_EOL.'<strong>bold</strong>
 <i>italic</i>, <em>italic</em>
 <u>underline</u>, <ins>underline</ins>
 <s>strikethrough</s>, <strike>strikethrough</strike>, <del>strikethrough</del>
