@@ -5,6 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 require_once '../php/phpmailer/Exception.php';
 require_once '../php/phpmailer/phpmailer.php';
 require_once '../php/phpmailer/smtp.php';
+require_once '../php/sendTelegram.php';
 
 
 $mail = new PHPMailer;
@@ -45,11 +46,11 @@ $msg .= "</body></html>";
 $body = $msg;
 $mail->msgHTML($body);
 
-if ($mail->send()) {
-	echo 'Message has been sent';
-} else {
+// if ($mail->send()) {
+// 	echo 'Message has been sent';
+// } else {
 
-	echo 'Message could not be sent.';
+// 	echo 'Message could not be sent.';
 
-	echo 'Mailer Error: ' . $mail->ErrorInfo;
-}
+// 	echo 'Mailer Error: ' . $mail->ErrorInfo;
+// }

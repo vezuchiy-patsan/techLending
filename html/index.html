@@ -1237,6 +1237,10 @@
             e.preventDefault();
 
             const data = dataForm(e.target);
+            data.append('link', window.location.href);
+            data.append('name_form', 'Основная форма');
+            data.append('title', document.title);
+            
             const response = await sendData(data);
 
             if (response.status === 200) {
