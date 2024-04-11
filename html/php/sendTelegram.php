@@ -51,10 +51,10 @@ if ($response === false) {
 
     // Проверка на наличие ключа 'ok' в массиве
     if ($responseArray['ok'] === true) {
-        // echo 'Значение": ' . $responseArray['result'];
+        echo 'Значение": ' . $responseArray['result'];
     } else {
-        // echo 'Ошибка: ' . $responseArray['error_code'];
-        // echo 'Описание: ' . $responseArray['description'];
+        echo 'Ошибка: ' . $responseArray['error_code'];
+        echo 'Описание: ' . $responseArray['description'];
     }
 }
 curl_close($curl);
