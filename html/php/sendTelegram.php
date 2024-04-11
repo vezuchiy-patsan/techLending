@@ -13,7 +13,7 @@ $channelId = MyEnum::test_dan;
 $text = 'Новая заявка #1111';
 $text .= PHP_EOL.'<b>Сайт</b>: <a href="">адрес</a>';
 $text .= PHP_EOL.'<b>Страница</b>: Название страницы - <a href="https://garvex.tech">Адрес страницы</a>';
-$text .= PHP_EOL.'<b>Название формы</b>: Название формы';
+$text .= PHP_EOL.'<b>Название формы</b>: Название формы <a href="http://www.example.com/">inline URL</a>';
 $text .= PHP_EOL.'<b>Номер заявки</b>: id';
 $text .= PHP_EOL.'<b>ФИО</b>: ФИО';
 $text .= PHP_EOL.'<b>Телефон</b>: <a href="tel:89052714903">номер</a>';
