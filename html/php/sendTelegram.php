@@ -10,20 +10,15 @@ enum MyEnum: int
 
 $botApiToken = '6938885385:AAGJlfJeG98ufjh91bvR4OcPdKtq059cl_4';
 $channelId = MyEnum::test_dan;
-$text = '<b>ФИО</b>'.chr(10).': ФИО';
-$text .=  PHP_EOL.'<strong>bold</strong>
-<i>italic</i>, <em>italic</em>
-<u>underline</u>, <ins>underline</ins>
-<s>strikethrough</s>, <strike>strikethrough</strike>, <del>strikethrough</del>
-<span class="tg-spoiler">spoiler</span>, <tg-spoiler>spoiler</tg-spoiler>
-<b>bold <i>italic bold <s>italic bold strikethrough <span class="tg-spoiler">italic bold strikethrough spoiler</span></s> <u>underline italic bold</u></i> bold</b>
-<a href="http://www.example.com/">inline URL</a>
-<a href="tg://user?id=123456789">inline mention of a user</a>
-<tg-emoji emoji-id="5368324170671202286">👍</tg-emoji>
-<code>inline fixed-width code</code>
-<pre>pre-formatted fixed-width code block</pre>
-<pre><code class="language-python">pre-formatted fixed-width code block written in the Python programming language</code></pre>
-<blockquote>Block quotation started\nBlock quotation continued\nThe last line of the block quotation</blockquote>';
+$text = 'Новая заявка #1111';
+$text .= PHP_EOL/'<b>Сайт</b>: <a href="">адрес</a>';
+$text .= PHP_EOL.'<b>Страница</b>: Название страницы - <a href="">Адрес страницы</a>';
+$text .= PHP_EOL.'<b>Название формы</b>: Название формы';
+$text .= PHP_EOL.'<b>Номер заявки</b>: id';
+$text .= PHP_EOL.'<b>ФИО</b>: ФИО';
+$text .= PHP_EOL.'<b>Телефон</b>: <a href="tel:89052714903">номер</a>';
+$text .= PHP_EOL.'<b>Почта</b>: <a href="mailto:daniil.axiyan.316@mail.ru">почта</a>';
+$text .= PHP_EOL.'<b>Сообщение</b>: Сообщение'; 
 
 $query = http_build_query([
     'chat_id' => $channelId->value,
