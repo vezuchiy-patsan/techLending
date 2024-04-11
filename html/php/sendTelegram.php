@@ -31,6 +31,8 @@ if ($response === false) {
 } else {
     // Если curl_exec вернул true, это означает, что запрос был успешно выполнен
     echo 'Operation completed without any errors';
+        // Вывод ответа сервера
+        echo 'Response: ' . $response;
 }
 curl_close($curl);
 ?>
