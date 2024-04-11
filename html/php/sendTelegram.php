@@ -11,6 +11,7 @@ enum MyEnum: int
 $botApiToken = '6938885385:AAGJlfJeG98ufjh91bvR4OcPdKtq059cl_4';
 $channelId = MyEnum::test_dan;
 $text = '<b>Привет </b> \n ';
+$text .= urlencode("here is my text.\n and this is a new line \n another new line");
 $text .=  '<strong>bold</strong>
 <i>italic</i>, <em>italic</em>
 <u>underline</u>, <ins>underline</ins>
