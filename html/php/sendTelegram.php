@@ -29,10 +29,16 @@ if ($response === false) {
     // Если curl_exec вернул false, это означает, что произошла ошибка
     echo 'Curl error: ' . curl_error($curl);
 } else {
-    // Если curl_exec вернул true, это означает, что запрос был успешно выполнен
-    echo 'Operation completed without any errors';
-        // Вывод ответа сервера
-        echo 'Response: ' . $response;
+    // Преобразование JSON-строки в ассоциативный массив
+    $responseArray = json_decode($response, true);
+
+    // Проверка на наличие ключа 'ok' в массиве
+    if ($responseArray['ok'] === true) {
+        echo 'Значение": ' . $responseArray['result'];
+    } else {
+        echo 'Ошибка: ' . $responseArray['error_code'];
+        echo 'Описание: ' . $responseArray['description'];
+    }
 }
 curl_close($curl);
 ?>
