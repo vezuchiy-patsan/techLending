@@ -11,7 +11,7 @@ $channelId = MyEnum::gut_id;
 $text = 'Hello, I am from PHP!';
 
 $query = http_build_query([
-    'chat_id' => $channelId,
+    'chat_id' => $channelId->value,
     'text' => $text,
 ]);
 $url = "https://api.telegram.org/bot{$botApiToken}/sendMessage?{$query}";
