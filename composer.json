@@ -1,6 +1,0 @@
-{
-    "require": {
-        "php-telegram-bot/telegram-bot-manager": "2.1",
-        "longman/telegram-bot": "dev-master as 0.81"
-    }
-}
