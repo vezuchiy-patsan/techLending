@@ -11,14 +11,6 @@ enum MyEnum: int
 $botApiToken = '6938885385:AAGJlfJeG98ufjh91bvR4OcPdKtq059cl_4';
 $channelId = MyEnum::test_dan;
 $text = 'Новая заявка #1111';
-$text .= PHP_EOL/'<b>Сайт</b>: <a href="">адрес</a>';
-$text .= PHP_EOL.'<b>Страница</b>: Название страницы - <a href="">Адрес страницы</a>';
-$text .= PHP_EOL.'<b>Название формы</b>: Название формы';
-$text .= PHP_EOL.'<b>Номер заявки</b>: id';
-$text .= PHP_EOL.'<b>ФИО</b>: ФИО';
-$text .= PHP_EOL.'<b>Телефон</b>: <a href="tel:89052714903">номер</a>';
-$text .= PHP_EOL.'<b>Почта</b>: <a href="mailto:daniil.axiyan.316@mail.ru">почта</a>';
-$text .= PHP_EOL.'<b>Сообщение</b>: Сообщение'; 
 
 $query = http_build_query([
     'chat_id' => $channelId->value,
