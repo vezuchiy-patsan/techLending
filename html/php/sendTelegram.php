@@ -19,7 +19,7 @@ enum MyEnum: int
 
 $botApiToken = '6938885385:AAGJlfJeG98ufjh91bvR4OcPdKtq059cl_4';
 $channelId = MyEnum::test_dan;
-$text = 'Новая заявка';
+$text = 'Новая заявка ГУТ';
 $text .= PHP_EOL.'<b>Сайт</b>: <a href="'.$_POST['link'].'">'.$_POST['title'].'</a>';
 $text .= PHP_EOL.'<b>Название формы</b>: '.$_POST['name_form'];
 $text .= PHP_EOL.'<b>ФИО</b>: '.$_POST['name'];
@@ -44,17 +44,17 @@ $response = curl_exec($curl);
 
 if ($response === false) {
     // Если curl_exec вернул false, это означает, что произошла ошибка
-    echo 'Curl error: ' . curl_error($curl);
+    // echo 'Curl error: ' . curl_error($curl);
 } else {
     // Преобразование JSON-строки в ассоциативный массив
-    $responseArray = json_decode($response, true);
+    // $responseArray = json_decode($response, true);
 
-    // Проверка на наличие ключа 'ok' в массиве
-    if ($responseArray['ok'] === true) {
-        echo 'Значение": ' . $responseArray['result'];
-    } else {
-        echo 'Ошибка: ' . $responseArray['error_code'];
-        echo 'Описание: ' . $responseArray['description'];
-    }
+    // // Проверка на наличие ключа 'ok' в массиве
+    // if ($responseArray['ok'] === true) {
+    //     echo 'Значение": ' . $responseArray['result'];
+    // } else {
+    //     echo 'Ошибка: ' . $responseArray['error_code'];
+    //     echo 'Описание: ' . $responseArray['description'];
+    // }
 }
 curl_close($curl);

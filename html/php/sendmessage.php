@@ -30,7 +30,6 @@ $mail->addAddress('smart@garvex.tech', 'Smart');
 // Тема письма
 $mail->Subject = 'Новая заявка c garvex.tech';
 
-// Тело письма
 //Тело письма
 $userphone = $_POST['tel'];
 $username = $_POST['name'];
@@ -46,11 +45,11 @@ $msg .= "</body></html>";
 $body = $msg;
 $mail->msgHTML($body);
 
-// if ($mail->send()) {
-// 	echo 'Message has been sent';
-// } else {
+if ($mail->send()) {
+	echo 'Message has been sent';
+} else {
 
-// 	echo 'Message could not be sent.';
+	echo 'Message could not be sent.';
 
-// 	echo 'Mailer Error: ' . $mail->ErrorInfo;
-// }
+	echo 'Mailer Error: ' . $mail->ErrorInfo;
+}
