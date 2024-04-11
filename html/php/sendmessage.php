@@ -34,7 +34,7 @@ $mail->Subject = 'Новая заявка c garvex.tech';
 //Тело письма
 $userphone = $_POST['tel'];
 $username = $_POST['name'];
-isset($_POST['email']) ? $useremail = nl2br($_POST['email']) : $usertext = nl2br($_POST['message']);
+// isset($_POST['email']) ? $useremail = nl2br($_POST['email']) : $usertext = nl2br($_POST['message']);
 $usertitle = $_POST['title'];
 
 $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
