@@ -14,7 +14,7 @@ try {
     $text .= PHP_EOL . '<b>Сайт</b>: <a href="' . $_POST['link'] . '">' . $_POST['title'] . '</a>';
     $text .= PHP_EOL . '<b>Название формы</b>: ' . $_POST['name_form'];
     $text .= PHP_EOL . '<b>ФИО</b>: ' . $_POST['name'];
-    $text .= PHP_EOL . '<b>Телефон</b>: ' . $_POST['tel'];
+    $text .= PHP_EOL . '<b>Телефон</b>: <code>' . $_POST['tel'].'</code>';
 
         // формирование параметров
         $query = http_build_query([
