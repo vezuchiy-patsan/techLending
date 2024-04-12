@@ -10,18 +10,18 @@ try {
 
     $channelId = MyEnum::gut_id;
 
-    // формирование параметров
-    $query = http_build_query([
-        'chat_id' => $channelId->value,
-        'text' => $text,
-        'parse_mode' => 'HTML'
-    ]);
-
     $text = 'Новая заявка ГУТ';
     $text .= PHP_EOL . '<b>Сайт</b>: <a href="' . $_POST['link'] . '">' . $_POST['title'] . '</a>';
     $text .= PHP_EOL . '<b>Название формы</b>: ' . $_POST['name_form'];
     $text .= PHP_EOL . '<b>ФИО</b>: ' . $_POST['name'];
     $text .= PHP_EOL . '<b>Телефон</b>: ' . $_POST['tel'];
+
+        // формирование параметров
+        $query = http_build_query([
+            'chat_id' => $channelId->value,
+            'text' => $text,
+            'parse_mode' => 'HTML'
+        ]);
 
     $url = "https://api.telegram.org/bot{$botApiToken}/sendMessage?{$query}";
 
