@@ -241,7 +241,7 @@
     <section class="stat__section bg-white rounded-bottom-5 position-relative">
         <div class="bg-white position-absolute w-100"></div>
         <div class="container">
-            <div class="row  animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="row w-100 animate__animated animate__fadeInUp animate__delay-2s">
                 <div class="stat__section_block text-center px-0 col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
                         <p>1 823</p>
@@ -1343,6 +1343,11 @@
             const hSection = document.querySelector(".geograph__section h2");
             const pSection = document.querySelectorAll(".geograph__section .geograph__section_block_img > div");
             const selector = nav.querySelector(".offcanvas__section");
+            // получим корневой элемент <html>
+            const $html = document.documentElement;
+            // узнаем его ширину
+            const width = $html.clientWidth;
+            document.documentElement.style.setProperty('--scroll-padding', `${innerWidth - width}px`);
 
             div.classList.add('newWrapper');
             if (screen.width <= 991 && document.getElementsByClassName('newWrapper').length === 0) {

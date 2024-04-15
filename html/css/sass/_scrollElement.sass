@@ -1,3 +1,5 @@
+@import '_valurables.sass'
+    
 .garvex_fixed_scroll
     background: url(../../images/gElement.png) center 100% no-repeat
     position: fixed
@@ -6,3 +8,6 @@
     width: 100%
     height: 100%
     left: calc(14vw + 20px)
+    @media screen and ( max-width: $media-md-768 )
+        left: 0
+        
