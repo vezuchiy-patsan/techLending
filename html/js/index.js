@@ -61,11 +61,10 @@ const lightbox = () => {
     const imagesSources = {
         "azs": {
             sources: ["../images/gallery/azs/new_azs1.png", "../images/gallery/azs/new_azs2.png", 
-            "../images/gallery/azs/new_azs3.png", "../images/gallery/azs/new-design_fuel_section.jpg","../images/gallery/azs/new-design_fuel.jpg", 
-            "../images/gallery/azs/new-design_limits.jpg"],
+            "../images/gallery/azs/new_azs3.png"],
         },
         "mon": {
-            sources: ["../images/gallery/monitoring/mon1.png", "../images/gallery/monitoring/mon2.png", "../images/gallery/monitoring/mon3.png", 
+            sources: ["../images/gallery/monitoring/mon3.png", 
             "../images/gallery/monitoring/mon4.png", "../images/gallery/monitoring/mon5.png", "../images/gallery/monitoring/mon6.png"],
         }
     }
