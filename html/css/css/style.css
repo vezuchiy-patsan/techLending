@@ -784,11 +784,11 @@ section nav ul .nav-item.dropdown .dropdown-menu li:hover div[class^=svg] path {
 }
 section nav .select {
   color: white;
-  position: relative;
 }
 @media screen and (max-width: 992px) {
   section nav .select {
     color: black;
+    position: relative;
   }
 }
 section nav .select .select__header {
@@ -964,6 +964,9 @@ section.stat__section .number p {
 }
 section.service__about {
   padding: 50px 0;
+}
+section.service__about .services__about_s_text {
+  text-align: justify;
 }
 section.services__section {
   padding-top: 54px;
