@@ -66,6 +66,10 @@ const lightbox = () => {
         "mon": {
             sources: ["../images/gallery/monitoring/mon3.png", 
             "../images/gallery/monitoring/mon4.png", "../images/gallery/monitoring/mon5.png", "../images/gallery/monitoring/mon6.png"],
+        },
+        "ware": {
+            sources: ["../images/gallery/warehouse/ware1.png", 
+            "../images/gallery/warehouse/ware2.png", "../images/gallery/warehouse/ware3.png"],
         }
     }
 
