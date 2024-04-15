@@ -29,6 +29,7 @@
   --bs-secondary: #E8ECF0;
   --bs-secondary-rgb: 232, 236, 240;
   --scroll-padding: 16px;
+  --scroll-icon: url("../../images/gElement.png");
 }
 
 .navbar {
@@ -39,20 +40,6 @@
   .form-select {
     --bs-form-select-bg-img: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
   }
-}
-
-::-webkit-scrollbar {
-  width: 16px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #E8ECF0;
-  border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #0E62F0;
-  border-radius: 100px;
 }
 
 * {
@@ -1554,4 +1541,7 @@ footer .footer__sections_tech_info p {
   .iti__flag {
     background-image: url("../../images/flags@2x.png");
   }
+}
+.garvex_fixed_scroll {
+  background: var(--scroll-icon);
 }/*# sourceMappingURL=style.css.map */
