@@ -29,7 +29,6 @@
   --bs-secondary: #E8ECF0;
   --bs-secondary-rgb: 232, 236, 240;
   --scroll-padding: 16px;
-  --scroll-icon: url("../../images/gElement.png");
 }
 
 .navbar {
@@ -1557,5 +1556,11 @@ footer .footer__sections_tech_info p {
   }
 }
 .garvex_fixed_scroll {
-  background: var(--scroll-icon);
+  background: url(../../images/gElement.png) center 100% no-repeat;
+  position: fixed;
+  z-index: -1;
+  bottom: 40vh;
+  width: 100%;
+  height: 100%;
+  left: calc(14vw + 20px);
 }/*# sourceMappingURL=style.css.map */
