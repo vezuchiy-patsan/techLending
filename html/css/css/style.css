@@ -1034,53 +1034,39 @@ section.services__section #pills-tab button.active {
   color: var(--bs-primary);
   border-color: var(--bs-primary);
 }
+section.services__section .services__section_block_img {
+  position: relative;
+}
 @media screen and (max-width: 1140px) {
   section.services__section .services__section_block_img {
     -ms-flex-item-align: end;
         align-self: flex-end;
   }
 }
-section.services__section .services__section_block_img img {
-  margin-top: -125px;
-}
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1140px) {
   section.services__section .services__section_block_img img {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
-  }
-}
-@media screen and (min-width: 1500px) {
-  section.services__section .services__section_block_img img {
+    position: absolute;
+    bottom: 60px;
     -webkit-transform: scale(1.5);
         -ms-transform: scale(1.5);
             transform: scale(1.5);
   }
 }
-@media screen and (min-width: 1500px) {
-  section.services__section:nth-child(2) .services__section_block_img img {
-    margin-top: -12px;
+@media screen and (min-width: 1200px) {
+  section.services__section #pills-tabContentService {
+    position: relative;
+    height: 400px;
   }
 }
 @media screen and (min-width: 1500px) {
-  section.services__section .tab-pane:nth-child(2) .services__section_block_img img {
-    margin-top: -25px;
+  section.services__section #pills-tabContentService {
+    height: 500px;
   }
 }
-section.services__section .tab-pane:nth-child(4) .services__section_block_img img {
-  margin-top: -65px;
-}
-section.services__section .tab-pane:nth-child(5) .services__section_block_img img {
-  margin-top: -30px;
-}
-@media screen and (min-width: 1500px) {
-  section.services__section:nth-child(5) .services__section_block_img img {
-    margin-top: -12px;
-  }
-}
-@media screen and (max-width: 1400px) {
-  section.services__section:nth-child(5) .services__section_block_img img {
-    margin-top: -45px;
+@media screen and (min-width: 1200px) {
+  section.services__section .tab-pane {
+    position: absolute;
+    bottom: 0;
   }
 }
 section.services__section .services__section_block h3 {
@@ -1115,6 +1101,7 @@ section.services__section .services__section_block img:not(.mobile_img) {
 }
 section.services__section .services__section_block p {
   font-size: 0.875rem;
+  text-align: justify;
 }
 @media screen and (min-width: 1500px) {
   section.services__section .services__section_block p {

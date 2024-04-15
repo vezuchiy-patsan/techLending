@@ -389,40 +389,25 @@ section
                     color: var(--bs-primary)
                     border-color: var(--bs-primary)
         .services__section_block_img
+            position: relative
             @media screen and (max-width: $media-xl)
                 align-self: flex-end
-            img
-                margin-top: -125px
-                @media screen and (min-width: 1200px)
-                    transform: scale(1.2)
-                @media screen and (min-width: $media-xs)
+            @media screen and (min-width: $media-xl)
+                img
+                    position: absolute
+                    bottom: 60px
                     transform: scale(1.5)
-        &:nth-child(2)
-            .services__section_block_img
-                img
-                    @media screen and ( min-width: $media-xs )
-                        margin-top: -12px
+        #pills-tabContentService
+            @media screen and ( min-width: 1200px )
+                position: relative
+                height: 400px
+            @media screen and ( min-width: $media-xs )
+                height: 500px
         .tab-pane
-            &:nth-child(2)
-                .services__section_block_img
-                    img
-                        @media screen and ( min-width: $media-xs )
-                            margin-top: -25px
-            &:nth-child(4)
-                .services__section_block_img
-                    img
-                        margin-top: -65px
-            &:nth-child(5)
-                .services__section_block_img
-                    img
-                        margin-top: -30px
-        &:nth-child(5)
-            .services__section_block_img
-                img
-                    @media screen and ( min-width: $media-xs )
-                        margin-top: -12px
-                    @media screen  and (max-width: 1400px)
-                        margin-top: -45px
+            @media screen and ( min-width: 1200px )
+                position: absolute
+                bottom: 0
+
         .services__section_block
             h3
                 font:
@@ -445,6 +430,7 @@ section
                     margin-top: 20x
             p
                 font-size: 0.875rem
+                text-align: justify
                 @media screen and (min-width: $media-xs)
                     font-size: 1.125rem
                 @media screen and (max-width: $media-md)
