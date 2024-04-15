@@ -1,6 +1,7 @@
 {
     "nav": {
         "home": "Home",
+        "about": "About us",
         "services": "Services",
         "doc": {
             "documentation": "Documentation",
@@ -33,6 +34,13 @@
         "ete": "End-to-end fuel accounting",
         "warehouse": "Warehouse",
         "tem": "Transport Enterprise Management"
+    },
+    "about_us": {
+        "p": "Company",
+        "h2": "About us",
+        "section": {
+            "p": "“Garvex Smart Technologies, a member of the Garvex Group of Companies, specializes in the development of software and cloud services aimed at fuel control and accounting, vehicle monitoring, warehouse operations management and optimization of business processes in transport companies. Our company not only offers basic versions of services, but also develops additional functionality according to individual partner requests, allowing you to create personalized solutions, including software branding and other customized features. Thanks to our innovative products of Garvex Smart Technologies, enterprises manage to reduce the risks of fuel theft and reduce fuel costs by 30%.“"
+        }
     },
     "services": {
         "h2": "Services",

@@ -29,8 +29,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
-<link href="../css/css/main.css?31db570329d547722b58" rel="stylesheet"></head>
-<link rel="stylesheet" href="../css/css/style.css?v=21">
+<link href="../css/css/main.css?50d3c2120a105783838a" rel="stylesheet"></head>
+<link rel="stylesheet" href="../css/css/style.css?v=215">
 
 <body class="bg-secondary">
     <div class="loading">
@@ -66,6 +66,12 @@
                             <div class="">
                                 <a class="nav-link" aria-current="page" href="#main" data-bs-dismiss="offcanvas"
                                     data-bs-target="#navbarOffcanvasLg" data-i18n="nav.home">Главная</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <div>
+                                <a class="nav-link" href="#about_us" data-bs-dismiss="offcanvas"
+                                    data-bs-target="#navbarOffcanvasLg" data-i18n="nav.about">O нас</a>
                             </div>
                         </li>
                         <li class="nav-item">
@@ -231,7 +237,8 @@
             </div>
         </div>
     </section>
-    <section class="stat__section bg-white rounded-bottom-5">
+    <section class="stat__section bg-white rounded-bottom-5 position-relative">
+        <div class="bg-white position-absolute w-100"></div>
         <div class="container">
             <div class="row  animate__animated animate__fadeInUp animate__delay-2s">
                 <div class="stat__section_block text-center px-0 col-lg-3 col-sm-6 col-12 position-relative">
@@ -256,16 +263,17 @@
                     <div class="number">
                         <p data-i18n="stat.ml">> 12 млн</p>
                     </div>
-                    <p id="services" data-i18n="stat.refils">Заправок</p>
+                    <p id="about_us" data-i18n="stat.refils">Заправок</p>
                 </div>
             </div>
         </div>
     </section>
-    <div class="service__about">
+    <section class="service__about">
         <div class="container">
-            <h2>О нас</h2>
-            <div class="service__about_section row px-0">
-                <div class="services__about_s_text">
+            <p class="h-mini" data-i18n="about_us.p">О компании</p>
+            <h2 data-i18n="about_us.h2">О нас</h2>
+            <div class="service__about_section row px-0 align-items-center">
+                <div class="services__about_s_text col-md-7 col-6" data-i18n="about_us.section.p">
                     «Компания «Гарвекс Умные Технологии», входящая в состав Группы Компаний «Гарвекс», специализируется
                     на разработке программного обеспечения и облачных сервисов, направленных на контроль и учет топлива,
                     мониторинг транспортных средств, управление складскими операциями и оптимизацию бизнес-процессов в
@@ -275,11 +283,13 @@
                     индивидуализированные возможности. Благодаря нашим инновационным продуктам компании «Гарвекс Умные
                     Технологии» предприятиям удается снизить риски кражи топлива и сократить расходы на ГСМ на 30%.»
                 </div>
-                <div class="services__about_s_img"><img src="" alt=""></div>
+                <div class="services__about_s_img col-md-5 col-6">
+                    <img src="../images/GarvexSmart.png" class="img-fluid" alt="Логотип «Гарвекс «Умные Технологии»">
+                </div>
             </div>
         </div>
-    </div>
-    <section class="bg-white rounded-5 services__section">
+    </section>
+    <section class="bg-white rounded-5 services__section" id="services">
         <div class="container">
             <h2 data-i18n="services.h2">Сервисы</h2>
             <div class="overflow-for-lg-scroll">
@@ -1258,7 +1268,7 @@
             data.append('link', window.location.href);
             data.append('name_form', 'Основная форма');
             data.append('title', document.title);
-            
+
             const response = await sendData(data);
 
             if (response.status === 200) {
@@ -1402,6 +1412,6 @@
         }
     </script>
 
-<script defer src="../main.js?31db570329d547722b58"></script></body>
+<script defer src="../main.js?50d3c2120a105783838a"></script></body>
 
 </html>

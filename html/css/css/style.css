@@ -601,7 +601,7 @@ section.head__section {
   }
 }
 section.head__section .section__head_logo {
-  width: 32%;
+  width: 24%;
 }
 @media screen and (max-width: 320px) {
   section.head__section .section__head_logo {
@@ -911,7 +911,12 @@ section nav a.btn:not(.offcanvas_d):hover {
   background-color: var(--bs-primary) !important;
   border-color: var(--bs-primary) !important;
 }
-section.stat__section {
+section.stat__section > div:first-child {
+  height: 50px;
+  top: -30px;
+  z-index: -1;
+}
+section.stat__section .container {
   padding: 50px 0;
 }
 @media screen and (min-width: 992px) {
@@ -956,6 +961,9 @@ section.stat__section .number p {
   font-weight: 600;
   font-size: 3.625rem;
   line-height: 70px;
+}
+section.service__about {
+  padding: 50px 0;
 }
 section.services__section {
   padding-top: 54px;
