@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "countup.js": "^2.8.0",
     "css-loader": "^6.10.0",
     "fslightbox": "^3.4.1",
     "intl-tel-input": "^20.3.0",

@@ -30,7 +30,7 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
 </head>
-<link rel="stylesheet" href="../css/css/style.css?v=215">
+<link rel="stylesheet" href="../css/css/style.css?v=333">
 
 <body class="bg-secondary">
     <div class="loading">
@@ -44,8 +44,12 @@
             <span class="loading-text-words">G</span>
         </div>
     </div>
-    <div class="garvex_fixed_scroll"></div>
-    <section class="head__section" id="main">
+    <div class="container position-relative">
+        <div class="position-absolute garvex_absolute_scroll">
+            <div class="garvex_fixed_scroll"></div>
+        </div>
+    </div>
+    <section class="head__section " id="main">
         <nav class="navbar navbar-expand-lg" id="menu">
             <div class="container-fluid">
                 <div class="section__head_logo">
@@ -238,31 +242,36 @@
             </div>
         </div>
     </section>
-    <section class="stat__section bg-white rounded-bottom-5 position-relative">
+    <section class="countAnimate stat__section bg-white rounded-bottom-5 position-relative">
         <div class="bg-white position-absolute w-100"></div>
         <div class="container">
             <div class="row w-100 animate__animated animate__fadeInUp animate__delay-2s">
                 <div class="stat__section_block text-center px-0 col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
-                        <p>1 823</p>
+                        <p class="count">1 823</p>
+                        <div class="counter"> </div>
                     </div>
                     <p data-i18n="stat.customer">Пользователей</p>
                 </div>
                 <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
-                        <p>6 972</p>
+                        <p class="count">6 972</p>
+                        <div class="counter"> </div>
+
                     </div>
                     <p data-i18n="stat.transport">Транспортных <br> средств</p>
                 </div>
                 <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
-                        <p>1 534</p>
+                        <p class="count">1 534</p>
+                        <div class="counter"> </div>
+
                     </div>
                     <p data-i18n="stat.fuel">Топливораздаточных <br> колонок</p>
                 </div>
                 <div class="stat__section_block text-center px-0  col-lg-3 col-sm-6 col-12 position-relative">
                     <div class="number">
-                        <p data-i18n="stat.ml">> 12 млн</p>
+                        <p data-i18n="stat.ml">> <span class="count">12</span> млн</p>
                     </div>
                     <p id="about_us" data-i18n="stat.refils">Заправок</p>
                 </div>
@@ -349,8 +358,8 @@
                             </div>
                             <p class="fs-3" data-i18n="services.section-1.price">— от 1875 рублей</p>
                         </div>
-                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/azs_mac.png"
-                                data-id="azs" class="img-fluid" width="618" height="670"
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img
+                                src="../images/azs_mac.png" data-id="azs" class="img-fluid" width="618" height="670"
                                 alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
                     </div>
 
@@ -362,7 +371,7 @@
                             <h3 data-i18n="services.section-2.h">Мониторинг транспорта</h3>
                             <div class="div__mobile_img">
                                 <img src="../images/monitoring.png" class="mobile_img img-fluid mb-2"
-                                    alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
+                                    alt="Монитор с скриншотом сервиса мониторинг транспорта">
                             </div>
                             <div class="services__section_text col-xxl-11 col-lg-10 col-12">
                                 <p data-i18n="services.section-2.p">Внедрение системы мониторинга транспорта является
@@ -379,7 +388,7 @@
                         </div>
                         <div class="services__section_block_img col-6 d-lg-block d-none"><img
                                 src="../images/monitoring.png" width="618" height="670" class="img-fluid" data-id="mon"
-                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                                alt="Монитор с скриншотом сервиса мониторинг транспорта"></div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
@@ -389,12 +398,12 @@
                             <h3 data-i18n="services.section-3.h">Склад</h3>
                             <div class="div__mobile_img">
                                 <img src="../images/warehouse.png" class="mobile_img img-fluid mb-2"
-                                    alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
+                                    alt="Монитор с скриншотом сервиса «Склад»">
                             </div>
                             <div class="services__section_text col-xxl-11 col-lg-10 col-12">
                                 <p data-i18n="services.section-3.p">«Склад» является сервисом хранения и обработки
                                     данных по товарам, сырью и
-                                    материальным ресурсам. Здесь фиксируются все операции, связанные с хранением и  
+                                    материальным ресурсам. Здесь фиксируются все операции, связанные с хранением и
                                     движением товаров,
                                     благодаря чему возможно оперативно уточнить местоположение товара, его количество и
                                     общую стоимость. Система содействует упорядочиванию и сокращению времени составления
@@ -405,7 +414,7 @@
                         </div>
                         <div class="services__section_block_img col-6 d-lg-block d-none"><img
                                 src="../images/warehouse.png" width="618" height="670" class="img-fluid" data-id="ware"
-                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                                alt="Монитор с скриншотом сервиса «Склад»"></div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-utp" role="tabpanel" aria-labelledby="pills-utp-tab" tabindex="0">
@@ -413,8 +422,8 @@
                         <div class="services__section_block col-xxl-6 col-lg-6 col-12">
                             <h3 data-i18n="services.section-5.h">Управление транспортным предприятием</h3>
                             <div class="div__mobile_img">
-                                <img src="../images/azs_mac.png" class="mobile_img img-fluid mb-2"
-                                    alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
+                                <img src="../video/coding.gif" class="mobile_img img-fluid mb-2"
+                                    alt="Гиф в процессе создания">
                             </div>
                             <div class="services__section_text col-xxl-11 col-lg-10 col-12">
                                 <p data-i18n="services.section-5.p">Управление транспортным предприятием (УТП)
@@ -426,8 +435,12 @@
                                 </p>
                             </div>
                         </div>
-                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/azs_mac.png"
-                                class="img-fluid" alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                        <div class="services__section_block_img col-6 d-lg-block d-none">
+                            <img src="../video/coding.gif" alt="Гиф в процессе создания" class="img-fluid" />
+
+                            <!-- <img src="../images/azs_mac.png" class="img-fluid"
+                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"> -->
+                        </div>
                     </div>
                 </div>
                 <div class="tab-pane fade" id="pills-e-t-e-accounting" role="tabpanel"
@@ -436,10 +449,10 @@
                         <div class="services__section_block col-lg-6 col-12">
                             <h3 data-i18n="services.section-4.h">Сквозной учет топлива</h3>
                             <div class="div__mobile_img">
-                                <img src="../images/azs_mac.png" class="mobile_img img-fluid"
-                                    alt="Монитор с скриншотом сервиса «АЗС-Онлайн»">
+                                <img src="../video/coding.gif" alt="Гиф в процессе создания"
+                                    class="mobile_img img-fluid">
                             </div>
-                            <div class="services__section_text col-xxl-12 col-lg-10 col-12">
+                            <div class="services__section_text col-xxl-11 col-lg-10 col-12">
                                 <p data-i18n="services.section-4.p">На многих предприятиях цепочка движения топлива
                                     представляет собой сложную и обширную
                                     инфраструктуру, что затрудняет контроль и управление, а также приводит к серьезным
@@ -454,9 +467,8 @@
                             </div>
 
                         </div>
-                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../images/azs_mac.png"
-                                width="618" height="670" class="img-fluid"
-                                alt="Монитор с скриншотом сервиса «АЗС-Онлайн»"></div>
+                        <div class="services__section_block_img col-6 d-lg-block d-none"><img src="../video/coding.gif"
+                                alt="Гиф в процессе создания" width="618" height="670" class="img-fluid"></div>
                     </div>
                 </div>
             </div>
@@ -471,7 +483,9 @@
                 class="row gap-3 justify-content-xl-between justify-content-md-center justify-content-sm-between justify-content-center mx-0">
                 <div class="col-auto industry__services_block px-0">
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#farmerModal">
-                        <img src="../images/farmer-industry.webp" class="img-fluid" alt="Трактор в поле">
+                        <div class="img_box">
+                            <img src="../images/farmer-industry.webp" class="img-fluid" alt="Трактор в поле">
+                        </div>
                         <div class="industry__services_cards_text row justify-content-between mx-0">
                             <p class="col-5 card-text-p-24 card-text-p-14-sm" data-i18n="working.modals.section-1.h">
                                 Сельское хозяйство</p>
@@ -509,7 +523,9 @@
                 </div>
                 <div class="col-auto industry__services_block px-0">
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#oilModal">
-                        <img src="../images/oil-industry.webp" class="img-fluid" alt="Бензовоз">
+                        <div class="img_box">
+                            <img src="../images/oil-industry.webp" class="img-fluid" alt="Бензовоз">
+                        </div>
                         <div class="industry__services_cards_text row justify-content-between mx-0">
                             <p class="col-5 card-text-p-24 card-text-p-14-sm" data-i18n="working.modals.section-2.h">
                                 Топливная
@@ -551,7 +567,9 @@
                 </div>
                 <div class="col-auto industry__services_block px-0">
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#transportModal">
-                        <img src="../images/transport-industry.webp" class="img-fluid" alt="Камаз">
+                        <div class="img_box">
+                            <img src="../images/transport-industry.webp" class="img-fluid" alt="Камаз">
+                        </div>
                         <div class="industry__services_cards_text row justify-content-between mx-0">
                             <p class="col-5 card-text-p-24 card-text-p-14-sm" data-i18n="working.modals.section-3.h">
                                 Транспортная
@@ -592,7 +610,9 @@
                 </div>
                 <div class="col-auto industry__services_block px-0">
                     <a href="javascript:void(0)" role="button" data-bs-toggle="modal" data-bs-target="#roadModal">
-                        <img src="../images/road-industry.webp" class="img-fluid" alt="Дорожная техника">
+                        <div class="img_box">
+                            <img src="../images/road-industry.webp" class="img-fluid" alt="Дорожная техника">
+                        </div>
                         <div class="industry__services_cards_text row justify-content-between mx-0">
                             <p class="col-5 card-text-p-24 card-text-p-14-sm" data-i18n="working.modals.section-4.h">
                                 Дорожное
@@ -662,7 +682,7 @@
             </div>
         </div>
     </section>
-    <section class="geograph__section">
+    <section class="geograph__section countAnimate">
         <div class="img">
         </div>
         <div class="container">
@@ -707,21 +727,21 @@
                     <div class="row">
                         <div class="geograph__section_block col-md-4 col-12 d-md-block d-flex flex-wrap">
                             <div class="geograph__section_text">
-                                <p class="p-main">92 038</p>
+                                <p class="p-main count geograph_count">92 038</p>
                                 <p class="p-secondary" data-i18n="geograph.section-1.s1.p">Топливных карт</p>
                             </div>
                             <div class="geograph__section_text">
-                                <p class="p-main">1 534</p>
+                                <p class="p-main count geograph_count">1 534</p>
                                 <p class="p-secondary" data-i18n="geograph.section-1.s2.p">Топливораздаточного
                                     оборудования</p>
                             </div>
                             <div class="geograph__section_text">
-                                <p class="p-main">101 478 468</p>
+                                <p class="p-main count geograph_count">101 478 468</p>
                                 <p class="p-secondary" data-i18n="geograph.section-1.s3.p">Учтенных литров топлива в
                                     месяц</p>
                             </div>
                             <div class="geograph__section_text">
-                                <p class="p-main">89</p>
+                                <p class="p-main count geograph_count">89</p>
                                 <p class="p-secondary" data-i18n="geograph.section-1.s4.p">Зафиксированных
                                     несанкционированных сливов</p>
                             </div>
@@ -737,19 +757,19 @@
                     <div class="row">
                         <div class="geograph__section_block col-md-4 col-12  d-md-block d-flex flex-wrap">
                             <div class="geograph__section_text">
-                                <p class="p-main">6 972</p>
+                                <p class="p-main count geograph_count">6 972</p>
                                 <p class="p-secondary" data-i18n="geograph.section-2.s1.p">Объектов</p>
                             </div>
                             <div class="geograph__section_text">
-                                <p class="p-main">18 968 032</p>
+                                <p class="p-main count geograph_count">18 968 032</p>
                                 <p class="p-secondary" data-i18n="geograph.section-2.s2.p">Пробег ТС в месяц</p>
                             </div>
                             <div class="geograph__section_text">
-                                <p class="p-main">1 213 128</p>
+                                <p class="p-main count geograph_count">1 213 128</p>
                                 <p class="p-secondary" data-i18n="geograph.section-2.s3.p">Литров топлива в месяц</p>
                             </div>
                             <div class="geograph__section_text">
-                                <p class="p-main">9 230</p>
+                                <p class="p-main count geograph_count">9 230</p>
                                 <p class="p-secondary" data-i18n="geograph.section-2.s4.p">Количество заправок</p>
                             </div>
                         </div>

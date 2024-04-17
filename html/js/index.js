@@ -4,6 +4,8 @@ import locI18next from 'loc-i18next'
 import LngDetector from 'i18next-browser-languagedetector'
 import 'animate.css';
 import telMask from "./utils/telMask";
+import { CountUp } from "countup.js";
+import countUp from "./animation/countUp";
 
 
 
@@ -42,8 +44,11 @@ if (url.includes('/en/')) {
 var element = document.querySelector(".loading-text-words:last-child");
 element.addEventListener("animationiteration", function () {
     const loader = document.querySelector(".loading");
-    loader.classList.add("loader_none")
-
+    if (!loader.classList.contains("loader_none")) {
+        
+        setTimeout(countUp(), 200);
+        loader.classList.add("loader_none");
+    }
 }, false);
 
 
@@ -60,16 +65,16 @@ function createLightboxWithProps(type, sources) {
 const lightbox = () => {
     const imagesSources = {
         "azs": {
-            sources: ["../images/gallery/azs/new_azs1.png", "../images/gallery/azs/new_azs2.png", 
-            "../images/gallery/azs/new_azs3.png"],
+            sources: ["../images/gallery/azs/new_azs1.png", "../images/gallery/azs/new_azs2.png",
+                "../images/gallery/azs/new_azs3.png"],
         },
         "mon": {
-            sources: ["../images/gallery/monitoring/mon3.png", 
-            "../images/gallery/monitoring/mon4.png", "../images/gallery/monitoring/mon5.png", "../images/gallery/monitoring/mon6.png"],
+            sources: ["../images/gallery/monitoring/mon3.png",
+                "../images/gallery/monitoring/mon4.png", "../images/gallery/monitoring/mon5.png", "../images/gallery/monitoring/mon6.png"],
         },
         "ware": {
-            sources: ["../images/gallery/warehouse/ware1.png", 
-            "../images/gallery/warehouse/ware2.png", "../images/gallery/warehouse/ware3.png"],
+            sources: ["../images/gallery/warehouse/ware1.png",
+                "../images/gallery/warehouse/ware2.png", "../images/gallery/warehouse/ware3.png"],
         }
     }
 
@@ -97,6 +102,7 @@ const lightbox = () => {
 };
 
 document.addEventListener("DOMContentLoaded", lightbox);
+
 
 
 // export { loci18n as loci18n, i18next as i18n };
