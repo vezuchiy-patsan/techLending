@@ -1548,10 +1548,4 @@ footer .footer__sections_tech_info p {
   bottom: 40vh;
   width: 100%;
   height: 100%;
-  left: calc(14vw + 20px);
-}
-@media screen and (max-width: 768px) {
-  .garvex_fixed_scroll {
-    left: 0;
-  }
 }/*# sourceMappingURL=style.css.map */
