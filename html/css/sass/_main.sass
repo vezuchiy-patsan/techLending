@@ -364,6 +364,8 @@ section
         #pills-tab
             position: relative
             z-index: 10
+            @media screen and (min-width: $media-lg-991)
+                margin-bottom: 75px !important
             @media screen and (max-width: $media-xl)
                 flex-direction: row
                 flex-wrap: nowrap
@@ -392,13 +394,28 @@ section
                     border-color: var(--bs-primary)
         .services__section_block_img
             position: relative
+            img
+                &:not(.gif):hover
+                    transform: scale(1.1)
+                    cursor: pointer  
             @media screen and (max-width: $media-xl)
-                align-self: flex-end
+                align-self: flex-end  
+            @media screen and (min-width: calc($media-xl + 1px))           
+                img
+                    position: absolute
+                    bottom: 50px
+                    transform: scale(1.25)   
+                    &:not(.gif):hover
+                        transform: scale(1.3)
+                        cursor: pointer         
             @media screen and (min-width: $media-xs)
                 img
                     position: absolute
-                    bottom: 60px
+                    bottom: 70px
                     transform: scale(1.5)
+                    &:not(.gif):hover
+                        transform: scale(1.55)
+                        cursor: pointer    
         #pills-tabContentService
             @media screen and ( min-width: 1200px )
                 position: relative
@@ -424,7 +441,7 @@ section
                 margin: 0 auto
             img
                 &.mobile_img
-                    @media screen and (min-width: $media-lg)
+                    @media screen and (min-width: $media-lg-991)
                         display: none
             img:not(.mobile_img)
                 margin-top: 35px
