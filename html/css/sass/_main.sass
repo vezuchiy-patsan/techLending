@@ -72,16 +72,17 @@ div[class^=container]
 
 section
     &.head__section
-        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 70%), url("../../images/head_back.png")
+        background: black
+        background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 80%), url("../../images/head_back.png")
         background-position: right center
         background-repeat: no-repeat
+        background-size: auto 100%
         height: auto
         border-end-start-radius: 30px
         border-end-end-radius: 30px
         padding: 18px 0 12px 0
         @media screen and ( max-width: $media-xl )
             background-image: url("../../images/head_back.png")
-            background-size: auto auto
             background-position: 75%
         .section__head_logo
             width: 24%
