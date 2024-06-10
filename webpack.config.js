@@ -22,8 +22,8 @@ module.exports = {
         }),
 
         new HtmlWebpackPlugin({
-            template: 'html/index.html', // Укажите путь к вашему HTML файлу
-            filename: 'ru/index.html',
+            template: 'src/index.html', // Укажите путь к вашему HTML файлу
+            filename: 'index.html',
             lang: "ru",
             title: 'Гарвекс умные технологии',
             description: '«Гарвекс «Умные Технологии». Следующий уровень управления топливом, транспортом и предприятием.',
@@ -31,7 +31,7 @@ module.exports = {
             hash: true,
         }),
         new HtmlWebpackPlugin({
-            template: 'html/index.html', // Укажите путь к вашему HTML файлу
+            template: 'src/index.html', // Укажите путь к вашему HTML файлу
             filename: 'en/index.html',
             lang: "en",
             title: 'Garvex Smart Technologies',

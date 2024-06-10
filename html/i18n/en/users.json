@@ -11,7 +11,8 @@
         "login": {
             "service": "Services",
             "azs": "Login to \"PetrolStation-Online\"",
-            "mon": "Login to \"Transport Monitoring\""
+            "mon": "Login to \"Transport Monitoring\"",
+            "skl": "Login to \"Warehouse\""
         },
         "mobile-nav": {
             "adr": "195279, Russia, St. Petersburg, Revolution Highway, 69, Liter A, office 303"
